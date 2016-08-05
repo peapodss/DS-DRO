@@ -1,0 +1,717 @@
+iMPACT Version: 14.7
+
+iMPACT log file Started on Wed Jul 13 21:01:53 2016
+
+Welcome to iMPACT
+iMPACT Version: 14.7
+// *** BATCH CMD : setMode -bs
+GUI --- Auto connect to cable...
+// *** BATCH CMD : setCable -port auto
+INFO:iMPACT - Digilent Plugin: Plugin Version: 2.4.4
+INFO:iMPACT - Digilent Plugin: found 1 device(s).
+INFO:iMPACT - Digilent Plugin: opening device: "JtagHs1", SN:210205812493
+INFO:iMPACT - Digilent Plugin: User Name: JtagHs1
+INFO:iMPACT - Digilent Plugin: Product Name: Digilent JTAG-HS1
+INFO:iMPACT - Digilent Plugin: Serial Number: 210205812493
+INFO:iMPACT - Digilent Plugin: Product ID: 30700150
+INFO:iMPACT - Digilent Plugin: Firmware Version: 0108
+INFO:iMPACT - Digilent Plugin: JTAG Port Number: 0
+INFO:iMPACT - Digilent Plugin: JTAG Clock Frequency: 10000000 Hz
+Attempting to identify devices in the boundary-scan chain configuration...
+INFO:iMPACT - Current time: 2016-07-13 21:02:01
+// *** BATCH CMD : Identify -inferir 
+PROGRESS_START - Starting Operation.
+Identifying chain contents...'0': : Manufacturer's ID = Xilinx xc2c64a, Version : 0
+INFO:iMPACT:1777 - 
+   Reading C:/Xilinx/14.7/ISE_DS/ISE/xbr/data/xc2c64a.bsd...
+INFO:iMPACT:501 - '1': Added Device xc2c64a successfully.
+----------------------------------------------------------------------
+done.
+PROGRESS_END - End Operation.
+Elapsed time =      0 sec.
+// *** BATCH CMD : identifyMPM 
+// *** BATCH CMD : assignFile -p 1 -file"D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.jed"
+'1': Loading file 'D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.jed'...
+done.
+INFO:iMPACT:501 - '1': Added Device xc2c64a successfully.
+----------------------------------------------------------------------
+INFO:iMPACT - Current time: 2016-07-13 21:02:19
+// *** BATCH CMD : Program -p 1 -e -v 
+Maximum TCK operating frequency for this device chain: 33000000.
+Validating chain...
+Boundary-scan chain validated successfully.
+'1': Erasing device...
+'1': Erasure completed successfully.
+'1': Programming device...
+PROGRESS_START - Starting Operation.
+done.
+'1': Verifying device...
+done.
+'1': Setting ISC done bits...done
+'1': Programming completed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =      1 sec.
+// *** BATCH CMD : assignFile -p 1 -file"D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.jed"
+'1': Loading file 'D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.jed'...
+done.
+INFO:iMPACT:501 - '1': Added Device xc2c64a successfully.
+----------------------------------------------------------------------
+INFO:iMPACT - Current time: 2016-07-14 09:26:08
+Updating config fileD:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.jed...
+// *** BATCH CMD : Program -p 1 -e -v 
+Maximum TCK operating frequency for this device chain: 33000000.
+Validating chain...
+Boundary-scan chain validated successfully.
+'1': Erasing device...
+'1': Erasure completed successfully.
+'1': Programming device...
+PROGRESS_START - Starting Operation.
+done.
+'1': Verifying device...
+done.
+'1': Setting ISC done bits...done
+'1': Programming completed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =      1 sec.
+INFO:iMPACT - Current time: 2016-07-14 09:27:13
+Updating config fileD:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.jed...
+// *** BATCH CMD : Program -p 1 -e -v 
+Maximum TCK operating frequency for this device chain: 33000000.
+Validating chain...
+Boundary-scan chain validated successfully.
+'1': Erasing device...
+'1': Erasure completed successfully.
+'1': Programming device...
+PROGRESS_START - Starting Operation.
+done.
+'1': Verifying device...
+done.
+'1': Setting ISC done bits...done
+'1': Programming completed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =      1 sec.
+INFO:iMPACT - Current time: 2016-07-14 09:28:57
+Updating config fileD:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.jed...
+// *** BATCH CMD : Program -p 1 -e -v 
+Maximum TCK operating frequency for this device chain: 33000000.
+Validating chain...
+Boundary-scan chain validated successfully.
+'1': Erasing device...
+'1': Erasure completed successfully.
+'1': Programming device...
+PROGRESS_START - Starting Operation.
+done.
+'1': Verifying device...
+done.
+'1': Setting ISC done bits...done
+'1': Programming completed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =      1 sec.
+INFO:iMPACT - Current time: 2016-07-14 09:30:20
+Updating config fileD:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.jed...
+// *** BATCH CMD : Program -p 1 -e -v 
+Maximum TCK operating frequency for this device chain: 33000000.
+Validating chain...
+Boundary-scan chain validated successfully.
+'1': Erasing device...
+'1': Erasure completed successfully.
+'1': Programming device...
+PROGRESS_START - Starting Operation.
+done.
+'1': Verifying device...
+done.
+'1': Setting ISC done bits...done
+'1': Programming completed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =      1 sec.
+INFO:iMPACT - Current time: 2016-07-14 09:31:57
+// *** BATCH CMD : Program -p 1 -e -v 
+Maximum TCK operating frequency for this device chain: 33000000.
+Validating chain...
+Boundary-scan chain validated successfully.
+'1': Erasing device...
+'1': Erasure completed successfully.
+'1': Programming device...
+PROGRESS_START - Starting Operation.
+done.
+'1': Verifying device...
+done.
+'1': Setting ISC done bits...done
+'1': Programming completed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =      2 sec.
+INFO:iMPACT - Current time: 2016-07-14 09:39:23
+Updating config fileD:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.jed...
+// *** BATCH CMD : Program -p 1 -e -v 
+Maximum TCK operating frequency for this device chain: 33000000.
+Validating chain...
+Boundary-scan chain validated successfully.
+'1': Erasing device...
+'1': Erasure completed successfully.
+'1': Programming device...
+PROGRESS_START - Starting Operation.
+done.
+'1': Verifying device...
+done.
+'1': Setting ISC done bits...done
+'1': Programming completed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =      1 sec.
+INFO:iMPACT - Current time: 2016-07-14 09:40:26
+Updating config fileD:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.jed...
+// *** BATCH CMD : Program -p 1 -e -v 
+Maximum TCK operating frequency for this device chain: 33000000.
+Validating chain...
+Boundary-scan chain validated successfully.
+'1': Erasing device...
+'1': Erasure completed successfully.
+'1': Programming device...
+PROGRESS_START - Starting Operation.
+done.
+'1': Verifying device...
+done.
+'1': Setting ISC done bits...done
+'1': Programming completed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =      1 sec.
+INFO:iMPACT - Current time: 2016-07-14 09:41:08
+Updating config fileD:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.jed...
+// *** BATCH CMD : Program -p 1 -e -v 
+Maximum TCK operating frequency for this device chain: 33000000.
+Validating chain...
+Boundary-scan chain validated successfully.
+'1': Erasing device...
+'1': Erasure completed successfully.
+'1': Programming device...
+PROGRESS_START - Starting Operation.
+done.
+'1': Verifying device...
+done.
+'1': Setting ISC done bits...done
+'1': Programming completed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =      2 sec.
+INFO:iMPACT - Current time: 2016-07-14 09:46:55
+Updating config fileD:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.jed...
+// *** BATCH CMD : Program -p 1 -e -v 
+Maximum TCK operating frequency for this device chain: 33000000.
+Validating chain...
+Boundary-scan chain validated successfully.
+'1': Erasing device...
+'1': Erasure completed successfully.
+'1': Programming device...
+PROGRESS_START - Starting Operation.
+done.
+'1': Verifying device...
+done.
+'1': Setting ISC done bits...done
+'1': Programming completed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =      1 sec.
+INFO:iMPACT - Current time: 2016-07-14 09:48:38
+Updating config fileD:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.jed...
+// *** BATCH CMD : Program -p 1 -e -v 
+Maximum TCK operating frequency for this device chain: 33000000.
+Validating chain...
+Boundary-scan chain validated successfully.
+'1': Erasing device...
+'1': Erasure completed successfully.
+'1': Programming device...
+PROGRESS_START - Starting Operation.
+done.
+'1': Verifying device...
+done.
+'1': Setting ISC done bits...done
+'1': Programming completed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =      1 sec.
+INFO:iMPACT - Current time: 2016-07-14 09:53:47
+Updating config fileD:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.jed...
+// *** BATCH CMD : Program -p 1 -e -v 
+Maximum TCK operating frequency for this device chaiProject: 'C:\Xilinx\14.7\ISE_DS\\auto_project.ipf' created.
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setMode -ss
+// *** BATCH CMD : setMode -sm
+// *** BATCH CMD : setMode -hw140
+// *** BATCH CMD : setMode -spi
+// *** BATCH CMD : setMode -acecf
+// *** BATCH CMD : setMode -acempm
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : saveProjectFile -file"C:\Xilinx\14.7\ISE_DS\\auto_project.ipf"
+// *** BATCH CMD : setMode -bs
+INFO:iMPACT - Launching WebTalk, please refer to the webtalk log at   C:\Xilinx\14.7\ISE_DS\webtalk.log for details.
+INFO:iMPACT - Running wbtc successfully.
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : deleteDevice -position 1
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setMode -ss
+// *** BATCH CMD : setMode -sm
+// *** BATCH CMD : setMode -hw140
+// *** BATCH CMD : setMode -spi
+// *** BATCH CMD : setMode -acecf
+// *** BATCH CMD : setMode -acempm
+// *** BATCH CMD : setMode -pff
+     1 sec.
+INFO:iMPACT - Current time: 2016-07-14 11:04:41
+Updating config fileD:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.jed...
+// *** BATCH CMD : Program -p 1 -e -v 
+Maximum TCK operating frequency for this device chain: 33000000.
+Validating chain...
+Boundary-scan chain validated successfully.
+'1': Erasing device...
+'1': Erasure completed successfully.
+'1': Programming device...
+PROGRESS_START - Starting Operation.
+done.
+'1': Verifying device...
+done.
+'1': Setting ISC done bits...done
+'1': Programming completed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =      1 sec.
+INFO:iMPACT - Current time: 2016-07-14 11:05:50
+// *** BATCH CMD : Program -p 1 -e -v 
+Maximum TCK operating frequency for this device chain: 33000000.
+Validating chain...
+Boundary-scan chain validated successfully.
+'1': Erasing device...
+'1': Erasure completed successfully.
+'1': Programming device...
+done.
+'1': Verifying device...
+PROGRESS_START - Starting Operation.
+done.
+'1': Setting ISC done bits...done
+'1': Programming completed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =      1 sec.
+INFO:iMPACT - Current time: 2016-07-14 11:05:53
+Updating config fileD:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.jed...
+// *** BATCH CMD : Program -p 1 -e -v 
+Maximum TCK operating frequency for this device chain: 33000000.
+Validating chain...
+Boundary-scan chain validated successfully.
+'1': Erasing device...
+'1': Erasure completed successfully.
+'1': Programming device...
+PROGRESS_START - Starting Operation.
+done.
+'1': Verifying device...
+done.
+'1': Setting ISC done bits...done
+'1': Programming completed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =      1 sec.
+INFO:iMPACT - Current time: 2016-07-14 11:09:31
+Updating config fileD:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.jed...
+// *** BATCH CMD : Program -p 1 -e -v 
+Maximum TCK operating frequency for this device chain: 33000000.
+Validating chain...
+Boundary-scan chain validated successfully.
+'1': Erasing device...
+'1': Erasure completed successfully.
+'1': Programming device...
+PROGRESS_START - Starting Operation.
+done.
+'1': Verifying device...
+done.
+'1': Setting ISC done bits...done
+'1': Programming completed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =      1 sec.
+INFO:iMPACT - Current time: 2016-07-14 11:10:42
+Updating config fileD:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.jed...
+// *** BATCH CMD : Program -p 1 -e -v 
+Maximum TCK operating frequency for this device chain: 33000000.
+Validating chain...
+Boundary-scan chain validated successfully.
+'1': Erasing device...
+'1': Erasure completed successfully.
+'1': Programming device...
+PROGRESS_START - Starting Operation.
+done.
+'1': Verifying device...
+done.
+'1': Setting ISC done bits...done
+'1': Programming completed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =      1 sec.
+INFO:iMPACT - Current time: 2016-07-14 11:11:38
+// *** BATCH CMD : Program -p 1 -e -v 
+Maximum TCK operating frequency for this device chain: 33000000.
+Validating chain...
+Boundary-scan chain validated successfully.
+'1': Erasing device...
+'1': Erasure completed successfully.
+'1': Programming device...
+done.
+'1': Verifying device...
+PROGRESS_START - Starting Operation.
+done.
+'1': Setting ISC done bits...done
+'1': Programming completed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =      1 sec.
+INFO:iMPACT - Current time: 2016-07-14 11:11:42
+// *** BATCH CMD : Program -p 1 -e -v 
+Maximum TCK operating frequency for this device chain: 33000000.
+Validating chain...
+Boundary-scan chain validated successfully.
+'1': Erasing device...
+'1': Erasure completed successfully.
+'1': Programming device...
+PROGRESS_START - Starting Operation.
+done.
+'1': Verifying device...
+done.
+'1': Setting ISC done bits...done
+'1': Programming completed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =      1 sec.
+INFO:iMPACT - Current time: 2016-07-14 11:13:40
+Updating config fileD:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.jed...
+// *** BATCH CMD : Program -p 1 -e -v 
+Maximum TCK operating frequency for this device chain: 33000000.
+Validating chain...
+Boundary-scan chain validated successfully.
+'1': Erasing device...
+'1': Erasure completed successfully.
+'1': Programming device...
+PROGRESS_START - Starting Operation.
+done.
+'1': Verifying device...
+done.
+'1': Setting ISC done bits...done
+'1': Programming completed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =      1 sec.
+INFO:iMPACT - Current time: 2016-07-14 11:15:13
+Updating config fileD:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.jed...
+// *** BATCH CMD : Program -p 1 -e -v 
+Maximum TCK operating frequency for this device chain: 33000000.
+Validating chain...
+Boundary-scan chain validated successfully.
+'1': Erasing device...
+'1': Erasure completed successfully.
+'1': Programming device...
+PROGRESS_START - Starting Operation.
+done.
+'1': Verifying device...
+done.
+'1': Setting ISC done bits...done
+'1': Programming completed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =      2 sec.
+INFO:iMPACT - Current time: 2016-07-14 11:20:54
+Updating config fileD:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.jed...
+// *** BATCH CMD : Program -p 1 -e -v 
+Maximum TCK operating frequency for this device chain: 33000000.
+Validating chain...
+Boundary-scan chain validated successfully.
+'1': Erasing device...
+'1': Erasure completed successfully.
+'1': Programming device...
+PROGRESS_START - Starting Operation.
+done.
+'1': Verifying device...
+done.
+'1': Setting ISC done bits...done
+'1': Programming completed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =      1 sec.
+INFO:iMPACT - Current time: 2016-07-14 11:24:38
+Updating config fileD:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.jed...
+// *** BATCH CMD : Program -p 1 -e -v 
+Maximum TCK operating frequency for this device chain: 33000000.
+Validating chain...
+Boundary-scan chain validated successfully.
+'1': Erasing device...
+'1': Erasure completed successfully.
+'1': Programming device...
+PROGRESS_START - Starting Operation.
+done.
+'1': Verifying device...
+done.
+'1': Setting ISC done bits...done
+'1': Programming completed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =      1 sec.
+INFO:iMPACT - Current time: 2016-07-14 11:26:19
+Updating config fileD:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.jed...
+// *** BATCH CMD : Program -p 1 -e -v 
+Maximum TCK operating frequency for this device chain: 33000000.
+Validating chain...
+Boundary-scan chain validated successfully.
+'1': Erasing device...
+'1': Erasure completed successfully.
+'1': Programming device...
+done.
+'1': Verifying device...
+PROGRESS_START - Starting Operation.
+done.
+'1': Setting ISC done bits...done
+'1': Programming completed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =      1 sec.
+INFO:iMPACT - Current time: 2016-07-14 11:27:35
+Updating config fileD:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.jed...
+// *** BATCH CMD : Program -p 1 -e -v 
+Maximum TCK operating frequency for this device chain: 33000000.
+Validating chain...
+Boundary-scan chain validated successfully.
+'1': Erasing device...
+'1': Erasure completed successfully.
+'1': Programming device...
+PROGRESS_START - Starting Operation.
+done.
+'1': Verifying device...
+done.
+'1': Setting ISC done bits...done
+'1': Programming completed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =      1 sec.
+INFO:iMPACT - Current time: 2016-07-14 11:29:36
+Updating config fileD:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.jed...
+// *** BATCH CMD : Program -p 1 -e -v 
+Maximum TCK operating frequency for this device chain: 33000000.
+Validating chain...
+Boundary-scan chain validated successfully.
+'1': Erasing device...
+'1': Erasure completed successfully.
+'1': Programming device...
+PROGRESS_START - Starting Operation.
+done.
+'1': Verifying device...
+done.
+'1': Setting ISC done bits...done
+'1': Programming completed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =      1 sec.
+INFO:iMPACT - Current time: 2016-07-14 11:31:10
+Updating config fileD:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.jed...
+// *** BATCH CMD : Program -p 1 -e -v 
+Maximum TCK operating frequency for this device chain: 33000000.
+Validating chain...
+Boundary-scan chain validated successfully.
+'1': Erasing device...
+'1': Erasure completed successfully.
+'1': Programming device...
+done.
+'1': Verifying device...
+PROGRESS_START - Starting Operation.
+done.
+'1': Setting ISC done bits...done
+'1': Programming completed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =      1 sec.
+INFO:iMPACT - Current time: 2016-07-14 11:33:51
+Updating config fileD:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.jed...
+// *** BATCH CMD : Program -p 1 -e -v 
+Maximum TCK operating frequency for this device chain: 33000000.
+Validating chain...
+Boundary-scan chain validated successfully.
+'1': Erasing device...
+'1': Erasure completed successfully.
+'1': Programming device...
+PROGRESS_START - Starting Operation.
+done.
+'1': Verifying device...
+done.
+'1': Setting ISC done bits...done
+'1': Programming completed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =      1 sec.
+INFO:iMPACT - Current time: 2016-07-14 11:39:58
+Updating config fileD:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.jed...
+// *** BATCH CMD : Program -p 1 -e -v 
+Maximum TCK operating frequency for this device chain: 33000000.
+Validating chain...
+Boundary-scan chain validated successfully.
+'1': Erasing device...
+'1': Erasure completed successfully.
+'1': Programming device...
+PROGRESS_START - Starting Operation.
+done.
+'1': Verifying device...
+done.
+'1': Setting ISC done bits...done
+'1': Programming completed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =      1 sec.
+INFO:iMPACT - Current time: 2016-07-14 11:42:44
+Updating config fileD:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.jed...
+// *** BATCH CMD : Program -p 1 -e -v 
+Maximum TCK operating frequency for this device chain: 33000000.
+Validating chain...
+Boundary-scan chain validated successfully.
+'1': Erasing device...
+'1': Erasure completed successfully.
+'1': Programming device...
+PROGRESS_START - Starting Operation.
+done.
+'1': Verifying device...
+done.
+'1': Setting ISC done bits...done
+'1': Programming completed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =      1 sec.
+INFO:iMPACT - Current time: 2016-07-14 11:46:11
+Updating config fileD:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.jed...
+// *** BATCH CMD : Program -p 1 -e -v 
+Maximum TCK operating frequency for this device chain: 33000000.
+Validating chain...
+Boundary-scan chain validated successfully.
+'1': Erasing device...
+'1': Erasure completed successfully.
+'1': Programming device...
+PROGRESS_START - Starting Operation.
+done.
+'1': Verifying device...
+done.
+'1': Setting ISC done bits...done
+'1': Programming completed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =      2 sec.
+INFO:iMPACT - Current time: 2016-07-14 11:52:08
+Updating config fileD:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.jed...
+// *** BATCH CMD : Program -p 1 -e -v 
+Maximum TCK operating frequency for this device chain: 33000000.
+Validating chain...
+Boundary-scan chain validated successfully.
+'1': Erasing device...
+'1': Erasure completed successfully.
+'1': Programming device...
+done.
+'1': Verifying device...
+PROGRESS_START - Starting Operation.
+done.
+'1': Setting ISC done bits...done
+'1': Programming completed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =      2 sec.
+INFO:iMPACT - Current time: 2016-07-14 11:55:01
+Updating config fileD:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.jed...
+// *** BATCH CMD : Program -p 1 -e -v 
+Maximum TCK operating frequency for this device chain: 33000000.
+Validating chain...
+Boundary-scan chain validated successfully.
+'1': Erasing device...
+'1': Erasure completed successfully.
+'1': Programming device...
+done.
+'1': Verifying device...
+PROGRESS_START - Starting Operation.
+done.
+'1': Setting ISC done bits...done
+'1': Programming completed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =      1 sec.
+INFO:iMPACT - Current time: 2016-07-14 11:58:07
+Updating config fileD:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.jed...
+// *** BATCH CMD : Program -p 1 -e -v 
+Maximum TCK operating frequency for this device chain: 33000000.
+Validating chain...
+Boundary-scan chain validated successfully.
+'1': Erasing device...
+'1': Erasure completed successfully.
+'1': Programming device...
+PROGRESS_START - Starting Operation.
+done.
+'1': Verifying device...
+done.
+'1': Setting ISC done bits...done
+'1': Programming completed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =      1 sec.
+INFO:iMPACT - Current time: 2016-07-14 11:59:30
+Updating config fileD:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.jed...
+// *** BATCH CMD : Program -p 1 -e -v 
+Maximum TCK operating frequency for this device chain: 33000000.
+Validating chain...
+Boundary-scan chain validated successfully.
+'1': Erasing device...
+'1': Erasure completed successfully.
+'1': Programming device...
+PROGRESS_START - Starting Operation.
+done.
+'1': Verifying device...
+done.
+'1': Setting ISC done bits...done
+'1': Programming completed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =      1 sec.
+INFO:iMPACT - Current time: 2016-07-14 12:01:16
+Updating config fileD:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.jed...
+// *** BATCH CMD : Program -p 1 -e -v 
+Maximum TCK operating frequency for this device chain: 33000000.
+Validating chain...
+Boundary-scan chain validated successfully.
+'1': Erasing device...
+'1': Erasure completed successfully.
+'1': Programming device...
+done.
+'1': Verifying device...
+PROGRESS_START - Starting Operation.
+done.
+'1': Setting ISC done bits...done
+'1': Programming completed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =      1 sec.
+INFO:iMPACT - Current time: 2016-07-14 12:04:43
+Updating config fileD:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.jed...
+// *** BATCH CMD : Program -p 1 -e -v 
+Maximum TCK operating frequency for this device chain: 33000000.
+Validating chain...
+Boundary-scan chain validated successfully.
+'1': Erasing device...
+'1': Erasure completed successfully.
+'1': Programming device...
+PROGRESS_START - Starting Operation.
+done.
+'1': Verifying device...
+done.
+'1': Setting ISC done bits...done
+'1': Programming completed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =      1 sec.
+INFO:iMPACT - Current time: 2016-07-14 18:01:06
+Updating config fileD:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.jed...
+// *** BATCH CMD : Program -p 1 -e -v 
+Maximum TCK operating frequency for this device chain: 33000000.
+Validating chain...
+Boundary-scan chain validated successfully.
+'1': Erasing device...
+'1': Erasure completed successfully.
+'1': Programming device...
+done.
+'1': Verifying device...
+PROGRESS_START - Starting Operation.
+done.
+'1': Setting ISC done bits...done
+'1': Programming completed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =      1 sec.
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setMode -ss
+// *** BATCH CMD : setMode -sm
+// *** BATCH CMD : setMode -hw140
+// *** BATCH CMD : setMode -spi
+// *** BATCH CMD : setMode -acecf
+// *** BATCH CMD : setMode -acempm
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : saveProjectFile -file"D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/programme.ipf"
+// *** BATCH CMD : setMode -bs
+INFO:iMPACT - Launching WebTalk, please refer to the webtalk log at   D:\Sync\ExternalProjects\CNC_QuaDdECODER\QuadraDec3x/webtalk.log for details.
+INFO:iMPACT - Running wbtc successfully.
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : deleteDevice -position 1
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setMode -ss
+// *** BATCH CMD : setMode -sm
+// *** BATCH CMD : setMode -hw140
+// *** BATCH CMD : setMode -spi
+// *** BATCH CMD : setMode -acecf
+// *** BATCH CMD : setMode -acempm
+// *** BATCH CMD : setMode -pff

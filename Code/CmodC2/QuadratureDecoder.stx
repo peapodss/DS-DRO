@@ -1,0 +1,37 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Parameter xsthdpdir set to D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/quad_dec.vhd" in Library work.
+Entity <quadraturedecoder> compiled.
+ERROR:HDLParsers:3313 - "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/quad_dec.vhd" Line 50. Undefined symbol 'bReset'.  Should it be: Reset?
+ERROR:HDLParsers:1209 - "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/quad_dec.vhd" Line 50. bReset: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3402 - "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/quad_dec.vhd" Line 52. Read symbol =, expecting <= or := 
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> 
+
+Total memory usage is 230804 kilobytes
+
+Number of errors   :    3 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

@@ -1,0 +1,2 @@
+vhdl isim_temp "quad_dec.vhd"
+vhdl isim_temp "QuadTest.vhd"

@@ -1,0 +1,42 @@
+Pin Freeze File:  version P.20131013
+
+2C64A44VQ XC2C64A-7-VQ44
+Clk S:PIN36
+LE S:PIN13
+Q1A S:PIN18
+Q1B S:PIN19
+Q1Z S:PIN20
+Q2A S:PIN21
+Q2B S:PIN22
+Q2Z S:PIN23
+Q3A S:PIN27
+Q3B S:PIN28
+Q3Z S:PIN29
+SCLK S:PIN16
+Seek S:PIN12
+MISO S:PIN14
+
+
+;The remaining section of the .gyd file is for documentation purposes only.
+;It shows where your internal equations were placed in the last successful fit.
+
+PARTITION FB1_1 Wire/rQ<1> Wire/rQ<0> N_PZ_265 N_PZ_259
+		 QuadDecoder3/rQuadA<1> QuadDecoder2/rQuadB<1> QuadDecoder2/rQuadA<1> QuadDecoder1/rQuadB<1>
+		 Clear N_PZ_263 N_PZ_262 N_PZ_261
+		 N_PZ_260 QuadDecoder1/rQuadA<1> QuadDecoder3/rQuadB<1> N_PZ_258
+		
+PARTITION FB2_1 Wire/rQ<10> Count3<3> Found3 Found2
+		 Count3<2> Count3<1> Count3<0> Count2<3>
+		 Found1 Count2<2> Count1<0> Count2<1>
+		 Count2<0> Count1<1> Count1<2> Count1<3>
+		
+PARTITION FB3_1 QuadDecoder3/rQuadZ QuadDecoder3/rQuadB<0> QuadDecoder3/rQuadA<0> Wire/rQ<3>
+		 Wire/rQ<2> QuadDecoder2/rQuadZ Wire/rQ<11> Wire/rQ<12>
+		 Wire/rQ<13> QuadDecoder2/rQuadB<0> QuadDecoder2/rQuadA<0> QuadDecoder1/rQuadZ
+		 Wire/rQ<14> QuadDecoder1/rQuadB<0> QuadDecoder1/rQuadA<0> Wire/rQ<15>
+		
+PARTITION FB4_6 Wire/rQ<9>
+PARTITION FB4_8 Wire/rQ<8> Wire/rQ<7> Wire/rQ<6>
+PARTITION FB4_12 Wire/rQ<5> Wire/rLE MISO Wire/rSCLK
+		 Wire/rQ<4>
+

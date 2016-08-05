@@ -1,0 +1,283 @@
+<html><head><link type='text/css' href='style.css' rel='stylesheet'></head><body class='pgBgnd'>
+<h3 align='center'>Equations</h3>
+<table width='90%' align='center' border='1' cellpadding='0' cellspacing='0'>
+<tr><td>
+</td></tr><tr><td>
+********** Mapped Logic **********
+</td></tr><tr><td>
+FDCPE_Clear: FDCPE port map (Clear,Clear_D,Clk,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Clear_D <= (LE AND NOT Wire/rLE);
+</td></tr><tr><td>
+FTCPE_Count10: FTCPE port map (Count1(0),Count1_T(0),Clk,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Count1_T(0) <= ((Count1(0) AND QuadDecoder3/rQuadA(0).COMB)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT QuadDecoder3/rQuadA(0).COMB AND N_PZ_259 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	N_PZ_262)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT QuadDecoder3/rQuadA(0).COMB AND NOT N_PZ_259 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT N_PZ_262));
+</td></tr><tr><td>
+FTCPE_Count11: FTCPE port map (Count1(1),Count1_T(1),Clk,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Count1_T(1) <= ((QuadDecoder3/rQuadA(0).COMB AND Count1(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (Count1(0) AND NOT QuadDecoder3/rQuadA(0).COMB AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	N_PZ_259 AND N_PZ_262)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT Count1(0) AND NOT QuadDecoder3/rQuadA(0).COMB AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT N_PZ_259 AND NOT N_PZ_262));
+</td></tr><tr><td>
+FTCPE_Count12: FTCPE port map (Count1(2),Count1_T(2),Clk,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Count1_T(2) <= ((QuadDecoder3/rQuadA(0).COMB AND Count1(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (Count1(0) AND NOT QuadDecoder3/rQuadA(0).COMB AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	N_PZ_259 AND N_PZ_262 AND Count1(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT Count1(0) AND NOT QuadDecoder3/rQuadA(0).COMB AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT N_PZ_259 AND NOT N_PZ_262 AND NOT Count1(1)));
+</td></tr><tr><td>
+FTCPE_Count13: FTCPE port map (Count1(3),Count1_T(3),Clk,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Count1_T(3) <= ((QuadDecoder3/rQuadA(0).COMB AND Count1(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (Count1(0) AND NOT QuadDecoder3/rQuadA(0).COMB AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	N_PZ_259 AND N_PZ_262 AND Count1(1) AND Count1(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT Count1(0) AND NOT QuadDecoder3/rQuadA(0).COMB AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT N_PZ_259 AND NOT N_PZ_262 AND NOT Count1(1) AND NOT Count1(2)));
+</td></tr><tr><td>
+FTCPE_Count20: FTCPE port map (Count2(0),Count2_T(0),Clk,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Count2_T(0) <= ((Count2(0) AND QuadDecoder2/rQuadB(0).COMB)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT QuadDecoder2/rQuadB(0).COMB AND N_PZ_260 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	N_PZ_263)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT QuadDecoder2/rQuadB(0).COMB AND NOT N_PZ_260 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT N_PZ_263));
+</td></tr><tr><td>
+FTCPE_Count21: FTCPE port map (Count2(1),Count2_T(1),Clk,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Count2_T(1) <= ((QuadDecoder2/rQuadB(0).COMB AND Count2(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (Count2(0) AND NOT QuadDecoder2/rQuadB(0).COMB AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT N_PZ_260 AND NOT N_PZ_263)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT Count2(0) AND NOT QuadDecoder2/rQuadB(0).COMB AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	N_PZ_260 AND N_PZ_263));
+</td></tr><tr><td>
+FTCPE_Count22: FTCPE port map (Count2(2),Count2_T(2),Clk,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Count2_T(2) <= ((QuadDecoder2/rQuadB(0).COMB AND Count2(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (Count2(0) AND NOT QuadDecoder2/rQuadB(0).COMB AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT N_PZ_260 AND NOT N_PZ_263 AND Count2(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT Count2(0) AND NOT QuadDecoder2/rQuadB(0).COMB AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	N_PZ_260 AND N_PZ_263 AND NOT Count2(1)));
+</td></tr><tr><td>
+FTCPE_Count23: FTCPE port map (Count2(3),Count2_T(3),Clk,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Count2_T(3) <= ((QuadDecoder2/rQuadB(0).COMB AND Count2(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (Count2(0) AND NOT QuadDecoder2/rQuadB(0).COMB AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT N_PZ_260 AND NOT N_PZ_263 AND Count2(1) AND Count2(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT Count2(0) AND NOT QuadDecoder2/rQuadB(0).COMB AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	N_PZ_260 AND N_PZ_263 AND NOT Count2(1) AND NOT Count2(2)));
+</td></tr><tr><td>
+FTCPE_Count30: FTCPE port map (Count3(0),Count3_T(0),Clk,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Count3_T(0) <= ((Count3(0) AND QuadDecoder3/rQuadB(0).COMB)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT QuadDecoder3/rQuadB(0).COMB AND N_PZ_258 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	N_PZ_261)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT QuadDecoder3/rQuadB(0).COMB AND NOT N_PZ_258 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT N_PZ_261));
+</td></tr><tr><td>
+FTCPE_Count31: FTCPE port map (Count3(1),Count3_T(1),Clk,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Count3_T(1) <= ((QuadDecoder3/rQuadB(0).COMB AND Count3(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (Count3(0) AND NOT QuadDecoder3/rQuadB(0).COMB AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	N_PZ_258 AND N_PZ_261)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT Count3(0) AND NOT QuadDecoder3/rQuadB(0).COMB AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT N_PZ_258 AND NOT N_PZ_261));
+</td></tr><tr><td>
+FTCPE_Count32: FTCPE port map (Count3(2),Count3_T(2),Clk,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Count3_T(2) <= ((QuadDecoder3/rQuadB(0).COMB AND Count3(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (Count3(0) AND NOT QuadDecoder3/rQuadB(0).COMB AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	N_PZ_258 AND N_PZ_261 AND Count3(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT Count3(0) AND NOT QuadDecoder3/rQuadB(0).COMB AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT N_PZ_258 AND NOT N_PZ_261 AND NOT Count3(1)));
+</td></tr><tr><td>
+FTCPE_Count33: FTCPE port map (Count3(3),Count3_T(3),Clk,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Count3_T(3) <= ((QuadDecoder3/rQuadB(0).COMB AND Count3(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (Count3(0) AND NOT QuadDecoder3/rQuadB(0).COMB AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	N_PZ_258 AND N_PZ_261 AND Count3(1) AND Count3(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT Count3(0) AND NOT QuadDecoder3/rQuadB(0).COMB AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT N_PZ_258 AND NOT N_PZ_261 AND NOT Count3(1) AND NOT Count3(2)));
+</td></tr><tr><td>
+FDCPE_Found1: FDCPE port map (Found1,Found1_D,Clk,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Found1_D <= ((QuadDecoder3/rQuadA(0).COMB)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT Clear AND Found1));
+</td></tr><tr><td>
+FDCPE_Found2: FDCPE port map (Found2,Found2_D,Clk,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Found2_D <= ((QuadDecoder2/rQuadB(0).COMB)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT Clear AND Found2));
+</td></tr><tr><td>
+FDCPE_Found3: FDCPE port map (Found3,Found3_D,Clk,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Found3_D <= ((QuadDecoder3/rQuadB(0).COMB)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (Found3 AND NOT Clear));
+</td></tr><tr><td>
+FDCPE_MISO: FDCPE port map (MISO,Wire/rQ(15),Clk,'0','0',MISO_CE);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MISO_CE <= (SCLK AND NOT Wire/rSCLK);
+</td></tr><tr><td>
+</td></tr><tr><td>
+N_PZ_258 <= ((QuadDecoder3/rQuadB(0) AND QuadDecoder3/rQuadA(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT QuadDecoder3/rQuadB(0) AND NOT QuadDecoder3/rQuadA(1)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+N_PZ_259 <= ((QuadDecoder1/rQuadB(0) AND QuadDecoder1/rQuadA(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT QuadDecoder1/rQuadB(0) AND NOT QuadDecoder1/rQuadA(1)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+N_PZ_260 <= ((QuadDecoder2/rQuadB(0) AND NOT QuadDecoder2/rQuadA(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT QuadDecoder2/rQuadB(0) AND QuadDecoder2/rQuadA(1)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+N_PZ_261 <= ((QuadDecoder3/rQuadA(0) AND NOT QuadDecoder3/rQuadB(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT QuadDecoder3/rQuadA(0) AND QuadDecoder3/rQuadB(1)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+N_PZ_262 <= ((QuadDecoder1/rQuadA(0) AND NOT QuadDecoder1/rQuadB(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT QuadDecoder1/rQuadA(0) AND QuadDecoder1/rQuadB(1)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+N_PZ_263 <= ((QuadDecoder2/rQuadA(0) AND QuadDecoder2/rQuadB(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT QuadDecoder2/rQuadA(0) AND NOT QuadDecoder2/rQuadB(1)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+N_PZ_265 <= ((NOT SCLK AND LE AND NOT Wire/rLE)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (Wire/rSCLK AND LE AND NOT Wire/rLE));
+</td></tr><tr><td>
+FDCPE_QuadDecoder1/rQuadA0: FDCPE port map (QuadDecoder1/rQuadA(0),Q1A,Clk,'0','0','1');
+</td></tr><tr><td>
+FDCPE_QuadDecoder1/rQuadA1: FDCPE port map (QuadDecoder1/rQuadA(1),QuadDecoder1/rQuadA(0),Clk,'0','0','1');
+</td></tr><tr><td>
+FDCPE_QuadDecoder1/rQuadB0: FDCPE port map (QuadDecoder1/rQuadB(0),Q1B,Clk,'0','0','1');
+</td></tr><tr><td>
+FDCPE_QuadDecoder1/rQuadB1: FDCPE port map (QuadDecoder1/rQuadB(1),QuadDecoder1/rQuadB(0),Clk,'0','0','1');
+</td></tr><tr><td>
+FDCPE_QuadDecoder1/rQuadZ: FDCPE port map (QuadDecoder1/rQuadZ,Q1Z,Clk,'0','0','1');
+</td></tr><tr><td>
+FDCPE_QuadDecoder2/rQuadA0: FDCPE port map (QuadDecoder2/rQuadA(0),Q2A,Clk,'0','0','1');
+</td></tr><tr><td>
+FDCPE_QuadDecoder2/rQuadA1: FDCPE port map (QuadDecoder2/rQuadA(1),QuadDecoder2/rQuadA(0),Clk,'0','0','1');
+</td></tr><tr><td>
+</td></tr><tr><td>
+QuadDecoder2/rQuadB(0).COMB <= (NOT Found2 AND Q2Z AND Seek AND NOT QuadDecoder2/rQuadZ);FDCPE_QuadDecoder2/rQuadB0: FDCPE port map (QuadDecoder2/rQuadB(0),Q2B,Clk,'0','0','1');
+</td></tr><tr><td>
+FDCPE_QuadDecoder2/rQuadB1: FDCPE port map (QuadDecoder2/rQuadB(1),QuadDecoder2/rQuadB(0),Clk,'0','0','1');
+</td></tr><tr><td>
+FDCPE_QuadDecoder2/rQuadZ: FDCPE port map (QuadDecoder2/rQuadZ,Q2Z,Clk,'0','0','1');
+</td></tr><tr><td>
+</td></tr><tr><td>
+QuadDecoder3/rQuadA(0).COMB <= (NOT Found1 AND NOT QuadDecoder1/rQuadZ AND Seek AND Q1Z);FDCPE_QuadDecoder3/rQuadA0: FDCPE port map (QuadDecoder3/rQuadA(0),Q3A,Clk,'0','0','1');
+</td></tr><tr><td>
+FDCPE_QuadDecoder3/rQuadA1: FDCPE port map (QuadDecoder3/rQuadA(1),QuadDecoder3/rQuadA(0),Clk,'0','0','1');
+</td></tr><tr><td>
+</td></tr><tr><td>
+QuadDecoder3/rQuadB(0).COMB <= (NOT Found3 AND Seek AND Q3Z AND NOT QuadDecoder3/rQuadZ);FDCPE_QuadDecoder3/rQuadB0: FDCPE port map (QuadDecoder3/rQuadB(0),Q3B,Clk,'0','0','1');
+</td></tr><tr><td>
+FDCPE_QuadDecoder3/rQuadB1: FDCPE port map (QuadDecoder3/rQuadB(1),QuadDecoder3/rQuadB(0),Clk,'0','0','1');
+</td></tr><tr><td>
+FDCPE_QuadDecoder3/rQuadZ: FDCPE port map (QuadDecoder3/rQuadZ,Q3Z,Clk,'0','0','1');
+</td></tr><tr><td>
+FDCPE_Wire/rLE: FDCPE port map (Wire/rLE,LE,Clk,'0','0','1');
+</td></tr><tr><td>
+FDCPE_Wire/rQ0: FDCPE port map (Wire/rQ(0),Wire/rQ_D(0),Clk,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Wire/rQ_D(0) <= NOT (((SCLK AND NOT Wire/rSCLK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT Wire/rQ(0) AND NOT N_PZ_265)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT Count3(0) AND N_PZ_265)));
+</td></tr><tr><td>
+FTCPE_Wire/rQ1: FTCPE port map (Wire/rQ(1),Wire/rQ_T(1),Clk,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Wire/rQ_T(1) <= ((Wire/rQ(1) AND N_PZ_265 AND NOT Count3(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT Wire/rQ(1) AND N_PZ_265 AND Count3(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (SCLK AND Wire/rQ(1) AND NOT Wire/rQ(0) AND NOT Wire/rSCLK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (SCLK AND NOT Wire/rQ(1) AND Wire/rQ(0) AND NOT Wire/rSCLK));
+</td></tr><tr><td>
+FTCPE_Wire/rQ2: FTCPE port map (Wire/rQ(2),Wire/rQ_T(2),Clk,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Wire/rQ_T(2) <= ((Wire/rQ(2) AND N_PZ_265 AND NOT Count3(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT Wire/rQ(2) AND N_PZ_265 AND Count3(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (SCLK AND Wire/rQ(2) AND NOT Wire/rQ(1) AND NOT Wire/rSCLK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (SCLK AND NOT Wire/rQ(2) AND Wire/rQ(1) AND NOT Wire/rSCLK));
+</td></tr><tr><td>
+FTCPE_Wire/rQ3: FTCPE port map (Wire/rQ(3),Wire/rQ_T(3),Clk,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Wire/rQ_T(3) <= ((Wire/rQ(3) AND N_PZ_265 AND NOT Count3(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT Wire/rQ(3) AND N_PZ_265 AND Count3(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (SCLK AND Wire/rQ(3) AND NOT Wire/rQ(2) AND NOT Wire/rSCLK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (SCLK AND NOT Wire/rQ(3) AND Wire/rQ(2) AND NOT Wire/rSCLK));
+</td></tr><tr><td>
+FTCPE_Wire/rQ4: FTCPE port map (Wire/rQ(4),Wire/rQ_T(4),Clk,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Wire/rQ_T(4) <= ((Wire/rQ(4) AND N_PZ_265 AND NOT Count2(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT Wire/rQ(4) AND N_PZ_265 AND Count2(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (SCLK AND Wire/rQ(4) AND NOT Wire/rQ(3) AND NOT Wire/rSCLK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (SCLK AND NOT Wire/rQ(4) AND Wire/rQ(3) AND NOT Wire/rSCLK));
+</td></tr><tr><td>
+FTCPE_Wire/rQ5: FTCPE port map (Wire/rQ(5),Wire/rQ_T(5),Clk,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Wire/rQ_T(5) <= ((Wire/rQ(5) AND N_PZ_265 AND NOT Count2(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT Wire/rQ(5) AND N_PZ_265 AND Count2(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (SCLK AND Wire/rQ(5) AND NOT Wire/rQ(4) AND NOT Wire/rSCLK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (SCLK AND NOT Wire/rQ(5) AND Wire/rQ(4) AND NOT Wire/rSCLK));
+</td></tr><tr><td>
+FTCPE_Wire/rQ6: FTCPE port map (Wire/rQ(6),Wire/rQ_T(6),Clk,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Wire/rQ_T(6) <= ((Wire/rQ(6) AND N_PZ_265 AND NOT Count2(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT Wire/rQ(6) AND N_PZ_265 AND Count2(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (SCLK AND Wire/rQ(6) AND NOT Wire/rQ(5) AND NOT Wire/rSCLK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (SCLK AND NOT Wire/rQ(6) AND Wire/rQ(5) AND NOT Wire/rSCLK));
+</td></tr><tr><td>
+FTCPE_Wire/rQ7: FTCPE port map (Wire/rQ(7),Wire/rQ_T(7),Clk,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Wire/rQ_T(7) <= ((Wire/rQ(7) AND N_PZ_265 AND NOT Count2(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT Wire/rQ(7) AND N_PZ_265 AND Count2(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (SCLK AND Wire/rQ(7) AND NOT Wire/rQ(6) AND NOT Wire/rSCLK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (SCLK AND NOT Wire/rQ(7) AND Wire/rQ(6) AND NOT Wire/rSCLK));
+</td></tr><tr><td>
+FTCPE_Wire/rQ8: FTCPE port map (Wire/rQ(8),Wire/rQ_T(8),Clk,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Wire/rQ_T(8) <= ((Wire/rQ(8) AND N_PZ_265 AND NOT Count1(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT Wire/rQ(8) AND N_PZ_265 AND Count1(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (SCLK AND Wire/rQ(8) AND NOT Wire/rQ(7) AND NOT Wire/rSCLK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (SCLK AND NOT Wire/rQ(8) AND Wire/rQ(7) AND NOT Wire/rSCLK));
+</td></tr><tr><td>
+FTCPE_Wire/rQ9: FTCPE port map (Wire/rQ(9),Wire/rQ_T(9),Clk,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Wire/rQ_T(9) <= ((Wire/rQ(9) AND N_PZ_265 AND NOT Count1(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT Wire/rQ(9) AND N_PZ_265 AND Count1(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (SCLK AND Wire/rQ(9) AND NOT Wire/rQ(8) AND NOT Wire/rSCLK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (SCLK AND NOT Wire/rQ(9) AND Wire/rQ(8) AND NOT Wire/rSCLK));
+</td></tr><tr><td>
+FTCPE_Wire/rQ10: FTCPE port map (Wire/rQ(10),Wire/rQ_T(10),Clk,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Wire/rQ_T(10) <= ((Wire/rQ(10) AND N_PZ_265 AND NOT Count1(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT Wire/rQ(10) AND N_PZ_265 AND Count1(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (SCLK AND Wire/rQ(10) AND NOT Wire/rQ(9) AND NOT Wire/rSCLK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (SCLK AND NOT Wire/rQ(10) AND Wire/rQ(9) AND NOT Wire/rSCLK));
+</td></tr><tr><td>
+FTCPE_Wire/rQ11: FTCPE port map (Wire/rQ(11),Wire/rQ_T(11),Clk,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Wire/rQ_T(11) <= ((Wire/rQ(11) AND N_PZ_265 AND NOT Count1(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT Wire/rQ(11) AND N_PZ_265 AND Count1(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (SCLK AND Wire/rQ(11) AND NOT Wire/rQ(10) AND NOT Wire/rSCLK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (SCLK AND NOT Wire/rQ(11) AND Wire/rQ(10) AND NOT Wire/rSCLK));
+</td></tr><tr><td>
+FTCPE_Wire/rQ12: FTCPE port map (Wire/rQ(12),Wire/rQ_T(12),Clk,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Wire/rQ_T(12) <= ((Wire/rQ(12) AND N_PZ_265 AND NOT Found3)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT Wire/rQ(12) AND N_PZ_265 AND Found3)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (SCLK AND Wire/rQ(12) AND NOT Wire/rQ(11) AND NOT Wire/rSCLK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (SCLK AND NOT Wire/rQ(12) AND Wire/rQ(11) AND NOT Wire/rSCLK));
+</td></tr><tr><td>
+FTCPE_Wire/rQ13: FTCPE port map (Wire/rQ(13),Wire/rQ_T(13),Clk,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Wire/rQ_T(13) <= ((Wire/rQ(13) AND N_PZ_265 AND NOT Found2)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT Wire/rQ(13) AND N_PZ_265 AND Found2)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (SCLK AND Wire/rQ(13) AND NOT Wire/rQ(12) AND NOT Wire/rSCLK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (SCLK AND NOT Wire/rQ(13) AND Wire/rQ(12) AND NOT Wire/rSCLK));
+</td></tr><tr><td>
+FTCPE_Wire/rQ14: FTCPE port map (Wire/rQ(14),Wire/rQ_T(14),Clk,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Wire/rQ_T(14) <= ((Wire/rQ(14) AND N_PZ_265 AND NOT Found1)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT Wire/rQ(14) AND N_PZ_265 AND Found1)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (SCLK AND Wire/rQ(14) AND NOT Wire/rQ(13) AND NOT Wire/rSCLK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (SCLK AND NOT Wire/rQ(14) AND Wire/rQ(13) AND NOT Wire/rSCLK));
+</td></tr><tr><td>
+FTCPE_Wire/rQ15: FTCPE port map (Wire/rQ(15),Wire/rQ_T(15),Clk,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Wire/rQ_T(15) <= ((Wire/rQ(15) AND N_PZ_265)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (Wire/rQ(15) AND SCLK AND NOT Wire/rQ(14) AND NOT Wire/rSCLK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT Wire/rQ(15) AND SCLK AND Wire/rQ(14) AND NOT Wire/rSCLK));
+</td></tr><tr><td>
+FDCPE_Wire/rSCLK: FDCPE port map (Wire/rSCLK,SCLK,Clk,'0','0','1');
+</td></tr><tr><td>
+</td></tr><tr><td>
+Register Legend:
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FDCPE (Q,D,C,CLR,PRE,CE); 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FDDCPE (Q,D,C,CLR,PRE,CE); 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FTCPE (Q,D,C,CLR,PRE,CE); 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FTDCPE (Q,D,C,CLR,PRE,CE); 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LDCP  (Q,D,G,CLR,PRE); 
+</td></tr><tr><td>
+</td></tr>
+</table>
+<form><span class="pgRef"><table width="90%" align="center"><tr>
+<td align="left"><input type="button" onclick="javascript:parent.leftnav.showTop()" onmouseover="window.status='goto top of page'; return true;" onmouseout="window.status=''" value="back to top"></td>
+<td align="right"><input type="button" onclick="window.print()" onmouseover="window.status='print page'; return true;" onmouseout="window.status=''" value="print page"></td>
+</tr></table></span></form>
+</body></html>

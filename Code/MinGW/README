@@ -1,0 +1,16 @@
+Windows building:
+
+1. Download and install MinGW from here: http://www.mingw.org/
+
+2. Download and install the nopoll library from here: http://www.aspl.es/nopoll/downloads/
+
+3. Go into the project directory and run "make.bat".
+
+ make
+
+
+Running:
+
+1. Make sure SPJS is already running and ChiliPeppr has already opened a connection to your machine.
+
+2. Start the program

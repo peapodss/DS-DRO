@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/QuadTest_isim_beh.exe" -prj "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/QuadTest_beh.prj" "work.QuadTest" 

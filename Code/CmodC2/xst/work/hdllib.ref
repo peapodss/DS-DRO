@@ -1,0 +1,6 @@
+EN wire NULL D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/Wire.vhd sub00/vhpl04 1469026032
+EN top NULL D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.vhd sub00/vhpl00 1469026034
+AR top behavioral D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.vhd sub00/vhpl01 1469026035
+AR quadraturedecoder behavioral D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/quad_dec.vhd sub00/vhpl03 1469026031
+EN quadraturedecoder NULL D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/quad_dec.vhd sub00/vhpl02 1469026030
+AR wire behavioral D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/Wire.vhd sub00/vhpl05 1469026033

@@ -1,0 +1,24 @@
+V3 11
+FL D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/quad_dec.vhd 2016/07/12.22:06:40 P.20131013
+EN work/QuadratureDecoder 1468354407 \
+      FL D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/quad_dec.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/NUMERIC_STD 1381692181 PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/QuadratureDecoder/Behavioral 1468354408 \
+      FL D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/quad_dec.vhd \
+      EN work/QuadratureDecoder 1468354407
+FL D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.vhd 2016/07/12.21:53:38 P.20131013
+EN work/top 1468354010 \
+      FL D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/top/Behavioral 1468354011 \
+      FL D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.vhd EN work/top 1468354010 \
+      CP QuadratureDecoder CP Wire
+FL D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/Wire.vhd 2016/07/12.22:05:20 P.20131013
+EN work/Wire 1468354008 \
+      FL D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/Wire.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/NUMERIC_STD 1381692181 PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/Wire/Behavioral 1468354009 \
+      FL D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/Wire.vhd \
+      EN work/Wire 1468354008

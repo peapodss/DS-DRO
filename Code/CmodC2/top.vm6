@@ -1,0 +1,2738 @@
+NDS Database:  version P.20131013
+
+NDS_INFO | xbr | 2C64A44VQ | XC2C64A-7-VQ44
+
+DEVICE | 2C64A | 2C64A44VQ | 
+
+NETWORK | top | 0 | 0 | 1073758214 | 0
+
+INPUT_INSTANCE | 0 | 0 | NULL | Clk_II | top_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | Clk | 5135 | PI | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | Clk_II/UIM | 5224 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | Clk_II | 0 | 5 | II_IMUX
+
+MACROCELL_INSTANCE | PrldLow | MISO_MC | top_COPY_0_COPY_0 | 1024 | 4 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Wire/rQ<15> | 5139 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rQ<15>_MC.Q | Wire/rQ<15>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | SCLK_II/UIM | 5145 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | SCLK_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Wire/rSCLK | 5221 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rSCLK_MC.Q | Wire/rSCLK_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+SIGNAL | NODE | FOOBAR4__ctinst/4 | 5223 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | FOOBAR4__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | Clk_II/UIM
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | MISO_MC.Q | 5397 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | MISO_MC.Q | MISO_MC | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | MISO_MC.SI | MISO_MC | 0 | 3 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Wire/rQ<15> | 5139 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rQ<15>_MC.Q | Wire/rQ<15>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | SCLK_II/UIM | 5145 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | SCLK_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Wire/rSCLK | 5221 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rSCLK_MC.Q | Wire/rSCLK_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | MISO_MC.D1 | 5138 | ? | 0 | 0 | MISO_MC | NULL | NULL | MISO_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | MISO_MC.D2 | 5137 | ? | 0 | 0 | MISO_MC | NULL | NULL | MISO_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 1 | IV_TRUE | Wire/rQ<15>
+OUTPUT_NODE_TYPE | 10 | 9 | MC_SI_CE
+SIGNAL | NODE | MISO_MC.CE | 5395 | ? | 0 | 0 | MISO_MC | NULL | NULL | MISO_MC.SI | 10 | 9 | MC_SI_CE
+SPPTERM | 2 | IV_TRUE | SCLK_II/UIM | IV_FALSE | Wire/rSCLK
+
+SRFF_INSTANCE | MISO_MC.REG | MISO_MC | 0 | 3 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | MISO_MC.D | 5136 | ? | 0 | 0 | MISO_MC | NULL | NULL | MISO_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | FOOBAR4__ctinst/4 | 5223 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | FOOBAR4__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | Clk_II/UIM
+INPUT_NODE_TYPE | 4 | 8 | SRFF_CE
+SIGNAL | NODE | MISO_MC.CE | 5395 | ? | 0 | 0 | MISO_MC | NULL | NULL | MISO_MC.SI | 10 | 9 | MC_SI_CE
+SPPTERM | 2 | IV_TRUE | SCLK_II/UIM | IV_FALSE | Wire/rSCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | MISO_MC.Q | 5396 | ? | 0 | 0 | MISO_MC | NULL | NULL | MISO_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff | Wire/rQ<15>_MC | top_COPY_0_COPY_0 | 5120 | 6 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Wire/rQ<15> | 5139 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rQ<15>_MC.Q | Wire/rQ<15>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_265 | 5259 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | N_PZ_265_MC.Q | N_PZ_265_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | SCLK_II/UIM | 5145 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | SCLK_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Wire/rQ<14> | 5146 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rQ<14>_MC.Q | Wire/rQ<14>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Wire/rSCLK | 5221 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rSCLK_MC.Q | Wire/rSCLK_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+SIGNAL | NODE | FOOBAR3__ctinst/4 | 5232 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | FOOBAR3__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | Clk_II/UIM
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | Wire/rQ<15> | 5139 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rQ<15>_MC.Q | Wire/rQ<15>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | Wire/rQ<15>_MC.SI | Wire/rQ<15>_MC | 0 | 5 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Wire/rQ<15> | 5139 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rQ<15>_MC.Q | Wire/rQ<15>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_265 | 5259 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | N_PZ_265_MC.Q | N_PZ_265_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | SCLK_II/UIM | 5145 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | SCLK_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Wire/rQ<14> | 5146 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rQ<14>_MC.Q | Wire/rQ<14>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Wire/rSCLK | 5221 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rSCLK_MC.Q | Wire/rSCLK_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | Wire/rQ<15>_MC.D1 | 5143 | ? | 0 | 0 | Wire/rQ<15>_MC | NULL | NULL | Wire/rQ<15>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | Wire/rQ<15>_MC.D2 | 5142 | ? | 0 | 0 | Wire/rQ<15>_MC | NULL | NULL | Wire/rQ<15>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_TRUE | Wire/rQ<15> | IV_TRUE | N_PZ_265
+SPPTERM | 4 | IV_TRUE | Wire/rQ<15> | IV_TRUE | SCLK_II/UIM | IV_FALSE | Wire/rQ<14> | IV_FALSE | Wire/rSCLK
+SPPTERM | 4 | IV_FALSE | Wire/rQ<15> | IV_TRUE | SCLK_II/UIM | IV_TRUE | Wire/rQ<14> | IV_FALSE | Wire/rSCLK
+
+SRFF_INSTANCE | Wire/rQ<15>_MC.REG | Wire/rQ<15>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | Wire/rQ<15>_MC.D | 5141 | ? | 0 | 0 | Wire/rQ<15>_MC | NULL | NULL | Wire/rQ<15>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | FOOBAR3__ctinst/4 | 5232 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | FOOBAR3__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | Clk_II/UIM
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | Wire/rQ<15>_MC.Q | 5140 | ? | 0 | 0 | Wire/rQ<15>_MC | NULL | NULL | Wire/rQ<15>_MC.REG | 0 | 8 | SRFF_Q
+
+INPUT_INSTANCE | 0 | 0 | NULL | SCLK_II | top_COPY_0_COPY_0 | 16 | 1 | 2
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | SCLK | 5144 | PI | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | SCLK_II/UIM | 5145 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | SCLK_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 10 | 5 | II_REG
+NODE | SCLK_II/IREG | 5435 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | SCLK_II | 10 | 5 | II_REG
+
+MACROCELL_INSTANCE | PrldLow+Tff | Wire/rQ<14>_MC | top_COPY_0_COPY_0 | 5120 | 7 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Wire/rQ<14> | 5146 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rQ<14>_MC.Q | Wire/rQ<14>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_265 | 5259 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | N_PZ_265_MC.Q | N_PZ_265_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Found1 | 5390 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Found1_MC.Q | Found1_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | SCLK_II/UIM | 5145 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | SCLK_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Wire/rQ<13> | 5151 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rQ<13>_MC.Q | Wire/rQ<13>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Wire/rSCLK | 5221 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rSCLK_MC.Q | Wire/rSCLK_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+SIGNAL | NODE | FOOBAR3__ctinst/4 | 5232 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | FOOBAR3__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | Clk_II/UIM
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | Wire/rQ<14> | 5146 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rQ<14>_MC.Q | Wire/rQ<14>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | Wire/rQ<14>_MC.SI | Wire/rQ<14>_MC | 0 | 6 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Wire/rQ<14> | 5146 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rQ<14>_MC.Q | Wire/rQ<14>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_265 | 5259 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | N_PZ_265_MC.Q | N_PZ_265_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Found1 | 5390 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Found1_MC.Q | Found1_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | SCLK_II/UIM | 5145 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | SCLK_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Wire/rQ<13> | 5151 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rQ<13>_MC.Q | Wire/rQ<13>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Wire/rSCLK | 5221 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rSCLK_MC.Q | Wire/rSCLK_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | Wire/rQ<14>_MC.D1 | 5150 | ? | 0 | 0 | Wire/rQ<14>_MC | NULL | NULL | Wire/rQ<14>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | Wire/rQ<14>_MC.D2 | 5149 | ? | 0 | 0 | Wire/rQ<14>_MC | NULL | NULL | Wire/rQ<14>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 3 | IV_TRUE | Wire/rQ<14> | IV_TRUE | N_PZ_265 | IV_FALSE | Found1
+SPPTERM | 3 | IV_FALSE | Wire/rQ<14> | IV_TRUE | N_PZ_265 | IV_TRUE | Found1
+SPPTERM | 4 | IV_TRUE | SCLK_II/UIM | IV_TRUE | Wire/rQ<14> | IV_FALSE | Wire/rQ<13> | IV_FALSE | Wire/rSCLK
+SPPTERM | 4 | IV_TRUE | SCLK_II/UIM | IV_FALSE | Wire/rQ<14> | IV_TRUE | Wire/rQ<13> | IV_FALSE | Wire/rSCLK
+
+SRFF_INSTANCE | Wire/rQ<14>_MC.REG | Wire/rQ<14>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | Wire/rQ<14>_MC.D | 5148 | ? | 0 | 0 | Wire/rQ<14>_MC | NULL | NULL | Wire/rQ<14>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | FOOBAR3__ctinst/4 | 5232 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | FOOBAR3__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | Clk_II/UIM
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | Wire/rQ<14>_MC.Q | 5147 | ? | 0 | 0 | Wire/rQ<14>_MC | NULL | NULL | Wire/rQ<14>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff | Wire/rQ<13>_MC | top_COPY_0_COPY_0 | 5120 | 7 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Wire/rQ<13> | 5151 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rQ<13>_MC.Q | Wire/rQ<13>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_265 | 5259 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | N_PZ_265_MC.Q | N_PZ_265_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Found2 | 5385 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Found2_MC.Q | Found2_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | SCLK_II/UIM | 5145 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | SCLK_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Wire/rQ<12> | 5156 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rQ<12>_MC.Q | Wire/rQ<12>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Wire/rSCLK | 5221 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rSCLK_MC.Q | Wire/rSCLK_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+SIGNAL | NODE | FOOBAR3__ctinst/4 | 5232 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | FOOBAR3__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | Clk_II/UIM
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | Wire/rQ<13> | 5151 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rQ<13>_MC.Q | Wire/rQ<13>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | Wire/rQ<13>_MC.SI | Wire/rQ<13>_MC | 0 | 6 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Wire/rQ<13> | 5151 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rQ<13>_MC.Q | Wire/rQ<13>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_265 | 5259 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | N_PZ_265_MC.Q | N_PZ_265_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Found2 | 5385 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Found2_MC.Q | Found2_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | SCLK_II/UIM | 5145 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | SCLK_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Wire/rQ<12> | 5156 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rQ<12>_MC.Q | Wire/rQ<12>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Wire/rSCLK | 5221 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rSCLK_MC.Q | Wire/rSCLK_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | Wire/rQ<13>_MC.D1 | 5155 | ? | 0 | 0 | Wire/rQ<13>_MC | NULL | NULL | Wire/rQ<13>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | Wire/rQ<13>_MC.D2 | 5154 | ? | 0 | 0 | Wire/rQ<13>_MC | NULL | NULL | Wire/rQ<13>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 3 | IV_TRUE | Wire/rQ<13> | IV_TRUE | N_PZ_265 | IV_FALSE | Found2
+SPPTERM | 3 | IV_FALSE | Wire/rQ<13> | IV_TRUE | N_PZ_265 | IV_TRUE | Found2
+SPPTERM | 4 | IV_TRUE | SCLK_II/UIM | IV_TRUE | Wire/rQ<13> | IV_FALSE | Wire/rQ<12> | IV_FALSE | Wire/rSCLK
+SPPTERM | 4 | IV_TRUE | SCLK_II/UIM | IV_FALSE | Wire/rQ<13> | IV_TRUE | Wire/rQ<12> | IV_FALSE | Wire/rSCLK
+
+SRFF_INSTANCE | Wire/rQ<13>_MC.REG | Wire/rQ<13>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | Wire/rQ<13>_MC.D | 5153 | ? | 0 | 0 | Wire/rQ<13>_MC | NULL | NULL | Wire/rQ<13>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | FOOBAR3__ctinst/4 | 5232 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | FOOBAR3__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | Clk_II/UIM
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | Wire/rQ<13>_MC.Q | 5152 | ? | 0 | 0 | Wire/rQ<13>_MC | NULL | NULL | Wire/rQ<13>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff | Wire/rQ<12>_MC | top_COPY_0_COPY_0 | 5120 | 7 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Wire/rQ<12> | 5156 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rQ<12>_MC.Q | Wire/rQ<12>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_265 | 5259 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | N_PZ_265_MC.Q | N_PZ_265_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Found3 | 5375 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Found3_MC.Q | Found3_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | SCLK_II/UIM | 5145 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | SCLK_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Wire/rQ<11> | 5161 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rQ<11>_MC.Q | Wire/rQ<11>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Wire/rSCLK | 5221 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rSCLK_MC.Q | Wire/rSCLK_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+SIGNAL | NODE | FOOBAR3__ctinst/4 | 5232 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | FOOBAR3__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | Clk_II/UIM
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | Wire/rQ<12> | 5156 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rQ<12>_MC.Q | Wire/rQ<12>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | Wire/rQ<12>_MC.SI | Wire/rQ<12>_MC | 0 | 6 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Wire/rQ<12> | 5156 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rQ<12>_MC.Q | Wire/rQ<12>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_265 | 5259 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | N_PZ_265_MC.Q | N_PZ_265_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Found3 | 5375 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Found3_MC.Q | Found3_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | SCLK_II/UIM | 5145 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | SCLK_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Wire/rQ<11> | 5161 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rQ<11>_MC.Q | Wire/rQ<11>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Wire/rSCLK | 5221 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rSCLK_MC.Q | Wire/rSCLK_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | Wire/rQ<12>_MC.D1 | 5160 | ? | 0 | 0 | Wire/rQ<12>_MC | NULL | NULL | Wire/rQ<12>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | Wire/rQ<12>_MC.D2 | 5159 | ? | 0 | 0 | Wire/rQ<12>_MC | NULL | NULL | Wire/rQ<12>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 3 | IV_TRUE | Wire/rQ<12> | IV_TRUE | N_PZ_265 | IV_FALSE | Found3
+SPPTERM | 3 | IV_FALSE | Wire/rQ<12> | IV_TRUE | N_PZ_265 | IV_TRUE | Found3
+SPPTERM | 4 | IV_TRUE | SCLK_II/UIM | IV_TRUE | Wire/rQ<12> | IV_FALSE | Wire/rQ<11> | IV_FALSE | Wire/rSCLK
+SPPTERM | 4 | IV_TRUE | SCLK_II/UIM | IV_FALSE | Wire/rQ<12> | IV_TRUE | Wire/rQ<11> | IV_FALSE | Wire/rSCLK
+
+SRFF_INSTANCE | Wire/rQ<12>_MC.REG | Wire/rQ<12>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | Wire/rQ<12>_MC.D | 5158 | ? | 0 | 0 | Wire/rQ<12>_MC | NULL | NULL | Wire/rQ<12>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | FOOBAR3__ctinst/4 | 5232 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | FOOBAR3__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | Clk_II/UIM
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | Wire/rQ<12>_MC.Q | 5157 | ? | 0 | 0 | Wire/rQ<12>_MC | NULL | NULL | Wire/rQ<12>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff | Wire/rQ<11>_MC | top_COPY_0_COPY_0 | 5120 | 7 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Wire/rQ<11> | 5161 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rQ<11>_MC.Q | Wire/rQ<11>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_265 | 5259 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | N_PZ_265_MC.Q | N_PZ_265_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Count1<3> | 5370 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Count1<3>_MC.Q | Count1<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | SCLK_II/UIM | 5145 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | SCLK_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Wire/rQ<10> | 5166 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rQ<10>_MC.Q | Wire/rQ<10>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Wire/rSCLK | 5221 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rSCLK_MC.Q | Wire/rSCLK_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+SIGNAL | NODE | FOOBAR3__ctinst/4 | 5232 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | FOOBAR3__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | Clk_II/UIM
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | Wire/rQ<11> | 5161 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rQ<11>_MC.Q | Wire/rQ<11>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | Wire/rQ<11>_MC.SI | Wire/rQ<11>_MC | 0 | 6 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Wire/rQ<11> | 5161 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rQ<11>_MC.Q | Wire/rQ<11>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_265 | 5259 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | N_PZ_265_MC.Q | N_PZ_265_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Count1<3> | 5370 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Count1<3>_MC.Q | Count1<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | SCLK_II/UIM | 5145 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | SCLK_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Wire/rQ<10> | 5166 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rQ<10>_MC.Q | Wire/rQ<10>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Wire/rSCLK | 5221 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rSCLK_MC.Q | Wire/rSCLK_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | Wire/rQ<11>_MC.D1 | 5165 | ? | 0 | 0 | Wire/rQ<11>_MC | NULL | NULL | Wire/rQ<11>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | Wire/rQ<11>_MC.D2 | 5164 | ? | 0 | 0 | Wire/rQ<11>_MC | NULL | NULL | Wire/rQ<11>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 3 | IV_TRUE | Wire/rQ<11> | IV_TRUE | N_PZ_265 | IV_FALSE | Count1<3>
+SPPTERM | 3 | IV_FALSE | Wire/rQ<11> | IV_TRUE | N_PZ_265 | IV_TRUE | Count1<3>
+SPPTERM | 4 | IV_TRUE | SCLK_II/UIM | IV_TRUE | Wire/rQ<11> | IV_FALSE | Wire/rQ<10> | IV_FALSE | Wire/rSCLK
+SPPTERM | 4 | IV_TRUE | SCLK_II/UIM | IV_FALSE | Wire/rQ<11> | IV_TRUE | Wire/rQ<10> | IV_FALSE | Wire/rSCLK
+
+SRFF_INSTANCE | Wire/rQ<11>_MC.REG | Wire/rQ<11>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | Wire/rQ<11>_MC.D | 5163 | ? | 0 | 0 | Wire/rQ<11>_MC | NULL | NULL | Wire/rQ<11>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | FOOBAR3__ctinst/4 | 5232 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | FOOBAR3__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | Clk_II/UIM
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | Wire/rQ<11>_MC.Q | 5162 | ? | 0 | 0 | Wire/rQ<11>_MC | NULL | NULL | Wire/rQ<11>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff | Wire/rQ<10>_MC | top_COPY_0_COPY_0 | 5120 | 7 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Wire/rQ<10> | 5166 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rQ<10>_MC.Q | Wire/rQ<10>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_265 | 5259 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | N_PZ_265_MC.Q | N_PZ_265_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Count1<2> | 5365 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Count1<2>_MC.Q | Count1<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | SCLK_II/UIM | 5145 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | SCLK_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Wire/rQ<9> | 5171 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rQ<9>_MC.Q | Wire/rQ<9>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Wire/rSCLK | 5221 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rSCLK_MC.Q | Wire/rSCLK_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+SIGNAL | NODE | FOOBAR2__ctinst/4 | 5258 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | FOOBAR2__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | Clk_II/UIM
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | Wire/rQ<10> | 5166 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rQ<10>_MC.Q | Wire/rQ<10>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | Wire/rQ<10>_MC.SI | Wire/rQ<10>_MC | 0 | 6 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Wire/rQ<10> | 5166 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rQ<10>_MC.Q | Wire/rQ<10>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_265 | 5259 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | N_PZ_265_MC.Q | N_PZ_265_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Count1<2> | 5365 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Count1<2>_MC.Q | Count1<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | SCLK_II/UIM | 5145 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | SCLK_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Wire/rQ<9> | 5171 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rQ<9>_MC.Q | Wire/rQ<9>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Wire/rSCLK | 5221 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rSCLK_MC.Q | Wire/rSCLK_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | Wire/rQ<10>_MC.D1 | 5170 | ? | 0 | 0 | Wire/rQ<10>_MC | NULL | NULL | Wire/rQ<10>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | Wire/rQ<10>_MC.D2 | 5169 | ? | 0 | 0 | Wire/rQ<10>_MC | NULL | NULL | Wire/rQ<10>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 3 | IV_TRUE | Wire/rQ<10> | IV_TRUE | N_PZ_265 | IV_FALSE | Count1<2>
+SPPTERM | 3 | IV_FALSE | Wire/rQ<10> | IV_TRUE | N_PZ_265 | IV_TRUE | Count1<2>
+SPPTERM | 4 | IV_TRUE | SCLK_II/UIM | IV_TRUE | Wire/rQ<10> | IV_FALSE | Wire/rQ<9> | IV_FALSE | Wire/rSCLK
+SPPTERM | 4 | IV_TRUE | SCLK_II/UIM | IV_FALSE | Wire/rQ<10> | IV_TRUE | Wire/rQ<9> | IV_FALSE | Wire/rSCLK
+
+SRFF_INSTANCE | Wire/rQ<10>_MC.REG | Wire/rQ<10>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | Wire/rQ<10>_MC.D | 5168 | ? | 0 | 0 | Wire/rQ<10>_MC | NULL | NULL | Wire/rQ<10>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | FOOBAR2__ctinst/4 | 5258 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | FOOBAR2__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | Clk_II/UIM
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | Wire/rQ<10>_MC.Q | 5167 | ? | 0 | 0 | Wire/rQ<10>_MC | NULL | NULL | Wire/rQ<10>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff | Wire/rQ<9>_MC | top_COPY_0_COPY_0 | 5120 | 7 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Wire/rQ<9> | 5171 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rQ<9>_MC.Q | Wire/rQ<9>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_265 | 5259 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | N_PZ_265_MC.Q | N_PZ_265_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Count1<1> | 5360 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Count1<1>_MC.Q | Count1<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | SCLK_II/UIM | 5145 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | SCLK_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Wire/rQ<8> | 5176 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rQ<8>_MC.Q | Wire/rQ<8>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Wire/rSCLK | 5221 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rSCLK_MC.Q | Wire/rSCLK_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+SIGNAL | NODE | FOOBAR4__ctinst/4 | 5223 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | FOOBAR4__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | Clk_II/UIM
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | Wire/rQ<9> | 5171 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rQ<9>_MC.Q | Wire/rQ<9>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | Wire/rQ<9>_MC.SI | Wire/rQ<9>_MC | 0 | 6 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Wire/rQ<9> | 5171 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rQ<9>_MC.Q | Wire/rQ<9>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_265 | 5259 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | N_PZ_265_MC.Q | N_PZ_265_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Count1<1> | 5360 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Count1<1>_MC.Q | Count1<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | SCLK_II/UIM | 5145 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | SCLK_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Wire/rQ<8> | 5176 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rQ<8>_MC.Q | Wire/rQ<8>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Wire/rSCLK | 5221 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rSCLK_MC.Q | Wire/rSCLK_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | Wire/rQ<9>_MC.D1 | 5175 | ? | 0 | 0 | Wire/rQ<9>_MC | NULL | NULL | Wire/rQ<9>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | Wire/rQ<9>_MC.D2 | 5174 | ? | 0 | 0 | Wire/rQ<9>_MC | NULL | NULL | Wire/rQ<9>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 3 | IV_TRUE | Wire/rQ<9> | IV_TRUE | N_PZ_265 | IV_FALSE | Count1<1>
+SPPTERM | 3 | IV_FALSE | Wire/rQ<9> | IV_TRUE | N_PZ_265 | IV_TRUE | Count1<1>
+SPPTERM | 4 | IV_TRUE | SCLK_II/UIM | IV_TRUE | Wire/rQ<9> | IV_FALSE | Wire/rQ<8> | IV_FALSE | Wire/rSCLK
+SPPTERM | 4 | IV_TRUE | SCLK_II/UIM | IV_FALSE | Wire/rQ<9> | IV_TRUE | Wire/rQ<8> | IV_FALSE | Wire/rSCLK
+
+SRFF_INSTANCE | Wire/rQ<9>_MC.REG | Wire/rQ<9>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | Wire/rQ<9>_MC.D | 5173 | ? | 0 | 0 | Wire/rQ<9>_MC | NULL | NULL | Wire/rQ<9>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | FOOBAR4__ctinst/4 | 5223 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | FOOBAR4__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | Clk_II/UIM
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | Wire/rQ<9>_MC.Q | 5172 | ? | 0 | 0 | Wire/rQ<9>_MC | NULL | NULL | Wire/rQ<9>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff | Wire/rQ<8>_MC | top_COPY_0_COPY_0 | 5120 | 7 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Wire/rQ<8> | 5176 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rQ<8>_MC.Q | Wire/rQ<8>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_265 | 5259 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | N_PZ_265_MC.Q | N_PZ_265_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Count1<0> | 5329 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Count1<0>_MC.Q | Count1<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | SCLK_II/UIM | 5145 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | SCLK_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Wire/rQ<7> | 5181 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rQ<7>_MC.Q | Wire/rQ<7>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Wire/rSCLK | 5221 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rSCLK_MC.Q | Wire/rSCLK_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+SIGNAL | NODE | FOOBAR4__ctinst/4 | 5223 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | FOOBAR4__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | Clk_II/UIM
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | Wire/rQ<8> | 5176 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rQ<8>_MC.Q | Wire/rQ<8>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | Wire/rQ<8>_MC.SI | Wire/rQ<8>_MC | 0 | 6 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Wire/rQ<8> | 5176 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rQ<8>_MC.Q | Wire/rQ<8>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_265 | 5259 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | N_PZ_265_MC.Q | N_PZ_265_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Count1<0> | 5329 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Count1<0>_MC.Q | Count1<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | SCLK_II/UIM | 5145 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | SCLK_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Wire/rQ<7> | 5181 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rQ<7>_MC.Q | Wire/rQ<7>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Wire/rSCLK | 5221 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rSCLK_MC.Q | Wire/rSCLK_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | Wire/rQ<8>_MC.D1 | 5180 | ? | 0 | 0 | Wire/rQ<8>_MC | NULL | NULL | Wire/rQ<8>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | Wire/rQ<8>_MC.D2 | 5179 | ? | 0 | 0 | Wire/rQ<8>_MC | NULL | NULL | Wire/rQ<8>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 3 | IV_TRUE | Wire/rQ<8> | IV_TRUE | N_PZ_265 | IV_FALSE | Count1<0>
+SPPTERM | 3 | IV_FALSE | Wire/rQ<8> | IV_TRUE | N_PZ_265 | IV_TRUE | Count1<0>
+SPPTERM | 4 | IV_TRUE | SCLK_II/UIM | IV_TRUE | Wire/rQ<8> | IV_FALSE | Wire/rQ<7> | IV_FALSE | Wire/rSCLK
+SPPTERM | 4 | IV_TRUE | SCLK_II/UIM | IV_FALSE | Wire/rQ<8> | IV_TRUE | Wire/rQ<7> | IV_FALSE | Wire/rSCLK
+
+SRFF_INSTANCE | Wire/rQ<8>_MC.REG | Wire/rQ<8>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | Wire/rQ<8>_MC.D | 5178 | ? | 0 | 0 | Wire/rQ<8>_MC | NULL | NULL | Wire/rQ<8>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | FOOBAR4__ctinst/4 | 5223 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | FOOBAR4__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | Clk_II/UIM
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | Wire/rQ<8>_MC.Q | 5177 | ? | 0 | 0 | Wire/rQ<8>_MC | NULL | NULL | Wire/rQ<8>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff | Wire/rQ<7>_MC | top_COPY_0_COPY_0 | 5120 | 7 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Wire/rQ<7> | 5181 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rQ<7>_MC.Q | Wire/rQ<7>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_265 | 5259 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | N_PZ_265_MC.Q | N_PZ_265_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Count2<3> | 5324 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Count2<3>_MC.Q | Count2<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | SCLK_II/UIM | 5145 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | SCLK_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Wire/rQ<6> | 5186 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rQ<6>_MC.Q | Wire/rQ<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Wire/rSCLK | 5221 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rSCLK_MC.Q | Wire/rSCLK_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+SIGNAL | NODE | FOOBAR4__ctinst/4 | 5223 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | FOOBAR4__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | Clk_II/UIM
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | Wire/rQ<7> | 5181 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rQ<7>_MC.Q | Wire/rQ<7>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | Wire/rQ<7>_MC.SI | Wire/rQ<7>_MC | 0 | 6 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Wire/rQ<7> | 5181 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rQ<7>_MC.Q | Wire/rQ<7>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_265 | 5259 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | N_PZ_265_MC.Q | N_PZ_265_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Count2<3> | 5324 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Count2<3>_MC.Q | Count2<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | SCLK_II/UIM | 5145 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | SCLK_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Wire/rQ<6> | 5186 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rQ<6>_MC.Q | Wire/rQ<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Wire/rSCLK | 5221 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rSCLK_MC.Q | Wire/rSCLK_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | Wire/rQ<7>_MC.D1 | 5185 | ? | 0 | 0 | Wire/rQ<7>_MC | NULL | NULL | Wire/rQ<7>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | Wire/rQ<7>_MC.D2 | 5184 | ? | 0 | 0 | Wire/rQ<7>_MC | NULL | NULL | Wire/rQ<7>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 3 | IV_TRUE | Wire/rQ<7> | IV_TRUE | N_PZ_265 | IV_FALSE | Count2<3>
+SPPTERM | 3 | IV_FALSE | Wire/rQ<7> | IV_TRUE | N_PZ_265 | IV_TRUE | Count2<3>
+SPPTERM | 4 | IV_TRUE | SCLK_II/UIM | IV_TRUE | Wire/rQ<7> | IV_FALSE | Wire/rQ<6> | IV_FALSE | Wire/rSCLK
+SPPTERM | 4 | IV_TRUE | SCLK_II/UIM | IV_FALSE | Wire/rQ<7> | IV_TRUE | Wire/rQ<6> | IV_FALSE | Wire/rSCLK
+
+SRFF_INSTANCE | Wire/rQ<7>_MC.REG | Wire/rQ<7>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | Wire/rQ<7>_MC.D | 5183 | ? | 0 | 0 | Wire/rQ<7>_MC | NULL | NULL | Wire/rQ<7>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | FOOBAR4__ctinst/4 | 5223 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | FOOBAR4__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | Clk_II/UIM
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | Wire/rQ<7>_MC.Q | 5182 | ? | 0 | 0 | Wire/rQ<7>_MC | NULL | NULL | Wire/rQ<7>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff | Wire/rQ<6>_MC | top_COPY_0_COPY_0 | 5120 | 7 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Wire/rQ<6> | 5186 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rQ<6>_MC.Q | Wire/rQ<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_265 | 5259 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | N_PZ_265_MC.Q | N_PZ_265_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Count2<2> | 5319 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Count2<2>_MC.Q | Count2<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | SCLK_II/UIM | 5145 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | SCLK_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Wire/rQ<5> | 5191 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rQ<5>_MC.Q | Wire/rQ<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Wire/rSCLK | 5221 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rSCLK_MC.Q | Wire/rSCLK_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+SIGNAL | NODE | FOOBAR4__ctinst/4 | 5223 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | FOOBAR4__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | Clk_II/UIM
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | Wire/rQ<6> | 5186 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rQ<6>_MC.Q | Wire/rQ<6>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | Wire/rQ<6>_MC.SI | Wire/rQ<6>_MC | 0 | 6 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Wire/rQ<6> | 5186 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rQ<6>_MC.Q | Wire/rQ<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_265 | 5259 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | N_PZ_265_MC.Q | N_PZ_265_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Count2<2> | 5319 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Count2<2>_MC.Q | Count2<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | SCLK_II/UIM | 5145 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | SCLK_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Wire/rQ<5> | 5191 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rQ<5>_MC.Q | Wire/rQ<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Wire/rSCLK | 5221 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rSCLK_MC.Q | Wire/rSCLK_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | Wire/rQ<6>_MC.D1 | 5190 | ? | 0 | 0 | Wire/rQ<6>_MC | NULL | NULL | Wire/rQ<6>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | Wire/rQ<6>_MC.D2 | 5189 | ? | 0 | 0 | Wire/rQ<6>_MC | NULL | NULL | Wire/rQ<6>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 3 | IV_TRUE | Wire/rQ<6> | IV_TRUE | N_PZ_265 | IV_FALSE | Count2<2>
+SPPTERM | 3 | IV_FALSE | Wire/rQ<6> | IV_TRUE | N_PZ_265 | IV_TRUE | Count2<2>
+SPPTERM | 4 | IV_TRUE | SCLK_II/UIM | IV_TRUE | Wire/rQ<6> | IV_FALSE | Wire/rQ<5> | IV_FALSE | Wire/rSCLK
+SPPTERM | 4 | IV_TRUE | SCLK_II/UIM | IV_FALSE | Wire/rQ<6> | IV_TRUE | Wire/rQ<5> | IV_FALSE | Wire/rSCLK
+
+SRFF_INSTANCE | Wire/rQ<6>_MC.REG | Wire/rQ<6>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | Wire/rQ<6>_MC.D | 5188 | ? | 0 | 0 | Wire/rQ<6>_MC | NULL | NULL | Wire/rQ<6>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | FOOBAR4__ctinst/4 | 5223 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | FOOBAR4__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | Clk_II/UIM
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | Wire/rQ<6>_MC.Q | 5187 | ? | 0 | 0 | Wire/rQ<6>_MC | NULL | NULL | Wire/rQ<6>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff | Wire/rQ<5>_MC | top_COPY_0_COPY_0 | 5120 | 7 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Wire/rQ<5> | 5191 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rQ<5>_MC.Q | Wire/rQ<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_265 | 5259 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | N_PZ_265_MC.Q | N_PZ_265_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Count2<1> | 5314 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Count2<1>_MC.Q | Count2<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | SCLK_II/UIM | 5145 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | SCLK_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Wire/rQ<4> | 5196 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rQ<4>_MC.Q | Wire/rQ<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Wire/rSCLK | 5221 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rSCLK_MC.Q | Wire/rSCLK_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+SIGNAL | NODE | FOOBAR4__ctinst/4 | 5223 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | FOOBAR4__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | Clk_II/UIM
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | Wire/rQ<5> | 5191 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rQ<5>_MC.Q | Wire/rQ<5>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | Wire/rQ<5>_MC.SI | Wire/rQ<5>_MC | 0 | 6 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Wire/rQ<5> | 5191 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rQ<5>_MC.Q | Wire/rQ<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_265 | 5259 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | N_PZ_265_MC.Q | N_PZ_265_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Count2<1> | 5314 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Count2<1>_MC.Q | Count2<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | SCLK_II/UIM | 5145 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | SCLK_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Wire/rQ<4> | 5196 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rQ<4>_MC.Q | Wire/rQ<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Wire/rSCLK | 5221 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rSCLK_MC.Q | Wire/rSCLK_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | Wire/rQ<5>_MC.D1 | 5195 | ? | 0 | 0 | Wire/rQ<5>_MC | NULL | NULL | Wire/rQ<5>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | Wire/rQ<5>_MC.D2 | 5194 | ? | 0 | 0 | Wire/rQ<5>_MC | NULL | NULL | Wire/rQ<5>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 3 | IV_TRUE | Wire/rQ<5> | IV_TRUE | N_PZ_265 | IV_FALSE | Count2<1>
+SPPTERM | 3 | IV_FALSE | Wire/rQ<5> | IV_TRUE | N_PZ_265 | IV_TRUE | Count2<1>
+SPPTERM | 4 | IV_TRUE | SCLK_II/UIM | IV_TRUE | Wire/rQ<5> | IV_FALSE | Wire/rQ<4> | IV_FALSE | Wire/rSCLK
+SPPTERM | 4 | IV_TRUE | SCLK_II/UIM | IV_FALSE | Wire/rQ<5> | IV_TRUE | Wire/rQ<4> | IV_FALSE | Wire/rSCLK
+
+SRFF_INSTANCE | Wire/rQ<5>_MC.REG | Wire/rQ<5>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | Wire/rQ<5>_MC.D | 5193 | ? | 0 | 0 | Wire/rQ<5>_MC | NULL | NULL | Wire/rQ<5>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | FOOBAR4__ctinst/4 | 5223 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | FOOBAR4__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | Clk_II/UIM
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | Wire/rQ<5>_MC.Q | 5192 | ? | 0 | 0 | Wire/rQ<5>_MC | NULL | NULL | Wire/rQ<5>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff | Wire/rQ<4>_MC | top_COPY_0_COPY_0 | 5120 | 7 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Wire/rQ<4> | 5196 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rQ<4>_MC.Q | Wire/rQ<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_265 | 5259 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | N_PZ_265_MC.Q | N_PZ_265_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Count2<0> | 5283 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Count2<0>_MC.Q | Count2<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | SCLK_II/UIM | 5145 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | SCLK_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Wire/rQ<3> | 5201 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rQ<3>_MC.Q | Wire/rQ<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Wire/rSCLK | 5221 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rSCLK_MC.Q | Wire/rSCLK_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+SIGNAL | NODE | FOOBAR4__ctinst/4 | 5223 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | FOOBAR4__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | Clk_II/UIM
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | Wire/rQ<4> | 5196 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rQ<4>_MC.Q | Wire/rQ<4>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | Wire/rQ<4>_MC.SI | Wire/rQ<4>_MC | 0 | 6 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Wire/rQ<4> | 5196 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rQ<4>_MC.Q | Wire/rQ<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_265 | 5259 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | N_PZ_265_MC.Q | N_PZ_265_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Count2<0> | 5283 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Count2<0>_MC.Q | Count2<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | SCLK_II/UIM | 5145 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | SCLK_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Wire/rQ<3> | 5201 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rQ<3>_MC.Q | Wire/rQ<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Wire/rSCLK | 5221 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rSCLK_MC.Q | Wire/rSCLK_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | Wire/rQ<4>_MC.D1 | 5200 | ? | 0 | 0 | Wire/rQ<4>_MC | NULL | NULL | Wire/rQ<4>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | Wire/rQ<4>_MC.D2 | 5199 | ? | 0 | 0 | Wire/rQ<4>_MC | NULL | NULL | Wire/rQ<4>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 3 | IV_TRUE | Wire/rQ<4> | IV_TRUE | N_PZ_265 | IV_FALSE | Count2<0>
+SPPTERM | 3 | IV_FALSE | Wire/rQ<4> | IV_TRUE | N_PZ_265 | IV_TRUE | Count2<0>
+SPPTERM | 4 | IV_TRUE | SCLK_II/UIM | IV_TRUE | Wire/rQ<4> | IV_FALSE | Wire/rQ<3> | IV_FALSE | Wire/rSCLK
+SPPTERM | 4 | IV_TRUE | SCLK_II/UIM | IV_FALSE | Wire/rQ<4> | IV_TRUE | Wire/rQ<3> | IV_FALSE | Wire/rSCLK
+
+SRFF_INSTANCE | Wire/rQ<4>_MC.REG | Wire/rQ<4>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | Wire/rQ<4>_MC.D | 5198 | ? | 0 | 0 | Wire/rQ<4>_MC | NULL | NULL | Wire/rQ<4>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | FOOBAR4__ctinst/4 | 5223 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | FOOBAR4__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | Clk_II/UIM
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | Wire/rQ<4>_MC.Q | 5197 | ? | 0 | 0 | Wire/rQ<4>_MC | NULL | NULL | Wire/rQ<4>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff | Wire/rQ<3>_MC | top_COPY_0_COPY_0 | 5120 | 7 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Wire/rQ<3> | 5201 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rQ<3>_MC.Q | Wire/rQ<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_265 | 5259 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | N_PZ_265_MC.Q | N_PZ_265_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Count3<3> | 5278 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Count3<3>_MC.Q | Count3<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | SCLK_II/UIM | 5145 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | SCLK_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Wire/rQ<2> | 5206 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rQ<2>_MC.Q | Wire/rQ<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Wire/rSCLK | 5221 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rSCLK_MC.Q | Wire/rSCLK_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+SIGNAL | NODE | FOOBAR3__ctinst/4 | 5232 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | FOOBAR3__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | Clk_II/UIM
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | Wire/rQ<3> | 5201 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rQ<3>_MC.Q | Wire/rQ<3>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | Wire/rQ<3>_MC.SI | Wire/rQ<3>_MC | 0 | 6 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Wire/rQ<3> | 5201 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rQ<3>_MC.Q | Wire/rQ<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_265 | 5259 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | N_PZ_265_MC.Q | N_PZ_265_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Count3<3> | 5278 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Count3<3>_MC.Q | Count3<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | SCLK_II/UIM | 5145 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | SCLK_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Wire/rQ<2> | 5206 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rQ<2>_MC.Q | Wire/rQ<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Wire/rSCLK | 5221 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rSCLK_MC.Q | Wire/rSCLK_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | Wire/rQ<3>_MC.D1 | 5205 | ? | 0 | 0 | Wire/rQ<3>_MC | NULL | NULL | Wire/rQ<3>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | Wire/rQ<3>_MC.D2 | 5204 | ? | 0 | 0 | Wire/rQ<3>_MC | NULL | NULL | Wire/rQ<3>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 3 | IV_TRUE | Wire/rQ<3> | IV_TRUE | N_PZ_265 | IV_FALSE | Count3<3>
+SPPTERM | 3 | IV_FALSE | Wire/rQ<3> | IV_TRUE | N_PZ_265 | IV_TRUE | Count3<3>
+SPPTERM | 4 | IV_TRUE | SCLK_II/UIM | IV_TRUE | Wire/rQ<3> | IV_FALSE | Wire/rQ<2> | IV_FALSE | Wire/rSCLK
+SPPTERM | 4 | IV_TRUE | SCLK_II/UIM | IV_FALSE | Wire/rQ<3> | IV_TRUE | Wire/rQ<2> | IV_FALSE | Wire/rSCLK
+
+SRFF_INSTANCE | Wire/rQ<3>_MC.REG | Wire/rQ<3>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | Wire/rQ<3>_MC.D | 5203 | ? | 0 | 0 | Wire/rQ<3>_MC | NULL | NULL | Wire/rQ<3>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | FOOBAR3__ctinst/4 | 5232 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | FOOBAR3__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | Clk_II/UIM
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | Wire/rQ<3>_MC.Q | 5202 | ? | 0 | 0 | Wire/rQ<3>_MC | NULL | NULL | Wire/rQ<3>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff | Wire/rQ<2>_MC | top_COPY_0_COPY_0 | 5120 | 7 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Wire/rQ<2> | 5206 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rQ<2>_MC.Q | Wire/rQ<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_265 | 5259 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | N_PZ_265_MC.Q | N_PZ_265_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Count3<2> | 5273 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Count3<2>_MC.Q | Count3<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | SCLK_II/UIM | 5145 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | SCLK_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Wire/rQ<1> | 5211 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rQ<1>_MC.Q | Wire/rQ<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Wire/rSCLK | 5221 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rSCLK_MC.Q | Wire/rSCLK_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+SIGNAL | NODE | FOOBAR3__ctinst/4 | 5232 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | FOOBAR3__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | Clk_II/UIM
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | Wire/rQ<2> | 5206 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rQ<2>_MC.Q | Wire/rQ<2>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | Wire/rQ<2>_MC.SI | Wire/rQ<2>_MC | 0 | 6 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Wire/rQ<2> | 5206 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rQ<2>_MC.Q | Wire/rQ<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_265 | 5259 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | N_PZ_265_MC.Q | N_PZ_265_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Count3<2> | 5273 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Count3<2>_MC.Q | Count3<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | SCLK_II/UIM | 5145 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | SCLK_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Wire/rQ<1> | 5211 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rQ<1>_MC.Q | Wire/rQ<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Wire/rSCLK | 5221 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rSCLK_MC.Q | Wire/rSCLK_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | Wire/rQ<2>_MC.D1 | 5210 | ? | 0 | 0 | Wire/rQ<2>_MC | NULL | NULL | Wire/rQ<2>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | Wire/rQ<2>_MC.D2 | 5209 | ? | 0 | 0 | Wire/rQ<2>_MC | NULL | NULL | Wire/rQ<2>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 3 | IV_TRUE | Wire/rQ<2> | IV_TRUE | N_PZ_265 | IV_FALSE | Count3<2>
+SPPTERM | 3 | IV_FALSE | Wire/rQ<2> | IV_TRUE | N_PZ_265 | IV_TRUE | Count3<2>
+SPPTERM | 4 | IV_TRUE | SCLK_II/UIM | IV_TRUE | Wire/rQ<2> | IV_FALSE | Wire/rQ<1> | IV_FALSE | Wire/rSCLK
+SPPTERM | 4 | IV_TRUE | SCLK_II/UIM | IV_FALSE | Wire/rQ<2> | IV_TRUE | Wire/rQ<1> | IV_FALSE | Wire/rSCLK
+
+SRFF_INSTANCE | Wire/rQ<2>_MC.REG | Wire/rQ<2>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | Wire/rQ<2>_MC.D | 5208 | ? | 0 | 0 | Wire/rQ<2>_MC | NULL | NULL | Wire/rQ<2>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | FOOBAR3__ctinst/4 | 5232 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | FOOBAR3__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | Clk_II/UIM
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | Wire/rQ<2>_MC.Q | 5207 | ? | 0 | 0 | Wire/rQ<2>_MC | NULL | NULL | Wire/rQ<2>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff | Wire/rQ<1>_MC | top_COPY_0_COPY_0 | 5120 | 7 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Wire/rQ<1> | 5211 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rQ<1>_MC.Q | Wire/rQ<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_265 | 5259 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | N_PZ_265_MC.Q | N_PZ_265_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Count3<1> | 5268 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Count3<1>_MC.Q | Count3<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | SCLK_II/UIM | 5145 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | SCLK_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Wire/rQ<0> | 5216 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rQ<0>_MC.Q | Wire/rQ<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Wire/rSCLK | 5221 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rSCLK_MC.Q | Wire/rSCLK_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+SIGNAL | NODE | FOOBAR1__ctinst/4 | 5247 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | FOOBAR1__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | Clk_II/UIM
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | Wire/rQ<1> | 5211 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rQ<1>_MC.Q | Wire/rQ<1>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | Wire/rQ<1>_MC.SI | Wire/rQ<1>_MC | 0 | 6 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Wire/rQ<1> | 5211 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rQ<1>_MC.Q | Wire/rQ<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_265 | 5259 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | N_PZ_265_MC.Q | N_PZ_265_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Count3<1> | 5268 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Count3<1>_MC.Q | Count3<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | SCLK_II/UIM | 5145 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | SCLK_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Wire/rQ<0> | 5216 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rQ<0>_MC.Q | Wire/rQ<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Wire/rSCLK | 5221 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rSCLK_MC.Q | Wire/rSCLK_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | Wire/rQ<1>_MC.D1 | 5215 | ? | 0 | 0 | Wire/rQ<1>_MC | NULL | NULL | Wire/rQ<1>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | Wire/rQ<1>_MC.D2 | 5214 | ? | 0 | 0 | Wire/rQ<1>_MC | NULL | NULL | Wire/rQ<1>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 3 | IV_TRUE | Wire/rQ<1> | IV_TRUE | N_PZ_265 | IV_FALSE | Count3<1>
+SPPTERM | 3 | IV_FALSE | Wire/rQ<1> | IV_TRUE | N_PZ_265 | IV_TRUE | Count3<1>
+SPPTERM | 4 | IV_TRUE | SCLK_II/UIM | IV_TRUE | Wire/rQ<1> | IV_FALSE | Wire/rQ<0> | IV_FALSE | Wire/rSCLK
+SPPTERM | 4 | IV_TRUE | SCLK_II/UIM | IV_FALSE | Wire/rQ<1> | IV_TRUE | Wire/rQ<0> | IV_FALSE | Wire/rSCLK
+
+SRFF_INSTANCE | Wire/rQ<1>_MC.REG | Wire/rQ<1>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | Wire/rQ<1>_MC.D | 5213 | ? | 0 | 0 | Wire/rQ<1>_MC | NULL | NULL | Wire/rQ<1>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | FOOBAR1__ctinst/4 | 5247 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | FOOBAR1__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | Clk_II/UIM
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | Wire/rQ<1>_MC.Q | 5212 | ? | 0 | 0 | Wire/rQ<1>_MC | NULL | NULL | Wire/rQ<1>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | Inv+PrldLow | Wire/rQ<0>_MC | top_COPY_0_COPY_0 | 1280 | 6 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | SCLK_II/UIM | 5145 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | SCLK_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Wire/rSCLK | 5221 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rSCLK_MC.Q | Wire/rSCLK_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Wire/rQ<0> | 5216 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rQ<0>_MC.Q | Wire/rQ<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_265 | 5259 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | N_PZ_265_MC.Q | N_PZ_265_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Count3<0> | 5225 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Count3<0>_MC.Q | Count3<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+SIGNAL | NODE | FOOBAR1__ctinst/4 | 5247 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | FOOBAR1__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | Clk_II/UIM
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | Wire/rQ<0> | 5216 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rQ<0>_MC.Q | Wire/rQ<0>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | Wire/rQ<0>_MC.SI | Wire/rQ<0>_MC | 0 | 5 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | SCLK_II/UIM | 5145 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | SCLK_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Wire/rSCLK | 5221 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rSCLK_MC.Q | Wire/rSCLK_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Wire/rQ<0> | 5216 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rQ<0>_MC.Q | Wire/rQ<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_265 | 5259 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | N_PZ_265_MC.Q | N_PZ_265_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Count3<0> | 5225 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Count3<0>_MC.Q | Count3<0>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | Wire/rQ<0>_MC.D1 | 5220 | ? | 0 | 0 | Wire/rQ<0>_MC | NULL | NULL | Wire/rQ<0>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | Wire/rQ<0>_MC.D2 | 5219 | ? | 0 | 0 | Wire/rQ<0>_MC | NULL | NULL | Wire/rQ<0>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_TRUE | SCLK_II/UIM | IV_FALSE | Wire/rSCLK
+SPPTERM | 2 | IV_FALSE | Wire/rQ<0> | IV_FALSE | N_PZ_265
+SPPTERM | 2 | IV_FALSE | Count3<0> | IV_TRUE | N_PZ_265
+
+SRFF_INSTANCE | Wire/rQ<0>_MC.REG | Wire/rQ<0>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | Wire/rQ<0>_MC.D | 5218 | ? | 0 | 0 | Wire/rQ<0>_MC | NULL | NULL | Wire/rQ<0>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | FOOBAR1__ctinst/4 | 5247 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | FOOBAR1__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | Clk_II/UIM
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | Wire/rQ<0>_MC.Q | 5217 | ? | 0 | 0 | Wire/rQ<0>_MC | NULL | NULL | Wire/rQ<0>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow | Wire/rSCLK_MC | top_COPY_0_COPY_0 | 1024 | 2 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+SIGNAL | NODE | FOOBAR4__ctinst/4 | 5223 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | FOOBAR4__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | Clk_II/UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | SCLK_II/IREG | 5435 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | SCLK_II | 10 | 5 | II_REG
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | Wire/rSCLK | 5221 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rSCLK_MC.Q | Wire/rSCLK_MC | 1 | 0 | MC_UIM
+
+SRFF_INSTANCE | Wire/rSCLK_MC.REG | Wire/rSCLK_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | SCLK_II/IREG | 5435 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | SCLK_II | 10 | 5 | II_REG
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | FOOBAR4__ctinst/4 | 5223 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | FOOBAR4__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | Clk_II/UIM
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | Wire/rSCLK_MC.Q | 5222 | ? | 0 | 0 | Wire/rSCLK_MC | NULL | NULL | Wire/rSCLK_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff | Count3<0>_MC | top_COPY_0_COPY_0 | 5120 | 5 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Count3<0> | 5225 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Count3<0>_MC.Q | Count3<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | QuadDecoder3/rQuadB<0>_MC.COMB | 5234 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | QuadDecoder3/rQuadB<0>_MC.D | QuadDecoder3/rQuadB<0>_MC | 6 | 0 | MC_COMB
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_258 | 5235 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | N_PZ_258_MC.Q | N_PZ_258_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_261 | 5248 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | N_PZ_261_MC.Q | N_PZ_261_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+SIGNAL | NODE | FOOBAR2__ctinst/4 | 5258 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | FOOBAR2__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | Clk_II/UIM
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | Count3<0> | 5225 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Count3<0>_MC.Q | Count3<0>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | Count3<0>_MC.SI | Count3<0>_MC | 0 | 4 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Count3<0> | 5225 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Count3<0>_MC.Q | Count3<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | QuadDecoder3/rQuadB<0>_MC.COMB | 5234 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | QuadDecoder3/rQuadB<0>_MC.D | QuadDecoder3/rQuadB<0>_MC | 6 | 0 | MC_COMB
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_258 | 5235 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | N_PZ_258_MC.Q | N_PZ_258_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_261 | 5248 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | N_PZ_261_MC.Q | N_PZ_261_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | Count3<0>_MC.D1 | 5229 | ? | 0 | 0 | Count3<0>_MC | NULL | NULL | Count3<0>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | Count3<0>_MC.D2 | 5228 | ? | 0 | 0 | Count3<0>_MC | NULL | NULL | Count3<0>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_TRUE | Count3<0> | IV_TRUE | QuadDecoder3/rQuadB<0>_MC.COMB
+SPPTERM | 3 | IV_FALSE | QuadDecoder3/rQuadB<0>_MC.COMB | IV_TRUE | N_PZ_258 | IV_TRUE | N_PZ_261
+SPPTERM | 3 | IV_FALSE | QuadDecoder3/rQuadB<0>_MC.COMB | IV_FALSE | N_PZ_258 | IV_FALSE | N_PZ_261
+
+SRFF_INSTANCE | Count3<0>_MC.REG | Count3<0>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | Count3<0>_MC.D | 5227 | ? | 0 | 0 | Count3<0>_MC | NULL | NULL | Count3<0>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | FOOBAR2__ctinst/4 | 5258 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | FOOBAR2__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | Clk_II/UIM
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | Count3<0>_MC.Q | 5226 | ? | 0 | 0 | Count3<0>_MC | NULL | NULL | Count3<0>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow | QuadDecoder3/rQuadB<0>_MC | top_COPY_0_COPY_0 | 1024 | 6 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+SIGNAL | NODE | FOOBAR3__ctinst/4 | 5232 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | FOOBAR3__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | Clk_II/UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Q3B_II/IREG | 5426 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | Q3B_II | 10 | 5 | II_REG
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Found3 | 5375 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Found3_MC.Q | Found3_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Seek_II/UIM | 5416 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | Seek_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Q3Z_II/UIM | 5430 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | Q3Z_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | QuadDecoder3/rQuadZ | 5431 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | QuadDecoder3/rQuadZ_MC.Q | QuadDecoder3/rQuadZ_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | QuadDecoder3/rQuadB<0> | 5230 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | QuadDecoder3/rQuadB<0>_MC.Q | QuadDecoder3/rQuadB<0>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 6 | 0 | MC_COMB
+NODE | QuadDecoder3/rQuadB<0>_MC.COMB | 5234 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | QuadDecoder3/rQuadB<0>_MC.D | QuadDecoder3/rQuadB<0>_MC | 6 | 0 | MC_COMB
+
+SIGNAL_INSTANCE | QuadDecoder3/rQuadB<0>_MC.SI | QuadDecoder3/rQuadB<0>_MC | 0 | 4 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Found3 | 5375 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Found3_MC.Q | Found3_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Seek_II/UIM | 5416 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | Seek_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Q3Z_II/UIM | 5430 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | Q3Z_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | QuadDecoder3/rQuadZ | 5431 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | QuadDecoder3/rQuadZ_MC.Q | QuadDecoder3/rQuadZ_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | QuadDecoder3/rQuadB<0>_MC.D1 | 5427 | ? | 0 | 0 | QuadDecoder3/rQuadB<0>_MC | NULL | NULL | QuadDecoder3/rQuadB<0>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 4 | IV_FALSE | Found3 | IV_TRUE | Seek_II/UIM | IV_TRUE | Q3Z_II/UIM | IV_FALSE | QuadDecoder3/rQuadZ
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | QuadDecoder3/rQuadB<0>_MC.D2 | 5428 | ? | 0 | 0 | QuadDecoder3/rQuadB<0>_MC | NULL | NULL | QuadDecoder3/rQuadB<0>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | QuadDecoder3/rQuadB<0>_MC.REG | QuadDecoder3/rQuadB<0>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | Q3B_II/IREG | 5426 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | Q3B_II | 10 | 5 | II_REG
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | FOOBAR3__ctinst/4 | 5232 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | FOOBAR3__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | Clk_II/UIM
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | QuadDecoder3/rQuadB<0>_MC.Q | 5231 | ? | 0 | 0 | QuadDecoder3/rQuadB<0>_MC | NULL | NULL | QuadDecoder3/rQuadB<0>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | NULL | N_PZ_258_MC | top_COPY_0_COPY_0 | 0 | 2 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | QuadDecoder3/rQuadB<0> | 5230 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | QuadDecoder3/rQuadB<0>_MC.Q | QuadDecoder3/rQuadB<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | QuadDecoder3/rQuadA<1> | 5240 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | QuadDecoder3/rQuadA<1>_MC.Q | QuadDecoder3/rQuadA<1>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | N_PZ_258 | 5235 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | N_PZ_258_MC.Q | N_PZ_258_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | N_PZ_258_MC.SI | N_PZ_258_MC | 0 | 2 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | QuadDecoder3/rQuadB<0> | 5230 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | QuadDecoder3/rQuadB<0>_MC.Q | QuadDecoder3/rQuadB<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | QuadDecoder3/rQuadA<1> | 5240 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | QuadDecoder3/rQuadA<1>_MC.Q | QuadDecoder3/rQuadA<1>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | N_PZ_258_MC.D1 | 5239 | ? | 0 | 0 | N_PZ_258_MC | NULL | NULL | N_PZ_258_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | N_PZ_258_MC.D2 | 5238 | ? | 0 | 0 | N_PZ_258_MC | NULL | NULL | N_PZ_258_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_TRUE | QuadDecoder3/rQuadB<0> | IV_TRUE | QuadDecoder3/rQuadA<1>
+SPPTERM | 2 | IV_FALSE | QuadDecoder3/rQuadB<0> | IV_FALSE | QuadDecoder3/rQuadA<1>
+
+SRFF_INSTANCE | N_PZ_258_MC.REG | N_PZ_258_MC | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | N_PZ_258_MC.D | 5237 | ? | 0 | 0 | N_PZ_258_MC | NULL | NULL | N_PZ_258_MC.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | N_PZ_258_MC.Q | 5236 | ? | 0 | 0 | N_PZ_258_MC | NULL | NULL | N_PZ_258_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow | QuadDecoder3/rQuadA<1>_MC | top_COPY_0_COPY_0 | 1024 | 2 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | QuadDecoder3/rQuadA<0> | 5245 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | QuadDecoder3/rQuadA<0>_MC.Q | QuadDecoder3/rQuadA<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+SIGNAL | NODE | FOOBAR1__ctinst/4 | 5247 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | FOOBAR1__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | Clk_II/UIM
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | QuadDecoder3/rQuadA<1> | 5240 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | QuadDecoder3/rQuadA<1>_MC.Q | QuadDecoder3/rQuadA<1>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | QuadDecoder3/rQuadA<1>_MC.SI | QuadDecoder3/rQuadA<1>_MC | 0 | 1 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | QuadDecoder3/rQuadA<0> | 5245 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | QuadDecoder3/rQuadA<0>_MC.Q | QuadDecoder3/rQuadA<0>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | QuadDecoder3/rQuadA<1>_MC.D1 | 5243 | ? | 0 | 0 | QuadDecoder3/rQuadA<1>_MC | NULL | NULL | QuadDecoder3/rQuadA<1>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 1 | IV_TRUE | QuadDecoder3/rQuadA<0>
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | QuadDecoder3/rQuadA<1>_MC.D2 | 5244 | ? | 0 | 0 | QuadDecoder3/rQuadA<1>_MC | NULL | NULL | QuadDecoder3/rQuadA<1>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | QuadDecoder3/rQuadA<1>_MC.REG | QuadDecoder3/rQuadA<1>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | QuadDecoder3/rQuadA<1>_MC.D | 5242 | ? | 0 | 0 | QuadDecoder3/rQuadA<1>_MC | NULL | NULL | QuadDecoder3/rQuadA<1>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | FOOBAR1__ctinst/4 | 5247 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | FOOBAR1__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | Clk_II/UIM
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | QuadDecoder3/rQuadA<1>_MC.Q | 5241 | ? | 0 | 0 | QuadDecoder3/rQuadA<1>_MC | NULL | NULL | QuadDecoder3/rQuadA<1>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow | QuadDecoder3/rQuadA<0>_MC | top_COPY_0_COPY_0 | 1024 | 6 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+SIGNAL | NODE | FOOBAR3__ctinst/4 | 5232 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | FOOBAR3__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | Clk_II/UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Q3A_II/IREG | 5421 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | Q3A_II | 10 | 5 | II_REG
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Found1 | 5390 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Found1_MC.Q | Found1_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | QuadDecoder1/rQuadZ | 5404 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | QuadDecoder1/rQuadZ_MC.Q | QuadDecoder1/rQuadZ_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Seek_II/UIM | 5416 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | Seek_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Q1Z_II/UIM | 5424 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | Q1Z_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | QuadDecoder3/rQuadA<0> | 5245 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | QuadDecoder3/rQuadA<0>_MC.Q | QuadDecoder3/rQuadA<0>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 6 | 0 | MC_COMB
+NODE | QuadDecoder3/rQuadA<0>_MC.COMB | 5335 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | QuadDecoder3/rQuadA<0>_MC.D | QuadDecoder3/rQuadA<0>_MC | 6 | 0 | MC_COMB
+
+SIGNAL_INSTANCE | QuadDecoder3/rQuadA<0>_MC.SI | QuadDecoder3/rQuadA<0>_MC | 0 | 4 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Found1 | 5390 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Found1_MC.Q | Found1_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | QuadDecoder1/rQuadZ | 5404 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | QuadDecoder1/rQuadZ_MC.Q | QuadDecoder1/rQuadZ_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Seek_II/UIM | 5416 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | Seek_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Q1Z_II/UIM | 5424 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | Q1Z_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | QuadDecoder3/rQuadA<0>_MC.D1 | 5422 | ? | 0 | 0 | QuadDecoder3/rQuadA<0>_MC | NULL | NULL | QuadDecoder3/rQuadA<0>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 4 | IV_FALSE | Found1 | IV_FALSE | QuadDecoder1/rQuadZ | IV_TRUE | Seek_II/UIM | IV_TRUE | Q1Z_II/UIM
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | QuadDecoder3/rQuadA<0>_MC.D2 | 5423 | ? | 0 | 0 | QuadDecoder3/rQuadA<0>_MC | NULL | NULL | QuadDecoder3/rQuadA<0>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | QuadDecoder3/rQuadA<0>_MC.REG | QuadDecoder3/rQuadA<0>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | Q3A_II/IREG | 5421 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | Q3A_II | 10 | 5 | II_REG
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | FOOBAR3__ctinst/4 | 5232 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | FOOBAR3__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | Clk_II/UIM
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | QuadDecoder3/rQuadA<0>_MC.Q | 5246 | ? | 0 | 0 | QuadDecoder3/rQuadA<0>_MC | NULL | NULL | QuadDecoder3/rQuadA<0>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | NULL | N_PZ_261_MC | top_COPY_0_COPY_0 | 0 | 2 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | QuadDecoder3/rQuadA<0> | 5245 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | QuadDecoder3/rQuadA<0>_MC.Q | QuadDecoder3/rQuadA<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | QuadDecoder3/rQuadB<1> | 5253 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | QuadDecoder3/rQuadB<1>_MC.Q | QuadDecoder3/rQuadB<1>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | N_PZ_261 | 5248 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | N_PZ_261_MC.Q | N_PZ_261_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | N_PZ_261_MC.SI | N_PZ_261_MC | 0 | 2 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | QuadDecoder3/rQuadA<0> | 5245 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | QuadDecoder3/rQuadA<0>_MC.Q | QuadDecoder3/rQuadA<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | QuadDecoder3/rQuadB<1> | 5253 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | QuadDecoder3/rQuadB<1>_MC.Q | QuadDecoder3/rQuadB<1>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | N_PZ_261_MC.D1 | 5252 | ? | 0 | 0 | N_PZ_261_MC | NULL | NULL | N_PZ_261_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | N_PZ_261_MC.D2 | 5251 | ? | 0 | 0 | N_PZ_261_MC | NULL | NULL | N_PZ_261_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_TRUE | QuadDecoder3/rQuadA<0> | IV_FALSE | QuadDecoder3/rQuadB<1>
+SPPTERM | 2 | IV_FALSE | QuadDecoder3/rQuadA<0> | IV_TRUE | QuadDecoder3/rQuadB<1>
+
+SRFF_INSTANCE | N_PZ_261_MC.REG | N_PZ_261_MC | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | N_PZ_261_MC.D | 5250 | ? | 0 | 0 | N_PZ_261_MC | NULL | NULL | N_PZ_261_MC.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | N_PZ_261_MC.Q | 5249 | ? | 0 | 0 | N_PZ_261_MC | NULL | NULL | N_PZ_261_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow | QuadDecoder3/rQuadB<1>_MC | top_COPY_0_COPY_0 | 1024 | 2 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | QuadDecoder3/rQuadB<0> | 5230 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | QuadDecoder3/rQuadB<0>_MC.Q | QuadDecoder3/rQuadB<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+SIGNAL | NODE | FOOBAR1__ctinst/4 | 5247 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | FOOBAR1__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | Clk_II/UIM
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | QuadDecoder3/rQuadB<1> | 5253 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | QuadDecoder3/rQuadB<1>_MC.Q | QuadDecoder3/rQuadB<1>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | QuadDecoder3/rQuadB<1>_MC.SI | QuadDecoder3/rQuadB<1>_MC | 0 | 1 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | QuadDecoder3/rQuadB<0> | 5230 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | QuadDecoder3/rQuadB<0>_MC.Q | QuadDecoder3/rQuadB<0>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | QuadDecoder3/rQuadB<1>_MC.D1 | 5256 | ? | 0 | 0 | QuadDecoder3/rQuadB<1>_MC | NULL | NULL | QuadDecoder3/rQuadB<1>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 1 | IV_TRUE | QuadDecoder3/rQuadB<0>
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | QuadDecoder3/rQuadB<1>_MC.D2 | 5257 | ? | 0 | 0 | QuadDecoder3/rQuadB<1>_MC | NULL | NULL | QuadDecoder3/rQuadB<1>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | QuadDecoder3/rQuadB<1>_MC.REG | QuadDecoder3/rQuadB<1>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | QuadDecoder3/rQuadB<1>_MC.D | 5255 | ? | 0 | 0 | QuadDecoder3/rQuadB<1>_MC | NULL | NULL | QuadDecoder3/rQuadB<1>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | FOOBAR1__ctinst/4 | 5247 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | FOOBAR1__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | Clk_II/UIM
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | QuadDecoder3/rQuadB<1>_MC.Q | 5254 | ? | 0 | 0 | QuadDecoder3/rQuadB<1>_MC | NULL | NULL | QuadDecoder3/rQuadB<1>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | NULL | N_PZ_265_MC | top_COPY_0_COPY_0 | 0 | 4 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | SCLK_II/UIM | 5145 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | SCLK_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | LE_II/UIM | 5265 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | LE_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Wire/rLE | 5266 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rLE_MC.Q | Wire/rLE_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Wire/rSCLK | 5221 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rSCLK_MC.Q | Wire/rSCLK_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | N_PZ_265 | 5259 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | N_PZ_265_MC.Q | N_PZ_265_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | N_PZ_265_MC.SI | N_PZ_265_MC | 0 | 4 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | SCLK_II/UIM | 5145 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | SCLK_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | LE_II/UIM | 5265 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | LE_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Wire/rLE | 5266 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rLE_MC.Q | Wire/rLE_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Wire/rSCLK | 5221 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rSCLK_MC.Q | Wire/rSCLK_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | N_PZ_265_MC.D1 | 5263 | ? | 0 | 0 | N_PZ_265_MC | NULL | NULL | N_PZ_265_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | N_PZ_265_MC.D2 | 5262 | ? | 0 | 0 | N_PZ_265_MC | NULL | NULL | N_PZ_265_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 3 | IV_FALSE | SCLK_II/UIM | IV_TRUE | LE_II/UIM | IV_FALSE | Wire/rLE
+SPPTERM | 3 | IV_TRUE | Wire/rSCLK | IV_TRUE | LE_II/UIM | IV_FALSE | Wire/rLE
+
+SRFF_INSTANCE | N_PZ_265_MC.REG | N_PZ_265_MC | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | N_PZ_265_MC.D | 5261 | ? | 0 | 0 | N_PZ_265_MC | NULL | NULL | N_PZ_265_MC.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | N_PZ_265_MC.Q | 5260 | ? | 0 | 0 | N_PZ_265_MC | NULL | NULL | N_PZ_265_MC.REG | 0 | 8 | SRFF_Q
+
+INPUT_INSTANCE | 0 | 0 | NULL | LE_II | top_COPY_0_COPY_0 | 16 | 1 | 2
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | LE | 5264 | PI | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | LE_II/UIM | 5265 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | LE_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 10 | 5 | II_REG
+NODE | LE_II/IREG | 5434 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | LE_II | 10 | 5 | II_REG
+
+MACROCELL_INSTANCE | PrldLow | Wire/rLE_MC | top_COPY_0_COPY_0 | 1024 | 2 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+SIGNAL | NODE | FOOBAR4__ctinst/4 | 5223 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | FOOBAR4__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | Clk_II/UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | LE_II/IREG | 5434 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | LE_II | 10 | 5 | II_REG
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | Wire/rLE | 5266 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rLE_MC.Q | Wire/rLE_MC | 1 | 0 | MC_UIM
+
+SRFF_INSTANCE | Wire/rLE_MC.REG | Wire/rLE_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | LE_II/IREG | 5434 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | LE_II | 10 | 5 | II_REG
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | FOOBAR4__ctinst/4 | 5223 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | FOOBAR4__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | Clk_II/UIM
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | Wire/rLE_MC.Q | 5267 | ? | 0 | 0 | Wire/rLE_MC | NULL | NULL | Wire/rLE_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff | Count3<1>_MC | top_COPY_0_COPY_0 | 5120 | 6 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | QuadDecoder3/rQuadB<0>_MC.COMB | 5234 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | QuadDecoder3/rQuadB<0>_MC.D | QuadDecoder3/rQuadB<0>_MC | 6 | 0 | MC_COMB
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Count3<1> | 5268 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Count3<1>_MC.Q | Count3<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Count3<0> | 5225 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Count3<0>_MC.Q | Count3<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_258 | 5235 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | N_PZ_258_MC.Q | N_PZ_258_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_261 | 5248 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | N_PZ_261_MC.Q | N_PZ_261_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+SIGNAL | NODE | FOOBAR2__ctinst/4 | 5258 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | FOOBAR2__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | Clk_II/UIM
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | Count3<1> | 5268 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Count3<1>_MC.Q | Count3<1>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | Count3<1>_MC.SI | Count3<1>_MC | 0 | 5 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | QuadDecoder3/rQuadB<0>_MC.COMB | 5234 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | QuadDecoder3/rQuadB<0>_MC.D | QuadDecoder3/rQuadB<0>_MC | 6 | 0 | MC_COMB
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Count3<1> | 5268 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Count3<1>_MC.Q | Count3<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Count3<0> | 5225 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Count3<0>_MC.Q | Count3<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_258 | 5235 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | N_PZ_258_MC.Q | N_PZ_258_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_261 | 5248 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | N_PZ_261_MC.Q | N_PZ_261_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | Count3<1>_MC.D1 | 5272 | ? | 0 | 0 | Count3<1>_MC | NULL | NULL | Count3<1>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | Count3<1>_MC.D2 | 5271 | ? | 0 | 0 | Count3<1>_MC | NULL | NULL | Count3<1>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_TRUE | QuadDecoder3/rQuadB<0>_MC.COMB | IV_TRUE | Count3<1>
+SPPTERM | 4 | IV_TRUE | Count3<0> | IV_FALSE | QuadDecoder3/rQuadB<0>_MC.COMB | IV_TRUE | N_PZ_258 | IV_TRUE | N_PZ_261
+SPPTERM | 4 | IV_FALSE | Count3<0> | IV_FALSE | QuadDecoder3/rQuadB<0>_MC.COMB | IV_FALSE | N_PZ_258 | IV_FALSE | N_PZ_261
+
+SRFF_INSTANCE | Count3<1>_MC.REG | Count3<1>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | Count3<1>_MC.D | 5270 | ? | 0 | 0 | Count3<1>_MC | NULL | NULL | Count3<1>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | FOOBAR2__ctinst/4 | 5258 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | FOOBAR2__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | Clk_II/UIM
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | Count3<1>_MC.Q | 5269 | ? | 0 | 0 | Count3<1>_MC | NULL | NULL | Count3<1>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff | Count3<2>_MC | top_COPY_0_COPY_0 | 5120 | 7 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | QuadDecoder3/rQuadB<0>_MC.COMB | 5234 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | QuadDecoder3/rQuadB<0>_MC.D | QuadDecoder3/rQuadB<0>_MC | 6 | 0 | MC_COMB
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Count3<2> | 5273 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Count3<2>_MC.Q | Count3<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Count3<0> | 5225 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Count3<0>_MC.Q | Count3<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_258 | 5235 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | N_PZ_258_MC.Q | N_PZ_258_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_261 | 5248 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | N_PZ_261_MC.Q | N_PZ_261_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Count3<1> | 5268 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Count3<1>_MC.Q | Count3<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+SIGNAL | NODE | FOOBAR2__ctinst/4 | 5258 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | FOOBAR2__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | Clk_II/UIM
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | Count3<2> | 5273 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Count3<2>_MC.Q | Count3<2>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | Count3<2>_MC.SI | Count3<2>_MC | 0 | 6 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | QuadDecoder3/rQuadB<0>_MC.COMB | 5234 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | QuadDecoder3/rQuadB<0>_MC.D | QuadDecoder3/rQuadB<0>_MC | 6 | 0 | MC_COMB
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Count3<2> | 5273 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Count3<2>_MC.Q | Count3<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Count3<0> | 5225 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Count3<0>_MC.Q | Count3<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_258 | 5235 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | N_PZ_258_MC.Q | N_PZ_258_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_261 | 5248 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | N_PZ_261_MC.Q | N_PZ_261_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Count3<1> | 5268 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Count3<1>_MC.Q | Count3<1>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | Count3<2>_MC.D1 | 5277 | ? | 0 | 0 | Count3<2>_MC | NULL | NULL | Count3<2>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | Count3<2>_MC.D2 | 5276 | ? | 0 | 0 | Count3<2>_MC | NULL | NULL | Count3<2>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_TRUE | QuadDecoder3/rQuadB<0>_MC.COMB | IV_TRUE | Count3<2>
+SPPTERM | 5 | IV_TRUE | Count3<0> | IV_FALSE | QuadDecoder3/rQuadB<0>_MC.COMB | IV_TRUE | N_PZ_258 | IV_TRUE | N_PZ_261 | IV_TRUE | Count3<1>
+SPPTERM | 5 | IV_FALSE | Count3<0> | IV_FALSE | QuadDecoder3/rQuadB<0>_MC.COMB | IV_FALSE | N_PZ_258 | IV_FALSE | N_PZ_261 | IV_FALSE | Count3<1>
+
+SRFF_INSTANCE | Count3<2>_MC.REG | Count3<2>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | Count3<2>_MC.D | 5275 | ? | 0 | 0 | Count3<2>_MC | NULL | NULL | Count3<2>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | FOOBAR2__ctinst/4 | 5258 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | FOOBAR2__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | Clk_II/UIM
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | Count3<2>_MC.Q | 5274 | ? | 0 | 0 | Count3<2>_MC | NULL | NULL | Count3<2>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff | Count3<3>_MC | top_COPY_0_COPY_0 | 5120 | 8 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | QuadDecoder3/rQuadB<0>_MC.COMB | 5234 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | QuadDecoder3/rQuadB<0>_MC.D | QuadDecoder3/rQuadB<0>_MC | 6 | 0 | MC_COMB
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Count3<3> | 5278 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Count3<3>_MC.Q | Count3<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Count3<0> | 5225 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Count3<0>_MC.Q | Count3<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_258 | 5235 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | N_PZ_258_MC.Q | N_PZ_258_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_261 | 5248 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | N_PZ_261_MC.Q | N_PZ_261_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Count3<1> | 5268 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Count3<1>_MC.Q | Count3<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Count3<2> | 5273 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Count3<2>_MC.Q | Count3<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+SIGNAL | NODE | FOOBAR2__ctinst/4 | 5258 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | FOOBAR2__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | Clk_II/UIM
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | Count3<3> | 5278 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Count3<3>_MC.Q | Count3<3>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | Count3<3>_MC.SI | Count3<3>_MC | 0 | 7 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | QuadDecoder3/rQuadB<0>_MC.COMB | 5234 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | QuadDecoder3/rQuadB<0>_MC.D | QuadDecoder3/rQuadB<0>_MC | 6 | 0 | MC_COMB
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Count3<3> | 5278 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Count3<3>_MC.Q | Count3<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Count3<0> | 5225 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Count3<0>_MC.Q | Count3<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_258 | 5235 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | N_PZ_258_MC.Q | N_PZ_258_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_261 | 5248 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | N_PZ_261_MC.Q | N_PZ_261_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Count3<1> | 5268 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Count3<1>_MC.Q | Count3<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Count3<2> | 5273 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Count3<2>_MC.Q | Count3<2>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | Count3<3>_MC.D1 | 5282 | ? | 0 | 0 | Count3<3>_MC | NULL | NULL | Count3<3>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | Count3<3>_MC.D2 | 5281 | ? | 0 | 0 | Count3<3>_MC | NULL | NULL | Count3<3>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_TRUE | QuadDecoder3/rQuadB<0>_MC.COMB | IV_TRUE | Count3<3>
+SPPTERM | 6 | IV_TRUE | Count3<0> | IV_FALSE | QuadDecoder3/rQuadB<0>_MC.COMB | IV_TRUE | N_PZ_258 | IV_TRUE | N_PZ_261 | IV_TRUE | Count3<1> | IV_TRUE | Count3<2>
+SPPTERM | 6 | IV_FALSE | Count3<0> | IV_FALSE | QuadDecoder3/rQuadB<0>_MC.COMB | IV_FALSE | N_PZ_258 | IV_FALSE | N_PZ_261 | IV_FALSE | Count3<1> | IV_FALSE | Count3<2>
+
+SRFF_INSTANCE | Count3<3>_MC.REG | Count3<3>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | Count3<3>_MC.D | 5280 | ? | 0 | 0 | Count3<3>_MC | NULL | NULL | Count3<3>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | FOOBAR2__ctinst/4 | 5258 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | FOOBAR2__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | Clk_II/UIM
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | Count3<3>_MC.Q | 5279 | ? | 0 | 0 | Count3<3>_MC | NULL | NULL | Count3<3>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff | Count2<0>_MC | top_COPY_0_COPY_0 | 5120 | 5 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Count2<0> | 5283 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Count2<0>_MC.Q | Count2<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | QuadDecoder2/rQuadB<0>_MC.COMB | 5291 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | QuadDecoder2/rQuadB<0>_MC.D | QuadDecoder2/rQuadB<0>_MC | 6 | 0 | MC_COMB
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_260 | 5292 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | N_PZ_260_MC.Q | N_PZ_260_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_263 | 5304 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | N_PZ_263_MC.Q | N_PZ_263_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+SIGNAL | NODE | FOOBAR2__ctinst/4 | 5258 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | FOOBAR2__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | Clk_II/UIM
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | Count2<0> | 5283 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Count2<0>_MC.Q | Count2<0>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | Count2<0>_MC.SI | Count2<0>_MC | 0 | 4 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Count2<0> | 5283 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Count2<0>_MC.Q | Count2<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | QuadDecoder2/rQuadB<0>_MC.COMB | 5291 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | QuadDecoder2/rQuadB<0>_MC.D | QuadDecoder2/rQuadB<0>_MC | 6 | 0 | MC_COMB
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_260 | 5292 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | N_PZ_260_MC.Q | N_PZ_260_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_263 | 5304 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | N_PZ_263_MC.Q | N_PZ_263_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | Count2<0>_MC.D1 | 5287 | ? | 0 | 0 | Count2<0>_MC | NULL | NULL | Count2<0>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | Count2<0>_MC.D2 | 5286 | ? | 0 | 0 | Count2<0>_MC | NULL | NULL | Count2<0>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_TRUE | Count2<0> | IV_TRUE | QuadDecoder2/rQuadB<0>_MC.COMB
+SPPTERM | 3 | IV_FALSE | QuadDecoder2/rQuadB<0>_MC.COMB | IV_TRUE | N_PZ_260 | IV_TRUE | N_PZ_263
+SPPTERM | 3 | IV_FALSE | QuadDecoder2/rQuadB<0>_MC.COMB | IV_FALSE | N_PZ_260 | IV_FALSE | N_PZ_263
+
+SRFF_INSTANCE | Count2<0>_MC.REG | Count2<0>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | Count2<0>_MC.D | 5285 | ? | 0 | 0 | Count2<0>_MC | NULL | NULL | Count2<0>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | FOOBAR2__ctinst/4 | 5258 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | FOOBAR2__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | Clk_II/UIM
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | Count2<0>_MC.Q | 5284 | ? | 0 | 0 | Count2<0>_MC | NULL | NULL | Count2<0>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow | QuadDecoder2/rQuadB<0>_MC | top_COPY_0_COPY_0 | 1024 | 6 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+SIGNAL | NODE | FOOBAR3__ctinst/4 | 5232 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | FOOBAR3__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | Clk_II/UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Q2B_II/IREG | 5411 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | Q2B_II | 10 | 5 | II_REG
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Found2 | 5385 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Found2_MC.Q | Found2_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Q2Z_II/UIM | 5415 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | Q2Z_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Seek_II/UIM | 5416 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | Seek_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | QuadDecoder2/rQuadZ | 5417 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | QuadDecoder2/rQuadZ_MC.Q | QuadDecoder2/rQuadZ_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | QuadDecoder2/rQuadB<0> | 5288 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | QuadDecoder2/rQuadB<0>_MC.Q | QuadDecoder2/rQuadB<0>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 6 | 0 | MC_COMB
+NODE | QuadDecoder2/rQuadB<0>_MC.COMB | 5291 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | QuadDecoder2/rQuadB<0>_MC.D | QuadDecoder2/rQuadB<0>_MC | 6 | 0 | MC_COMB
+
+SIGNAL_INSTANCE | QuadDecoder2/rQuadB<0>_MC.SI | QuadDecoder2/rQuadB<0>_MC | 0 | 4 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Found2 | 5385 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Found2_MC.Q | Found2_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Q2Z_II/UIM | 5415 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | Q2Z_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Seek_II/UIM | 5416 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | Seek_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | QuadDecoder2/rQuadZ | 5417 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | QuadDecoder2/rQuadZ_MC.Q | QuadDecoder2/rQuadZ_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | QuadDecoder2/rQuadB<0>_MC.D1 | 5412 | ? | 0 | 0 | QuadDecoder2/rQuadB<0>_MC | NULL | NULL | QuadDecoder2/rQuadB<0>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 4 | IV_FALSE | Found2 | IV_TRUE | Q2Z_II/UIM | IV_TRUE | Seek_II/UIM | IV_FALSE | QuadDecoder2/rQuadZ
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | QuadDecoder2/rQuadB<0>_MC.D2 | 5413 | ? | 0 | 0 | QuadDecoder2/rQuadB<0>_MC | NULL | NULL | QuadDecoder2/rQuadB<0>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | QuadDecoder2/rQuadB<0>_MC.REG | QuadDecoder2/rQuadB<0>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | Q2B_II/IREG | 5411 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | Q2B_II | 10 | 5 | II_REG
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | FOOBAR3__ctinst/4 | 5232 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | FOOBAR3__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | Clk_II/UIM
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | QuadDecoder2/rQuadB<0>_MC.Q | 5289 | ? | 0 | 0 | QuadDecoder2/rQuadB<0>_MC | NULL | NULL | QuadDecoder2/rQuadB<0>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | NULL | N_PZ_260_MC | top_COPY_0_COPY_0 | 0 | 2 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | QuadDecoder2/rQuadB<0> | 5288 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | QuadDecoder2/rQuadB<0>_MC.Q | QuadDecoder2/rQuadB<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | QuadDecoder2/rQuadA<1> | 5297 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | QuadDecoder2/rQuadA<1>_MC.Q | QuadDecoder2/rQuadA<1>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | N_PZ_260 | 5292 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | N_PZ_260_MC.Q | N_PZ_260_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | N_PZ_260_MC.SI | N_PZ_260_MC | 0 | 2 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | QuadDecoder2/rQuadB<0> | 5288 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | QuadDecoder2/rQuadB<0>_MC.Q | QuadDecoder2/rQuadB<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | QuadDecoder2/rQuadA<1> | 5297 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | QuadDecoder2/rQuadA<1>_MC.Q | QuadDecoder2/rQuadA<1>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | N_PZ_260_MC.D1 | 5296 | ? | 0 | 0 | N_PZ_260_MC | NULL | NULL | N_PZ_260_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | N_PZ_260_MC.D2 | 5295 | ? | 0 | 0 | N_PZ_260_MC | NULL | NULL | N_PZ_260_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_TRUE | QuadDecoder2/rQuadB<0> | IV_FALSE | QuadDecoder2/rQuadA<1>
+SPPTERM | 2 | IV_FALSE | QuadDecoder2/rQuadB<0> | IV_TRUE | QuadDecoder2/rQuadA<1>
+
+SRFF_INSTANCE | N_PZ_260_MC.REG | N_PZ_260_MC | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | N_PZ_260_MC.D | 5294 | ? | 0 | 0 | N_PZ_260_MC | NULL | NULL | N_PZ_260_MC.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | N_PZ_260_MC.Q | 5293 | ? | 0 | 0 | N_PZ_260_MC | NULL | NULL | N_PZ_260_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow | QuadDecoder2/rQuadA<1>_MC | top_COPY_0_COPY_0 | 1024 | 2 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | QuadDecoder2/rQuadA<0> | 5302 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | QuadDecoder2/rQuadA<0>_MC.Q | QuadDecoder2/rQuadA<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+SIGNAL | NODE | FOOBAR1__ctinst/4 | 5247 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | FOOBAR1__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | Clk_II/UIM
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | QuadDecoder2/rQuadA<1> | 5297 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | QuadDecoder2/rQuadA<1>_MC.Q | QuadDecoder2/rQuadA<1>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | QuadDecoder2/rQuadA<1>_MC.SI | QuadDecoder2/rQuadA<1>_MC | 0 | 1 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | QuadDecoder2/rQuadA<0> | 5302 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | QuadDecoder2/rQuadA<0>_MC.Q | QuadDecoder2/rQuadA<0>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | QuadDecoder2/rQuadA<1>_MC.D1 | 5300 | ? | 0 | 0 | QuadDecoder2/rQuadA<1>_MC | NULL | NULL | QuadDecoder2/rQuadA<1>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 1 | IV_TRUE | QuadDecoder2/rQuadA<0>
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | QuadDecoder2/rQuadA<1>_MC.D2 | 5301 | ? | 0 | 0 | QuadDecoder2/rQuadA<1>_MC | NULL | NULL | QuadDecoder2/rQuadA<1>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | QuadDecoder2/rQuadA<1>_MC.REG | QuadDecoder2/rQuadA<1>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | QuadDecoder2/rQuadA<1>_MC.D | 5299 | ? | 0 | 0 | QuadDecoder2/rQuadA<1>_MC | NULL | NULL | QuadDecoder2/rQuadA<1>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | FOOBAR1__ctinst/4 | 5247 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | FOOBAR1__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | Clk_II/UIM
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | QuadDecoder2/rQuadA<1>_MC.Q | 5298 | ? | 0 | 0 | QuadDecoder2/rQuadA<1>_MC | NULL | NULL | QuadDecoder2/rQuadA<1>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow | QuadDecoder2/rQuadA<0>_MC | top_COPY_0_COPY_0 | 1024 | 2 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+SIGNAL | NODE | FOOBAR3__ctinst/4 | 5232 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | FOOBAR3__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | Clk_II/UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Q2A_II/IREG | 5409 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | Q2A_II | 10 | 5 | II_REG
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | QuadDecoder2/rQuadA<0> | 5302 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | QuadDecoder2/rQuadA<0>_MC.Q | QuadDecoder2/rQuadA<0>_MC | 1 | 0 | MC_UIM
+
+SRFF_INSTANCE | QuadDecoder2/rQuadA<0>_MC.REG | QuadDecoder2/rQuadA<0>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | Q2A_II/IREG | 5409 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | Q2A_II | 10 | 5 | II_REG
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | FOOBAR3__ctinst/4 | 5232 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | FOOBAR3__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | Clk_II/UIM
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | QuadDecoder2/rQuadA<0>_MC.Q | 5303 | ? | 0 | 0 | QuadDecoder2/rQuadA<0>_MC | NULL | NULL | QuadDecoder2/rQuadA<0>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | NULL | N_PZ_263_MC | top_COPY_0_COPY_0 | 0 | 2 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | QuadDecoder2/rQuadA<0> | 5302 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | QuadDecoder2/rQuadA<0>_MC.Q | QuadDecoder2/rQuadA<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | QuadDecoder2/rQuadB<1> | 5309 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | QuadDecoder2/rQuadB<1>_MC.Q | QuadDecoder2/rQuadB<1>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | N_PZ_263 | 5304 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | N_PZ_263_MC.Q | N_PZ_263_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | N_PZ_263_MC.SI | N_PZ_263_MC | 0 | 2 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | QuadDecoder2/rQuadA<0> | 5302 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | QuadDecoder2/rQuadA<0>_MC.Q | QuadDecoder2/rQuadA<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | QuadDecoder2/rQuadB<1> | 5309 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | QuadDecoder2/rQuadB<1>_MC.Q | QuadDecoder2/rQuadB<1>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | N_PZ_263_MC.D1 | 5308 | ? | 0 | 0 | N_PZ_263_MC | NULL | NULL | N_PZ_263_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | N_PZ_263_MC.D2 | 5307 | ? | 0 | 0 | N_PZ_263_MC | NULL | NULL | N_PZ_263_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_TRUE | QuadDecoder2/rQuadA<0> | IV_TRUE | QuadDecoder2/rQuadB<1>
+SPPTERM | 2 | IV_FALSE | QuadDecoder2/rQuadA<0> | IV_FALSE | QuadDecoder2/rQuadB<1>
+
+SRFF_INSTANCE | N_PZ_263_MC.REG | N_PZ_263_MC | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | N_PZ_263_MC.D | 5306 | ? | 0 | 0 | N_PZ_263_MC | NULL | NULL | N_PZ_263_MC.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | N_PZ_263_MC.Q | 5305 | ? | 0 | 0 | N_PZ_263_MC | NULL | NULL | N_PZ_263_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow | QuadDecoder2/rQuadB<1>_MC | top_COPY_0_COPY_0 | 1024 | 2 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | QuadDecoder2/rQuadB<0> | 5288 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | QuadDecoder2/rQuadB<0>_MC.Q | QuadDecoder2/rQuadB<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+SIGNAL | NODE | FOOBAR1__ctinst/4 | 5247 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | FOOBAR1__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | Clk_II/UIM
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | QuadDecoder2/rQuadB<1> | 5309 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | QuadDecoder2/rQuadB<1>_MC.Q | QuadDecoder2/rQuadB<1>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | QuadDecoder2/rQuadB<1>_MC.SI | QuadDecoder2/rQuadB<1>_MC | 0 | 1 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | QuadDecoder2/rQuadB<0> | 5288 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | QuadDecoder2/rQuadB<0>_MC.Q | QuadDecoder2/rQuadB<0>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | QuadDecoder2/rQuadB<1>_MC.D1 | 5312 | ? | 0 | 0 | QuadDecoder2/rQuadB<1>_MC | NULL | NULL | QuadDecoder2/rQuadB<1>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 1 | IV_TRUE | QuadDecoder2/rQuadB<0>
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | QuadDecoder2/rQuadB<1>_MC.D2 | 5313 | ? | 0 | 0 | QuadDecoder2/rQuadB<1>_MC | NULL | NULL | QuadDecoder2/rQuadB<1>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | QuadDecoder2/rQuadB<1>_MC.REG | QuadDecoder2/rQuadB<1>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | QuadDecoder2/rQuadB<1>_MC.D | 5311 | ? | 0 | 0 | QuadDecoder2/rQuadB<1>_MC | NULL | NULL | QuadDecoder2/rQuadB<1>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | FOOBAR1__ctinst/4 | 5247 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | FOOBAR1__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | Clk_II/UIM
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | QuadDecoder2/rQuadB<1>_MC.Q | 5310 | ? | 0 | 0 | QuadDecoder2/rQuadB<1>_MC | NULL | NULL | QuadDecoder2/rQuadB<1>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff | Count2<1>_MC | top_COPY_0_COPY_0 | 5120 | 6 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | QuadDecoder2/rQuadB<0>_MC.COMB | 5291 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | QuadDecoder2/rQuadB<0>_MC.D | QuadDecoder2/rQuadB<0>_MC | 6 | 0 | MC_COMB
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Count2<1> | 5314 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Count2<1>_MC.Q | Count2<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Count2<0> | 5283 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Count2<0>_MC.Q | Count2<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_260 | 5292 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | N_PZ_260_MC.Q | N_PZ_260_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_263 | 5304 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | N_PZ_263_MC.Q | N_PZ_263_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+SIGNAL | NODE | FOOBAR2__ctinst/4 | 5258 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | FOOBAR2__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | Clk_II/UIM
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | Count2<1> | 5314 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Count2<1>_MC.Q | Count2<1>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | Count2<1>_MC.SI | Count2<1>_MC | 0 | 5 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | QuadDecoder2/rQuadB<0>_MC.COMB | 5291 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | QuadDecoder2/rQuadB<0>_MC.D | QuadDecoder2/rQuadB<0>_MC | 6 | 0 | MC_COMB
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Count2<1> | 5314 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Count2<1>_MC.Q | Count2<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Count2<0> | 5283 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Count2<0>_MC.Q | Count2<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_260 | 5292 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | N_PZ_260_MC.Q | N_PZ_260_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_263 | 5304 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | N_PZ_263_MC.Q | N_PZ_263_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | Count2<1>_MC.D1 | 5318 | ? | 0 | 0 | Count2<1>_MC | NULL | NULL | Count2<1>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | Count2<1>_MC.D2 | 5317 | ? | 0 | 0 | Count2<1>_MC | NULL | NULL | Count2<1>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_TRUE | QuadDecoder2/rQuadB<0>_MC.COMB | IV_TRUE | Count2<1>
+SPPTERM | 4 | IV_TRUE | Count2<0> | IV_FALSE | QuadDecoder2/rQuadB<0>_MC.COMB | IV_FALSE | N_PZ_260 | IV_FALSE | N_PZ_263
+SPPTERM | 4 | IV_FALSE | Count2<0> | IV_FALSE | QuadDecoder2/rQuadB<0>_MC.COMB | IV_TRUE | N_PZ_260 | IV_TRUE | N_PZ_263
+
+SRFF_INSTANCE | Count2<1>_MC.REG | Count2<1>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | Count2<1>_MC.D | 5316 | ? | 0 | 0 | Count2<1>_MC | NULL | NULL | Count2<1>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | FOOBAR2__ctinst/4 | 5258 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | FOOBAR2__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | Clk_II/UIM
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | Count2<1>_MC.Q | 5315 | ? | 0 | 0 | Count2<1>_MC | NULL | NULL | Count2<1>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff | Count2<2>_MC | top_COPY_0_COPY_0 | 5120 | 7 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | QuadDecoder2/rQuadB<0>_MC.COMB | 5291 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | QuadDecoder2/rQuadB<0>_MC.D | QuadDecoder2/rQuadB<0>_MC | 6 | 0 | MC_COMB
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Count2<2> | 5319 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Count2<2>_MC.Q | Count2<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Count2<0> | 5283 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Count2<0>_MC.Q | Count2<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_260 | 5292 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | N_PZ_260_MC.Q | N_PZ_260_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_263 | 5304 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | N_PZ_263_MC.Q | N_PZ_263_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Count2<1> | 5314 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Count2<1>_MC.Q | Count2<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+SIGNAL | NODE | FOOBAR2__ctinst/4 | 5258 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | FOOBAR2__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | Clk_II/UIM
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | Count2<2> | 5319 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Count2<2>_MC.Q | Count2<2>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | Count2<2>_MC.SI | Count2<2>_MC | 0 | 6 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | QuadDecoder2/rQuadB<0>_MC.COMB | 5291 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | QuadDecoder2/rQuadB<0>_MC.D | QuadDecoder2/rQuadB<0>_MC | 6 | 0 | MC_COMB
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Count2<2> | 5319 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Count2<2>_MC.Q | Count2<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Count2<0> | 5283 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Count2<0>_MC.Q | Count2<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_260 | 5292 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | N_PZ_260_MC.Q | N_PZ_260_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_263 | 5304 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | N_PZ_263_MC.Q | N_PZ_263_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Count2<1> | 5314 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Count2<1>_MC.Q | Count2<1>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | Count2<2>_MC.D1 | 5323 | ? | 0 | 0 | Count2<2>_MC | NULL | NULL | Count2<2>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | Count2<2>_MC.D2 | 5322 | ? | 0 | 0 | Count2<2>_MC | NULL | NULL | Count2<2>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_TRUE | QuadDecoder2/rQuadB<0>_MC.COMB | IV_TRUE | Count2<2>
+SPPTERM | 5 | IV_TRUE | Count2<0> | IV_FALSE | QuadDecoder2/rQuadB<0>_MC.COMB | IV_FALSE | N_PZ_260 | IV_FALSE | N_PZ_263 | IV_TRUE | Count2<1>
+SPPTERM | 5 | IV_FALSE | Count2<0> | IV_FALSE | QuadDecoder2/rQuadB<0>_MC.COMB | IV_TRUE | N_PZ_260 | IV_TRUE | N_PZ_263 | IV_FALSE | Count2<1>
+
+SRFF_INSTANCE | Count2<2>_MC.REG | Count2<2>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | Count2<2>_MC.D | 5321 | ? | 0 | 0 | Count2<2>_MC | NULL | NULL | Count2<2>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | FOOBAR2__ctinst/4 | 5258 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | FOOBAR2__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | Clk_II/UIM
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | Count2<2>_MC.Q | 5320 | ? | 0 | 0 | Count2<2>_MC | NULL | NULL | Count2<2>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff | Count2<3>_MC | top_COPY_0_COPY_0 | 5120 | 8 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | QuadDecoder2/rQuadB<0>_MC.COMB | 5291 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | QuadDecoder2/rQuadB<0>_MC.D | QuadDecoder2/rQuadB<0>_MC | 6 | 0 | MC_COMB
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Count2<3> | 5324 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Count2<3>_MC.Q | Count2<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Count2<0> | 5283 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Count2<0>_MC.Q | Count2<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_260 | 5292 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | N_PZ_260_MC.Q | N_PZ_260_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_263 | 5304 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | N_PZ_263_MC.Q | N_PZ_263_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Count2<1> | 5314 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Count2<1>_MC.Q | Count2<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Count2<2> | 5319 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Count2<2>_MC.Q | Count2<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+SIGNAL | NODE | FOOBAR2__ctinst/4 | 5258 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | FOOBAR2__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | Clk_II/UIM
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | Count2<3> | 5324 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Count2<3>_MC.Q | Count2<3>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | Count2<3>_MC.SI | Count2<3>_MC | 0 | 7 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | QuadDecoder2/rQuadB<0>_MC.COMB | 5291 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | QuadDecoder2/rQuadB<0>_MC.D | QuadDecoder2/rQuadB<0>_MC | 6 | 0 | MC_COMB
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Count2<3> | 5324 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Count2<3>_MC.Q | Count2<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Count2<0> | 5283 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Count2<0>_MC.Q | Count2<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_260 | 5292 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | N_PZ_260_MC.Q | N_PZ_260_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_263 | 5304 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | N_PZ_263_MC.Q | N_PZ_263_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Count2<1> | 5314 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Count2<1>_MC.Q | Count2<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Count2<2> | 5319 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Count2<2>_MC.Q | Count2<2>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | Count2<3>_MC.D1 | 5328 | ? | 0 | 0 | Count2<3>_MC | NULL | NULL | Count2<3>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | Count2<3>_MC.D2 | 5327 | ? | 0 | 0 | Count2<3>_MC | NULL | NULL | Count2<3>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_TRUE | QuadDecoder2/rQuadB<0>_MC.COMB | IV_TRUE | Count2<3>
+SPPTERM | 6 | IV_TRUE | Count2<0> | IV_FALSE | QuadDecoder2/rQuadB<0>_MC.COMB | IV_FALSE | N_PZ_260 | IV_FALSE | N_PZ_263 | IV_TRUE | Count2<1> | IV_TRUE | Count2<2>
+SPPTERM | 6 | IV_FALSE | Count2<0> | IV_FALSE | QuadDecoder2/rQuadB<0>_MC.COMB | IV_TRUE | N_PZ_260 | IV_TRUE | N_PZ_263 | IV_FALSE | Count2<1> | IV_FALSE | Count2<2>
+
+SRFF_INSTANCE | Count2<3>_MC.REG | Count2<3>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | Count2<3>_MC.D | 5326 | ? | 0 | 0 | Count2<3>_MC | NULL | NULL | Count2<3>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | FOOBAR2__ctinst/4 | 5258 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | FOOBAR2__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | Clk_II/UIM
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | Count2<3>_MC.Q | 5325 | ? | 0 | 0 | Count2<3>_MC | NULL | NULL | Count2<3>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff | Count1<0>_MC | top_COPY_0_COPY_0 | 5120 | 5 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Count1<0> | 5329 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Count1<0>_MC.Q | Count1<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | QuadDecoder3/rQuadA<0>_MC.COMB | 5335 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | QuadDecoder3/rQuadA<0>_MC.D | QuadDecoder3/rQuadA<0>_MC | 6 | 0 | MC_COMB
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_259 | 5336 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | N_PZ_259_MC.Q | N_PZ_259_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_262 | 5350 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | N_PZ_262_MC.Q | N_PZ_262_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+SIGNAL | NODE | FOOBAR2__ctinst/4 | 5258 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | FOOBAR2__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | Clk_II/UIM
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | Count1<0> | 5329 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Count1<0>_MC.Q | Count1<0>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | Count1<0>_MC.SI | Count1<0>_MC | 0 | 4 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Count1<0> | 5329 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Count1<0>_MC.Q | Count1<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | QuadDecoder3/rQuadA<0>_MC.COMB | 5335 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | QuadDecoder3/rQuadA<0>_MC.D | QuadDecoder3/rQuadA<0>_MC | 6 | 0 | MC_COMB
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_259 | 5336 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | N_PZ_259_MC.Q | N_PZ_259_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_262 | 5350 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | N_PZ_262_MC.Q | N_PZ_262_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | Count1<0>_MC.D1 | 5333 | ? | 0 | 0 | Count1<0>_MC | NULL | NULL | Count1<0>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | Count1<0>_MC.D2 | 5332 | ? | 0 | 0 | Count1<0>_MC | NULL | NULL | Count1<0>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_TRUE | Count1<0> | IV_TRUE | QuadDecoder3/rQuadA<0>_MC.COMB
+SPPTERM | 3 | IV_FALSE | QuadDecoder3/rQuadA<0>_MC.COMB | IV_TRUE | N_PZ_259 | IV_TRUE | N_PZ_262
+SPPTERM | 3 | IV_FALSE | QuadDecoder3/rQuadA<0>_MC.COMB | IV_FALSE | N_PZ_259 | IV_FALSE | N_PZ_262
+
+SRFF_INSTANCE | Count1<0>_MC.REG | Count1<0>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | Count1<0>_MC.D | 5331 | ? | 0 | 0 | Count1<0>_MC | NULL | NULL | Count1<0>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | FOOBAR2__ctinst/4 | 5258 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | FOOBAR2__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | Clk_II/UIM
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | Count1<0>_MC.Q | 5330 | ? | 0 | 0 | Count1<0>_MC | NULL | NULL | Count1<0>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | NULL | N_PZ_259_MC | top_COPY_0_COPY_0 | 0 | 2 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | QuadDecoder1/rQuadB<0> | 5341 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | QuadDecoder1/rQuadB<0>_MC.Q | QuadDecoder1/rQuadB<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | QuadDecoder1/rQuadA<1> | 5343 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | QuadDecoder1/rQuadA<1>_MC.Q | QuadDecoder1/rQuadA<1>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | N_PZ_259 | 5336 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | N_PZ_259_MC.Q | N_PZ_259_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | N_PZ_259_MC.SI | N_PZ_259_MC | 0 | 2 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | QuadDecoder1/rQuadB<0> | 5341 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | QuadDecoder1/rQuadB<0>_MC.Q | QuadDecoder1/rQuadB<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | QuadDecoder1/rQuadA<1> | 5343 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | QuadDecoder1/rQuadA<1>_MC.Q | QuadDecoder1/rQuadA<1>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | N_PZ_259_MC.D1 | 5340 | ? | 0 | 0 | N_PZ_259_MC | NULL | NULL | N_PZ_259_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | N_PZ_259_MC.D2 | 5339 | ? | 0 | 0 | N_PZ_259_MC | NULL | NULL | N_PZ_259_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_TRUE | QuadDecoder1/rQuadB<0> | IV_TRUE | QuadDecoder1/rQuadA<1>
+SPPTERM | 2 | IV_FALSE | QuadDecoder1/rQuadB<0> | IV_FALSE | QuadDecoder1/rQuadA<1>
+
+SRFF_INSTANCE | N_PZ_259_MC.REG | N_PZ_259_MC | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | N_PZ_259_MC.D | 5338 | ? | 0 | 0 | N_PZ_259_MC | NULL | NULL | N_PZ_259_MC.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | N_PZ_259_MC.Q | 5337 | ? | 0 | 0 | N_PZ_259_MC | NULL | NULL | N_PZ_259_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow | QuadDecoder1/rQuadB<0>_MC | top_COPY_0_COPY_0 | 1024 | 2 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+SIGNAL | NODE | FOOBAR3__ctinst/4 | 5232 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | FOOBAR3__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | Clk_II/UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Q1B_II/IREG | 5403 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | Q1B_II | 10 | 5 | II_REG
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | QuadDecoder1/rQuadB<0> | 5341 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | QuadDecoder1/rQuadB<0>_MC.Q | QuadDecoder1/rQuadB<0>_MC | 1 | 0 | MC_UIM
+
+SRFF_INSTANCE | QuadDecoder1/rQuadB<0>_MC.REG | QuadDecoder1/rQuadB<0>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | Q1B_II/IREG | 5403 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | Q1B_II | 10 | 5 | II_REG
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | FOOBAR3__ctinst/4 | 5232 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | FOOBAR3__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | Clk_II/UIM
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | QuadDecoder1/rQuadB<0>_MC.Q | 5342 | ? | 0 | 0 | QuadDecoder1/rQuadB<0>_MC | NULL | NULL | QuadDecoder1/rQuadB<0>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow | QuadDecoder1/rQuadA<1>_MC | top_COPY_0_COPY_0 | 1024 | 2 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | QuadDecoder1/rQuadA<0> | 5348 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | QuadDecoder1/rQuadA<0>_MC.Q | QuadDecoder1/rQuadA<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+SIGNAL | NODE | FOOBAR1__ctinst/4 | 5247 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | FOOBAR1__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | Clk_II/UIM
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | QuadDecoder1/rQuadA<1> | 5343 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | QuadDecoder1/rQuadA<1>_MC.Q | QuadDecoder1/rQuadA<1>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | QuadDecoder1/rQuadA<1>_MC.SI | QuadDecoder1/rQuadA<1>_MC | 0 | 1 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | QuadDecoder1/rQuadA<0> | 5348 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | QuadDecoder1/rQuadA<0>_MC.Q | QuadDecoder1/rQuadA<0>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | QuadDecoder1/rQuadA<1>_MC.D1 | 5346 | ? | 0 | 0 | QuadDecoder1/rQuadA<1>_MC | NULL | NULL | QuadDecoder1/rQuadA<1>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 1 | IV_TRUE | QuadDecoder1/rQuadA<0>
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | QuadDecoder1/rQuadA<1>_MC.D2 | 5347 | ? | 0 | 0 | QuadDecoder1/rQuadA<1>_MC | NULL | NULL | QuadDecoder1/rQuadA<1>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | QuadDecoder1/rQuadA<1>_MC.REG | QuadDecoder1/rQuadA<1>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | QuadDecoder1/rQuadA<1>_MC.D | 5345 | ? | 0 | 0 | QuadDecoder1/rQuadA<1>_MC | NULL | NULL | QuadDecoder1/rQuadA<1>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | FOOBAR1__ctinst/4 | 5247 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | FOOBAR1__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | Clk_II/UIM
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | QuadDecoder1/rQuadA<1>_MC.Q | 5344 | ? | 0 | 0 | QuadDecoder1/rQuadA<1>_MC | NULL | NULL | QuadDecoder1/rQuadA<1>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow | QuadDecoder1/rQuadA<0>_MC | top_COPY_0_COPY_0 | 1024 | 2 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+SIGNAL | NODE | FOOBAR3__ctinst/4 | 5232 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | FOOBAR3__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | Clk_II/UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Q1A_II/IREG | 5401 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | Q1A_II | 10 | 5 | II_REG
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | QuadDecoder1/rQuadA<0> | 5348 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | QuadDecoder1/rQuadA<0>_MC.Q | QuadDecoder1/rQuadA<0>_MC | 1 | 0 | MC_UIM
+
+SRFF_INSTANCE | QuadDecoder1/rQuadA<0>_MC.REG | QuadDecoder1/rQuadA<0>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | Q1A_II/IREG | 5401 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | Q1A_II | 10 | 5 | II_REG
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | FOOBAR3__ctinst/4 | 5232 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | FOOBAR3__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | Clk_II/UIM
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | QuadDecoder1/rQuadA<0>_MC.Q | 5349 | ? | 0 | 0 | QuadDecoder1/rQuadA<0>_MC | NULL | NULL | QuadDecoder1/rQuadA<0>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | NULL | N_PZ_262_MC | top_COPY_0_COPY_0 | 0 | 2 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | QuadDecoder1/rQuadA<0> | 5348 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | QuadDecoder1/rQuadA<0>_MC.Q | QuadDecoder1/rQuadA<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | QuadDecoder1/rQuadB<1> | 5355 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | QuadDecoder1/rQuadB<1>_MC.Q | QuadDecoder1/rQuadB<1>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | N_PZ_262 | 5350 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | N_PZ_262_MC.Q | N_PZ_262_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | N_PZ_262_MC.SI | N_PZ_262_MC | 0 | 2 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | QuadDecoder1/rQuadA<0> | 5348 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | QuadDecoder1/rQuadA<0>_MC.Q | QuadDecoder1/rQuadA<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | QuadDecoder1/rQuadB<1> | 5355 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | QuadDecoder1/rQuadB<1>_MC.Q | QuadDecoder1/rQuadB<1>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | N_PZ_262_MC.D1 | 5354 | ? | 0 | 0 | N_PZ_262_MC | NULL | NULL | N_PZ_262_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | N_PZ_262_MC.D2 | 5353 | ? | 0 | 0 | N_PZ_262_MC | NULL | NULL | N_PZ_262_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_TRUE | QuadDecoder1/rQuadA<0> | IV_FALSE | QuadDecoder1/rQuadB<1>
+SPPTERM | 2 | IV_FALSE | QuadDecoder1/rQuadA<0> | IV_TRUE | QuadDecoder1/rQuadB<1>
+
+SRFF_INSTANCE | N_PZ_262_MC.REG | N_PZ_262_MC | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | N_PZ_262_MC.D | 5352 | ? | 0 | 0 | N_PZ_262_MC | NULL | NULL | N_PZ_262_MC.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | N_PZ_262_MC.Q | 5351 | ? | 0 | 0 | N_PZ_262_MC | NULL | NULL | N_PZ_262_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow | QuadDecoder1/rQuadB<1>_MC | top_COPY_0_COPY_0 | 1024 | 2 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | QuadDecoder1/rQuadB<0> | 5341 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | QuadDecoder1/rQuadB<0>_MC.Q | QuadDecoder1/rQuadB<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+SIGNAL | NODE | FOOBAR1__ctinst/4 | 5247 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | FOOBAR1__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | Clk_II/UIM
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | QuadDecoder1/rQuadB<1> | 5355 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | QuadDecoder1/rQuadB<1>_MC.Q | QuadDecoder1/rQuadB<1>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | QuadDecoder1/rQuadB<1>_MC.SI | QuadDecoder1/rQuadB<1>_MC | 0 | 1 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | QuadDecoder1/rQuadB<0> | 5341 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | QuadDecoder1/rQuadB<0>_MC.Q | QuadDecoder1/rQuadB<0>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | QuadDecoder1/rQuadB<1>_MC.D1 | 5358 | ? | 0 | 0 | QuadDecoder1/rQuadB<1>_MC | NULL | NULL | QuadDecoder1/rQuadB<1>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 1 | IV_TRUE | QuadDecoder1/rQuadB<0>
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | QuadDecoder1/rQuadB<1>_MC.D2 | 5359 | ? | 0 | 0 | QuadDecoder1/rQuadB<1>_MC | NULL | NULL | QuadDecoder1/rQuadB<1>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | QuadDecoder1/rQuadB<1>_MC.REG | QuadDecoder1/rQuadB<1>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | QuadDecoder1/rQuadB<1>_MC.D | 5357 | ? | 0 | 0 | QuadDecoder1/rQuadB<1>_MC | NULL | NULL | QuadDecoder1/rQuadB<1>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | FOOBAR1__ctinst/4 | 5247 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | FOOBAR1__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | Clk_II/UIM
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | QuadDecoder1/rQuadB<1>_MC.Q | 5356 | ? | 0 | 0 | QuadDecoder1/rQuadB<1>_MC | NULL | NULL | QuadDecoder1/rQuadB<1>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff | Count1<1>_MC | top_COPY_0_COPY_0 | 5120 | 6 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | QuadDecoder3/rQuadA<0>_MC.COMB | 5335 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | QuadDecoder3/rQuadA<0>_MC.D | QuadDecoder3/rQuadA<0>_MC | 6 | 0 | MC_COMB
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Count1<1> | 5360 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Count1<1>_MC.Q | Count1<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Count1<0> | 5329 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Count1<0>_MC.Q | Count1<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_259 | 5336 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | N_PZ_259_MC.Q | N_PZ_259_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_262 | 5350 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | N_PZ_262_MC.Q | N_PZ_262_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+SIGNAL | NODE | FOOBAR2__ctinst/4 | 5258 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | FOOBAR2__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | Clk_II/UIM
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | Count1<1> | 5360 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Count1<1>_MC.Q | Count1<1>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | Count1<1>_MC.SI | Count1<1>_MC | 0 | 5 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | QuadDecoder3/rQuadA<0>_MC.COMB | 5335 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | QuadDecoder3/rQuadA<0>_MC.D | QuadDecoder3/rQuadA<0>_MC | 6 | 0 | MC_COMB
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Count1<1> | 5360 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Count1<1>_MC.Q | Count1<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Count1<0> | 5329 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Count1<0>_MC.Q | Count1<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_259 | 5336 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | N_PZ_259_MC.Q | N_PZ_259_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_262 | 5350 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | N_PZ_262_MC.Q | N_PZ_262_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | Count1<1>_MC.D1 | 5364 | ? | 0 | 0 | Count1<1>_MC | NULL | NULL | Count1<1>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | Count1<1>_MC.D2 | 5363 | ? | 0 | 0 | Count1<1>_MC | NULL | NULL | Count1<1>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_TRUE | QuadDecoder3/rQuadA<0>_MC.COMB | IV_TRUE | Count1<1>
+SPPTERM | 4 | IV_TRUE | Count1<0> | IV_FALSE | QuadDecoder3/rQuadA<0>_MC.COMB | IV_TRUE | N_PZ_259 | IV_TRUE | N_PZ_262
+SPPTERM | 4 | IV_FALSE | Count1<0> | IV_FALSE | QuadDecoder3/rQuadA<0>_MC.COMB | IV_FALSE | N_PZ_259 | IV_FALSE | N_PZ_262
+
+SRFF_INSTANCE | Count1<1>_MC.REG | Count1<1>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | Count1<1>_MC.D | 5362 | ? | 0 | 0 | Count1<1>_MC | NULL | NULL | Count1<1>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | FOOBAR2__ctinst/4 | 5258 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | FOOBAR2__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | Clk_II/UIM
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | Count1<1>_MC.Q | 5361 | ? | 0 | 0 | Count1<1>_MC | NULL | NULL | Count1<1>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff | Count1<2>_MC | top_COPY_0_COPY_0 | 5120 | 7 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | QuadDecoder3/rQuadA<0>_MC.COMB | 5335 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | QuadDecoder3/rQuadA<0>_MC.D | QuadDecoder3/rQuadA<0>_MC | 6 | 0 | MC_COMB
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Count1<2> | 5365 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Count1<2>_MC.Q | Count1<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Count1<0> | 5329 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Count1<0>_MC.Q | Count1<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_259 | 5336 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | N_PZ_259_MC.Q | N_PZ_259_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_262 | 5350 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | N_PZ_262_MC.Q | N_PZ_262_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Count1<1> | 5360 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Count1<1>_MC.Q | Count1<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+SIGNAL | NODE | FOOBAR2__ctinst/4 | 5258 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | FOOBAR2__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | Clk_II/UIM
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | Count1<2> | 5365 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Count1<2>_MC.Q | Count1<2>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | Count1<2>_MC.SI | Count1<2>_MC | 0 | 6 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | QuadDecoder3/rQuadA<0>_MC.COMB | 5335 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | QuadDecoder3/rQuadA<0>_MC.D | QuadDecoder3/rQuadA<0>_MC | 6 | 0 | MC_COMB
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Count1<2> | 5365 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Count1<2>_MC.Q | Count1<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Count1<0> | 5329 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Count1<0>_MC.Q | Count1<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_259 | 5336 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | N_PZ_259_MC.Q | N_PZ_259_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_262 | 5350 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | N_PZ_262_MC.Q | N_PZ_262_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Count1<1> | 5360 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Count1<1>_MC.Q | Count1<1>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | Count1<2>_MC.D1 | 5369 | ? | 0 | 0 | Count1<2>_MC | NULL | NULL | Count1<2>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | Count1<2>_MC.D2 | 5368 | ? | 0 | 0 | Count1<2>_MC | NULL | NULL | Count1<2>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_TRUE | QuadDecoder3/rQuadA<0>_MC.COMB | IV_TRUE | Count1<2>
+SPPTERM | 5 | IV_TRUE | Count1<0> | IV_FALSE | QuadDecoder3/rQuadA<0>_MC.COMB | IV_TRUE | N_PZ_259 | IV_TRUE | N_PZ_262 | IV_TRUE | Count1<1>
+SPPTERM | 5 | IV_FALSE | Count1<0> | IV_FALSE | QuadDecoder3/rQuadA<0>_MC.COMB | IV_FALSE | N_PZ_259 | IV_FALSE | N_PZ_262 | IV_FALSE | Count1<1>
+
+SRFF_INSTANCE | Count1<2>_MC.REG | Count1<2>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | Count1<2>_MC.D | 5367 | ? | 0 | 0 | Count1<2>_MC | NULL | NULL | Count1<2>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | FOOBAR2__ctinst/4 | 5258 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | FOOBAR2__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | Clk_II/UIM
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | Count1<2>_MC.Q | 5366 | ? | 0 | 0 | Count1<2>_MC | NULL | NULL | Count1<2>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff | Count1<3>_MC | top_COPY_0_COPY_0 | 5120 | 8 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | QuadDecoder3/rQuadA<0>_MC.COMB | 5335 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | QuadDecoder3/rQuadA<0>_MC.D | QuadDecoder3/rQuadA<0>_MC | 6 | 0 | MC_COMB
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Count1<3> | 5370 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Count1<3>_MC.Q | Count1<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Count1<0> | 5329 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Count1<0>_MC.Q | Count1<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_259 | 5336 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | N_PZ_259_MC.Q | N_PZ_259_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_262 | 5350 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | N_PZ_262_MC.Q | N_PZ_262_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Count1<1> | 5360 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Count1<1>_MC.Q | Count1<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Count1<2> | 5365 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Count1<2>_MC.Q | Count1<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+SIGNAL | NODE | FOOBAR2__ctinst/4 | 5258 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | FOOBAR2__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | Clk_II/UIM
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | Count1<3> | 5370 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Count1<3>_MC.Q | Count1<3>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | Count1<3>_MC.SI | Count1<3>_MC | 0 | 7 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | QuadDecoder3/rQuadA<0>_MC.COMB | 5335 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | QuadDecoder3/rQuadA<0>_MC.D | QuadDecoder3/rQuadA<0>_MC | 6 | 0 | MC_COMB
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Count1<3> | 5370 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Count1<3>_MC.Q | Count1<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Count1<0> | 5329 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Count1<0>_MC.Q | Count1<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_259 | 5336 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | N_PZ_259_MC.Q | N_PZ_259_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_262 | 5350 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | N_PZ_262_MC.Q | N_PZ_262_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Count1<1> | 5360 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Count1<1>_MC.Q | Count1<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Count1<2> | 5365 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Count1<2>_MC.Q | Count1<2>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | Count1<3>_MC.D1 | 5374 | ? | 0 | 0 | Count1<3>_MC | NULL | NULL | Count1<3>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | Count1<3>_MC.D2 | 5373 | ? | 0 | 0 | Count1<3>_MC | NULL | NULL | Count1<3>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_TRUE | QuadDecoder3/rQuadA<0>_MC.COMB | IV_TRUE | Count1<3>
+SPPTERM | 6 | IV_TRUE | Count1<0> | IV_FALSE | QuadDecoder3/rQuadA<0>_MC.COMB | IV_TRUE | N_PZ_259 | IV_TRUE | N_PZ_262 | IV_TRUE | Count1<1> | IV_TRUE | Count1<2>
+SPPTERM | 6 | IV_FALSE | Count1<0> | IV_FALSE | QuadDecoder3/rQuadA<0>_MC.COMB | IV_FALSE | N_PZ_259 | IV_FALSE | N_PZ_262 | IV_FALSE | Count1<1> | IV_FALSE | Count1<2>
+
+SRFF_INSTANCE | Count1<3>_MC.REG | Count1<3>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | Count1<3>_MC.D | 5372 | ? | 0 | 0 | Count1<3>_MC | NULL | NULL | Count1<3>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | FOOBAR2__ctinst/4 | 5258 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | FOOBAR2__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | Clk_II/UIM
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | Count1<3>_MC.Q | 5371 | ? | 0 | 0 | Count1<3>_MC | NULL | NULL | Count1<3>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow | Found3_MC | top_COPY_0_COPY_0 | 1024 | 4 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | QuadDecoder3/rQuadB<0>_MC.COMB | 5234 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | QuadDecoder3/rQuadB<0>_MC.D | QuadDecoder3/rQuadB<0>_MC | 6 | 0 | MC_COMB
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Found3 | 5375 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Found3_MC.Q | Found3_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Clear | 5380 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Clear_MC.Q | Clear_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+SIGNAL | NODE | FOOBAR2__ctinst/4 | 5258 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | FOOBAR2__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | Clk_II/UIM
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | Found3 | 5375 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Found3_MC.Q | Found3_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | Found3_MC.SI | Found3_MC | 0 | 3 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | QuadDecoder3/rQuadB<0>_MC.COMB | 5234 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | QuadDecoder3/rQuadB<0>_MC.D | QuadDecoder3/rQuadB<0>_MC | 6 | 0 | MC_COMB
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Found3 | 5375 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Found3_MC.Q | Found3_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Clear | 5380 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Clear_MC.Q | Clear_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | Found3_MC.D1 | 5379 | ? | 0 | 0 | Found3_MC | NULL | NULL | Found3_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | Found3_MC.D2 | 5378 | ? | 0 | 0 | Found3_MC | NULL | NULL | Found3_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 1 | IV_TRUE | QuadDecoder3/rQuadB<0>_MC.COMB
+SPPTERM | 2 | IV_TRUE | Found3 | IV_FALSE | Clear
+
+SRFF_INSTANCE | Found3_MC.REG | Found3_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | Found3_MC.D | 5377 | ? | 0 | 0 | Found3_MC | NULL | NULL | Found3_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | FOOBAR2__ctinst/4 | 5258 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | FOOBAR2__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | Clk_II/UIM
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | Found3_MC.Q | 5376 | ? | 0 | 0 | Found3_MC | NULL | NULL | Found3_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow | Clear_MC | top_COPY_0_COPY_0 | 1024 | 3 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | LE_II/UIM | 5265 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | LE_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Wire/rLE | 5266 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rLE_MC.Q | Wire/rLE_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+SIGNAL | NODE | FOOBAR1__ctinst/4 | 5247 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | FOOBAR1__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | Clk_II/UIM
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | Clear | 5380 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Clear_MC.Q | Clear_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | Clear_MC.SI | Clear_MC | 0 | 2 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | LE_II/UIM | 5265 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | LE_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Wire/rLE | 5266 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Wire/rLE_MC.Q | Wire/rLE_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | Clear_MC.D1 | 5383 | ? | 0 | 0 | Clear_MC | NULL | NULL | Clear_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 2 | IV_TRUE | LE_II/UIM | IV_FALSE | Wire/rLE
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | Clear_MC.D2 | 5384 | ? | 0 | 0 | Clear_MC | NULL | NULL | Clear_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | Clear_MC.REG | Clear_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | Clear_MC.D | 5382 | ? | 0 | 0 | Clear_MC | NULL | NULL | Clear_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | FOOBAR1__ctinst/4 | 5247 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | FOOBAR1__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | Clk_II/UIM
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | Clear_MC.Q | 5381 | ? | 0 | 0 | Clear_MC | NULL | NULL | Clear_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow | Found2_MC | top_COPY_0_COPY_0 | 1024 | 4 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | QuadDecoder2/rQuadB<0>_MC.COMB | 5291 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | QuadDecoder2/rQuadB<0>_MC.D | QuadDecoder2/rQuadB<0>_MC | 6 | 0 | MC_COMB
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Clear | 5380 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Clear_MC.Q | Clear_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Found2 | 5385 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Found2_MC.Q | Found2_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+SIGNAL | NODE | FOOBAR2__ctinst/4 | 5258 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | FOOBAR2__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | Clk_II/UIM
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | Found2 | 5385 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Found2_MC.Q | Found2_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | Found2_MC.SI | Found2_MC | 0 | 3 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | QuadDecoder2/rQuadB<0>_MC.COMB | 5291 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | QuadDecoder2/rQuadB<0>_MC.D | QuadDecoder2/rQuadB<0>_MC | 6 | 0 | MC_COMB
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Clear | 5380 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Clear_MC.Q | Clear_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Found2 | 5385 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Found2_MC.Q | Found2_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | Found2_MC.D1 | 5389 | ? | 0 | 0 | Found2_MC | NULL | NULL | Found2_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | Found2_MC.D2 | 5388 | ? | 0 | 0 | Found2_MC | NULL | NULL | Found2_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 1 | IV_TRUE | QuadDecoder2/rQuadB<0>_MC.COMB
+SPPTERM | 2 | IV_FALSE | Clear | IV_TRUE | Found2
+
+SRFF_INSTANCE | Found2_MC.REG | Found2_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | Found2_MC.D | 5387 | ? | 0 | 0 | Found2_MC | NULL | NULL | Found2_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | FOOBAR2__ctinst/4 | 5258 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | FOOBAR2__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | Clk_II/UIM
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | Found2_MC.Q | 5386 | ? | 0 | 0 | Found2_MC | NULL | NULL | Found2_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow | Found1_MC | top_COPY_0_COPY_0 | 1024 | 4 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | QuadDecoder3/rQuadA<0>_MC.COMB | 5335 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | QuadDecoder3/rQuadA<0>_MC.D | QuadDecoder3/rQuadA<0>_MC | 6 | 0 | MC_COMB
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Clear | 5380 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Clear_MC.Q | Clear_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Found1 | 5390 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Found1_MC.Q | Found1_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+SIGNAL | NODE | FOOBAR2__ctinst/4 | 5258 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | FOOBAR2__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | Clk_II/UIM
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | Found1 | 5390 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Found1_MC.Q | Found1_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | Found1_MC.SI | Found1_MC | 0 | 3 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | QuadDecoder3/rQuadA<0>_MC.COMB | 5335 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | QuadDecoder3/rQuadA<0>_MC.D | QuadDecoder3/rQuadA<0>_MC | 6 | 0 | MC_COMB
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Clear | 5380 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Clear_MC.Q | Clear_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Found1 | 5390 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | Found1_MC.Q | Found1_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | Found1_MC.D1 | 5394 | ? | 0 | 0 | Found1_MC | NULL | NULL | Found1_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | Found1_MC.D2 | 5393 | ? | 0 | 0 | Found1_MC | NULL | NULL | Found1_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 1 | IV_TRUE | QuadDecoder3/rQuadA<0>_MC.COMB
+SPPTERM | 2 | IV_FALSE | Clear | IV_TRUE | Found1
+
+SRFF_INSTANCE | Found1_MC.REG | Found1_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | Found1_MC.D | 5392 | ? | 0 | 0 | Found1_MC | NULL | NULL | Found1_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | FOOBAR2__ctinst/4 | 5258 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | FOOBAR2__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | Clk_II/UIM
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | Found1_MC.Q | 5391 | ? | 0 | 0 | Found1_MC | NULL | NULL | Found1_MC.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | MISO | top_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | MISO_MC.Q | 5397 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | MISO_MC.Q | MISO_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | MISO | 5398 | PO | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | MISO | 0 | 6 | OI_OUT
+
+INPUT_INSTANCE | 0 | 0 | NULL | Seek_II | top_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | Seek | 5399 | PI | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | Seek_II/UIM | 5416 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | Seek_II | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | Q1A_II | top_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | Q1A | 5400 | PI | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 10 | 5 | II_REG
+NODE | Q1A_II/IREG | 5401 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | Q1A_II | 10 | 5 | II_REG
+
+INPUT_INSTANCE | 0 | 0 | NULL | Q1B_II | top_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | Q1B | 5402 | PI | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 10 | 5 | II_REG
+NODE | Q1B_II/IREG | 5403 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | Q1B_II | 10 | 5 | II_REG
+
+MACROCELL_INSTANCE | PrldLow | QuadDecoder1/rQuadZ_MC | top_COPY_0_COPY_0 | 1024 | 2 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+SIGNAL | NODE | FOOBAR3__ctinst/4 | 5232 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | FOOBAR3__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | Clk_II/UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Q1Z_II/IREG | 5407 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | Q1Z_II | 10 | 5 | II_REG
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | QuadDecoder1/rQuadZ | 5404 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | QuadDecoder1/rQuadZ_MC.Q | QuadDecoder1/rQuadZ_MC | 1 | 0 | MC_UIM
+
+SRFF_INSTANCE | QuadDecoder1/rQuadZ_MC.REG | QuadDecoder1/rQuadZ_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | Q1Z_II/IREG | 5407 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | Q1Z_II | 10 | 5 | II_REG
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | FOOBAR3__ctinst/4 | 5232 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | FOOBAR3__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | Clk_II/UIM
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | QuadDecoder1/rQuadZ_MC.Q | 5405 | ? | 0 | 0 | QuadDecoder1/rQuadZ_MC | NULL | NULL | QuadDecoder1/rQuadZ_MC.REG | 0 | 8 | SRFF_Q
+
+INPUT_INSTANCE | 0 | 0 | NULL | Q1Z_II | top_COPY_0_COPY_0 | 16 | 1 | 2
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | Q1Z | 5406 | PI | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | Q1Z_II/UIM | 5424 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | Q1Z_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 10 | 5 | II_REG
+NODE | Q1Z_II/IREG | 5407 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | Q1Z_II | 10 | 5 | II_REG
+
+INPUT_INSTANCE | 0 | 0 | NULL | Q2A_II | top_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | Q2A | 5408 | PI | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 10 | 5 | II_REG
+NODE | Q2A_II/IREG | 5409 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | Q2A_II | 10 | 5 | II_REG
+
+INPUT_INSTANCE | 0 | 0 | NULL | Q2B_II | top_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | Q2B | 5410 | PI | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 10 | 5 | II_REG
+NODE | Q2B_II/IREG | 5411 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | Q2B_II | 10 | 5 | II_REG
+
+INPUT_INSTANCE | 0 | 0 | NULL | Q2Z_II | top_COPY_0_COPY_0 | 16 | 1 | 2
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | Q2Z | 5414 | PI | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | Q2Z_II/UIM | 5415 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | Q2Z_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 10 | 5 | II_REG
+NODE | Q2Z_II/IREG | 5419 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | Q2Z_II | 10 | 5 | II_REG
+
+MACROCELL_INSTANCE | PrldLow | QuadDecoder2/rQuadZ_MC | top_COPY_0_COPY_0 | 1024 | 2 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+SIGNAL | NODE | FOOBAR3__ctinst/4 | 5232 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | FOOBAR3__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | Clk_II/UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Q2Z_II/IREG | 5419 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | Q2Z_II | 10 | 5 | II_REG
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | QuadDecoder2/rQuadZ | 5417 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | QuadDecoder2/rQuadZ_MC.Q | QuadDecoder2/rQuadZ_MC | 1 | 0 | MC_UIM
+
+SRFF_INSTANCE | QuadDecoder2/rQuadZ_MC.REG | QuadDecoder2/rQuadZ_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | Q2Z_II/IREG | 5419 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | Q2Z_II | 10 | 5 | II_REG
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | FOOBAR3__ctinst/4 | 5232 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | FOOBAR3__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | Clk_II/UIM
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | QuadDecoder2/rQuadZ_MC.Q | 5418 | ? | 0 | 0 | QuadDecoder2/rQuadZ_MC | NULL | NULL | QuadDecoder2/rQuadZ_MC.REG | 0 | 8 | SRFF_Q
+
+INPUT_INSTANCE | 0 | 0 | NULL | Q3A_II | top_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | Q3A | 5420 | PI | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 10 | 5 | II_REG
+NODE | Q3A_II/IREG | 5421 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | Q3A_II | 10 | 5 | II_REG
+
+INPUT_INSTANCE | 0 | 0 | NULL | Q3B_II | top_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | Q3B | 5425 | PI | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 10 | 5 | II_REG
+NODE | Q3B_II/IREG | 5426 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | Q3B_II | 10 | 5 | II_REG
+
+INPUT_INSTANCE | 0 | 0 | NULL | Q3Z_II | top_COPY_0_COPY_0 | 16 | 1 | 2
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | Q3Z | 5429 | PI | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | Q3Z_II/UIM | 5430 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | Q3Z_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 10 | 5 | II_REG
+NODE | Q3Z_II/IREG | 5433 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | Q3Z_II | 10 | 5 | II_REG
+
+MACROCELL_INSTANCE | PrldLow | QuadDecoder3/rQuadZ_MC | top_COPY_0_COPY_0 | 1024 | 2 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+SIGNAL | NODE | FOOBAR3__ctinst/4 | 5232 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | FOOBAR3__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | Clk_II/UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Q3Z_II/IREG | 5433 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | Q3Z_II | 10 | 5 | II_REG
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | QuadDecoder3/rQuadZ | 5431 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | QuadDecoder3/rQuadZ_MC.Q | QuadDecoder3/rQuadZ_MC | 1 | 0 | MC_UIM
+
+SRFF_INSTANCE | QuadDecoder3/rQuadZ_MC.REG | QuadDecoder3/rQuadZ_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | Q3Z_II/IREG | 5433 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | Q3Z_II | 10 | 5 | II_REG
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | FOOBAR3__ctinst/4 | 5232 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | FOOBAR3__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | Clk_II/UIM
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | QuadDecoder3/rQuadZ_MC.Q | 5432 | ? | 0 | 0 | QuadDecoder3/rQuadZ_MC | NULL | NULL | QuadDecoder3/rQuadZ_MC.REG | 0 | 8 | SRFF_Q
+
+FB_INSTANCE | FOOBAR1_ | top_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 1 | Wire/rQ<1>_MC | 1 | NULL | 0 | NULL | 0 | 38 | 49152
+FBPIN | 2 | Wire/rQ<0>_MC | 1 | NULL | 0 | NULL | 0 | 37 | 49152
+FBPIN | 3 | N_PZ_265_MC | 1 | Clk_II | 1 | NULL | 0 | 36 | 49152
+FBPIN | 4 | N_PZ_259_MC | 1 | NULL | 0 | NULL | 0
+FBPIN | 5 | QuadDecoder3/rQuadA<1>_MC | 1 | NULL | 0 | NULL | 0
+FBPIN | 6 | QuadDecoder2/rQuadB<1>_MC | 1 | NULL | 0 | NULL | 0
+FBPIN | 7 | QuadDecoder2/rQuadA<1>_MC | 1 | NULL | 0 | NULL | 0
+FBPIN | 8 | QuadDecoder1/rQuadB<1>_MC | 1 | NULL | 0 | NULL | 0
+FBPIN | 9 | Clear_MC | 1 | NULL | 0 | NULL | 0 | 34 | 53248
+FBPIN | 10 | N_PZ_263_MC | 1 | NULL | 0 | NULL | 0 | 33 | 53248
+FBPIN | 11 | N_PZ_262_MC | 1 | NULL | 0 | NULL | 0 | 32 | 53248
+FBPIN | 12 | N_PZ_261_MC | 1 | NULL | 0 | NULL | 0 | 31 | 53248
+FBPIN | 13 | N_PZ_260_MC | 1 | NULL | 0 | NULL | 0 | 30 | 51200
+FBPIN | 14 | QuadDecoder1/rQuadA<1>_MC | 1 | NULL | 0 | NULL | 0
+FBPIN | 15 | QuadDecoder3/rQuadB<1>_MC | 1 | NULL | 0 | NULL | 0
+FBPIN | 16 | N_PZ_258_MC | 1 | NULL | 0 | NULL | 0
+
+FB_INSTANCE | FOOBAR2_ | top_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 1 | Wire/rQ<10>_MC | 1 | NULL | 0 | NULL | 0 | 39 | 49152
+FBPIN | 2 | Count3<3>_MC | 1 | NULL | 0 | NULL | 0 | 40 | 49152
+FBPIN | 3 | Found3_MC | 1 | NULL | 0 | NULL | 0
+FBPIN | 4 | Found2_MC | 1 | NULL | 0 | NULL | 0
+FBPIN | 5 | Count3<2>_MC | 1 | NULL | 0 | NULL | 0 | 41 | 49152
+FBPIN | 6 | Count3<1>_MC | 1 | NULL | 0 | NULL | 0 | 42 | 49152
+FBPIN | 7 | Count3<0>_MC | 1 | NULL | 0 | NULL | 0 | 43 | 57344
+FBPIN | 8 | Count2<3>_MC | 1 | NULL | 0 | NULL | 0 | 44 | 57344
+FBPIN | 9 | Found1_MC | 1 | NULL | 0 | NULL | 0
+FBPIN | 10 | Count2<2>_MC | 1 | NULL | 0 | NULL | 0 | 1 | 57344
+FBPIN | 11 | Count1<0>_MC | 1 | NULL | 0 | NULL | 0
+FBPIN | 12 | Count2<1>_MC | 1 | NULL | 0 | NULL | 0 | 2 | 49152
+FBPIN | 13 | Count2<0>_MC | 1 | NULL | 0 | NULL | 0 | 3 | 49152
+FBPIN | 14 | Count1<1>_MC | 1 | NULL | 0 | NULL | 0
+FBPIN | 15 | Count1<2>_MC | 1 | NULL | 0 | NULL | 0
+FBPIN | 16 | Count1<3>_MC | 1 | NULL | 0 | NULL | 0
+
+FB_INSTANCE | FOOBAR3_ | top_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 1 | QuadDecoder3/rQuadZ_MC | 1 | Q3Z_II | 1 | NULL | 0 | 29 | 49152
+FBPIN | 2 | QuadDecoder3/rQuadB<0>_MC | 1 | Q3B_II | 1 | NULL | 0 | 28 | 49152
+FBPIN | 3 | QuadDecoder3/rQuadA<0>_MC | 1 | Q3A_II | 1 | NULL | 0 | 27 | 49152
+FBPIN | 4 | Wire/rQ<3>_MC | 1 | NULL | 0 | NULL | 0
+FBPIN | 5 | Wire/rQ<2>_MC | 1 | NULL | 0 | NULL | 0
+FBPIN | 6 | QuadDecoder2/rQuadZ_MC | 1 | Q2Z_II | 1 | NULL | 0 | 23 | 49152
+FBPIN | 7 | Wire/rQ<11>_MC | 1 | NULL | 0 | NULL | 0
+FBPIN | 8 | Wire/rQ<12>_MC | 1 | NULL | 0 | NULL | 0
+FBPIN | 9 | Wire/rQ<13>_MC | 1 | NULL | 0 | NULL | 0
+FBPIN | 10 | QuadDecoder2/rQuadB<0>_MC | 1 | Q2B_II | 1 | NULL | 0 | 22 | 49152
+FBPIN | 11 | QuadDecoder2/rQuadA<0>_MC | 1 | Q2A_II | 1 | NULL | 0 | 21 | 49152
+FBPIN | 12 | QuadDecoder1/rQuadZ_MC | 1 | Q1Z_II | 1 | NULL | 0 | 20 | 49152
+FBPIN | 13 | Wire/rQ<14>_MC | 1 | NULL | 0 | NULL | 0
+FBPIN | 14 | QuadDecoder1/rQuadB<0>_MC | 1 | Q1B_II | 1 | NULL | 0 | 19 | 49152
+FBPIN | 15 | QuadDecoder1/rQuadA<0>_MC | 1 | Q1A_II | 1 | NULL | 0 | 18 | 49152
+FBPIN | 16 | Wire/rQ<15>_MC | 1 | NULL | 0 | NULL | 0
+
+FB_INSTANCE | FOOBAR4_ | top_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 6 | Wire/rQ<9>_MC | 1 | NULL | 0 | NULL | 0
+FBPIN | 8 | Wire/rQ<8>_MC | 1 | NULL | 0 | NULL | 0
+FBPIN | 9 | Wire/rQ<7>_MC | 1 | NULL | 0 | NULL | 0
+FBPIN | 10 | Wire/rQ<6>_MC | 1 | NULL | 0 | NULL | 0
+FBPIN | 11 | NULL | 0 | Seek_II | 1 | NULL | 0 | 12 | 49152
+FBPIN | 12 | Wire/rQ<5>_MC | 1 | NULL | 0 | NULL | 0
+FBPIN | 13 | Wire/rLE_MC | 1 | LE_II | 1 | NULL | 0 | 13 | 49152
+FBPIN | 14 | MISO_MC | 1 | NULL | 0 | MISO | 1 | 14 | 49152
+FBPIN | 15 | Wire/rSCLK_MC | 1 | SCLK_II | 1 | NULL | 0 | 16 | 49152
+FBPIN | 16 | Wire/rQ<4>_MC | 1 | NULL | 0 | NULL | 0
+
+FB_INSTANCE | INPUTPINS_FOOBAR5_ | top_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR1_ | FOOBAR1__ctinst | top_COPY_0_COPY_0 | 0 | 1 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Clk_II/UIM | 5224 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | Clk_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 4 | 12 | CT_SI4
+SIGNAL | NODE | FOOBAR1__ctinst/4 | 5247 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | FOOBAR1__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | Clk_II/UIM
+
+CT_INSTANCE | FOOBAR2_ | FOOBAR2__ctinst | top_COPY_0_COPY_0 | 0 | 1 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Clk_II/UIM | 5224 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | Clk_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 4 | 12 | CT_SI4
+SIGNAL | NODE | FOOBAR2__ctinst/4 | 5258 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | FOOBAR2__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | Clk_II/UIM
+
+CT_INSTANCE | FOOBAR3_ | FOOBAR3__ctinst | top_COPY_0_COPY_0 | 0 | 1 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Clk_II/UIM | 5224 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | Clk_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 4 | 12 | CT_SI4
+SIGNAL | NODE | FOOBAR3__ctinst/4 | 5232 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | FOOBAR3__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | Clk_II/UIM
+
+CT_INSTANCE | FOOBAR4_ | FOOBAR4__ctinst | top_COPY_0_COPY_0 | 0 | 1 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Clk_II/UIM | 5224 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | Clk_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 4 | 12 | CT_SI4
+SIGNAL | NODE | FOOBAR4__ctinst/4 | 5223 | ? | 0 | 0 | top_COPY_0_COPY_0 | NULL | NULL | FOOBAR4__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | Clk_II/UIM
+
+PLA | FOOBAR1_ | 29
+PLA_TERM | 0 | 
+SPPTERM | 2 | IV_TRUE | QuadDecoder3/rQuadB<0> | IV_TRUE | QuadDecoder3/rQuadA<1>
+PLA_TERM | 1 | 
+SPPTERM | 2 | IV_FALSE | QuadDecoder3/rQuadB<0> | IV_FALSE | QuadDecoder3/rQuadA<1>
+PLA_TERM | 2 | 
+SPPTERM | 2 | IV_TRUE | QuadDecoder1/rQuadB<0> | IV_TRUE | QuadDecoder1/rQuadA<1>
+PLA_TERM | 3 | 
+SPPTERM | 2 | IV_FALSE | QuadDecoder1/rQuadB<0> | IV_FALSE | QuadDecoder1/rQuadA<1>
+PLA_TERM | 4 | 
+SPPTERM | 1 | IV_TRUE | Clk_II/UIM
+PLA_TERM | 5 | 
+SPPTERM | 2 | IV_FALSE | QuadDecoder2/rQuadB<0> | IV_TRUE | QuadDecoder2/rQuadA<1>
+PLA_TERM | 6 | 
+SPPTERM | 2 | IV_TRUE | QuadDecoder2/rQuadB<0> | IV_FALSE | QuadDecoder2/rQuadA<1>
+PLA_TERM | 7 | 
+SPPTERM | 2 | IV_FALSE | QuadDecoder3/rQuadA<0> | IV_TRUE | QuadDecoder3/rQuadB<1>
+PLA_TERM | 8 | 
+SPPTERM | 2 | IV_TRUE | QuadDecoder3/rQuadA<0> | IV_FALSE | QuadDecoder3/rQuadB<1>
+PLA_TERM | 9 | 
+SPPTERM | 2 | IV_FALSE | QuadDecoder1/rQuadA<0> | IV_TRUE | QuadDecoder1/rQuadB<1>
+PLA_TERM | 10 | 
+SPPTERM | 2 | IV_TRUE | QuadDecoder1/rQuadA<0> | IV_FALSE | QuadDecoder1/rQuadB<1>
+PLA_TERM | 11 | 
+SPPTERM | 2 | IV_TRUE | QuadDecoder2/rQuadA<0> | IV_TRUE | QuadDecoder2/rQuadB<1>
+PLA_TERM | 12 | 
+SPPTERM | 2 | IV_FALSE | QuadDecoder2/rQuadA<0> | IV_FALSE | QuadDecoder2/rQuadB<1>
+PLA_TERM | 13 | 
+SPPTERM | 3 | IV_FALSE | SCLK_II/UIM | IV_TRUE | LE_II/UIM | IV_FALSE | Wire/rLE
+PLA_TERM | 14 | 
+SPPTERM | 3 | IV_TRUE | Wire/rSCLK | IV_TRUE | LE_II/UIM | IV_FALSE | Wire/rLE
+PLA_TERM | 15 | 
+SPPTERM | 2 | IV_TRUE | SCLK_II/UIM | IV_FALSE | Wire/rSCLK
+PLA_TERM | 16 | 
+SPPTERM | 2 | IV_FALSE | Count3<0> | IV_TRUE | N_PZ_265
+PLA_TERM | 17 | 
+SPPTERM | 2 | IV_FALSE | Wire/rQ<0> | IV_FALSE | N_PZ_265
+PLA_TERM | 18 | 
+SPPTERM | 4 | IV_TRUE | SCLK_II/UIM | IV_TRUE | Wire/rQ<1> | IV_FALSE | Wire/rQ<0> | IV_FALSE | Wire/rSCLK
+PLA_TERM | 19 | 
+SPPTERM | 4 | IV_TRUE | SCLK_II/UIM | IV_FALSE | Wire/rQ<1> | IV_TRUE | Wire/rQ<0> | IV_FALSE | Wire/rSCLK
+PLA_TERM | 20 | 
+SPPTERM | 3 | IV_TRUE | Wire/rQ<1> | IV_TRUE | N_PZ_265 | IV_FALSE | Count3<1>
+PLA_TERM | 21 | 
+SPPTERM | 3 | IV_FALSE | Wire/rQ<1> | IV_TRUE | N_PZ_265 | IV_TRUE | Count3<1>
+PLA_TERM | 22 | 
+SPPTERM | 1 | IV_TRUE | QuadDecoder3/rQuadA<0>
+PLA_TERM | 25 | 
+SPPTERM | 1 | IV_TRUE | QuadDecoder2/rQuadB<0>
+PLA_TERM | 28 | 
+SPPTERM | 1 | IV_TRUE | QuadDecoder2/rQuadA<0>
+PLA_TERM | 31 | 
+SPPTERM | 1 | IV_TRUE | QuadDecoder1/rQuadB<0>
+PLA_TERM | 34 | 
+SPPTERM | 2 | IV_TRUE | LE_II/UIM | IV_FALSE | Wire/rLE
+PLA_TERM | 49 | 
+SPPTERM | 1 | IV_TRUE | QuadDecoder1/rQuadA<0>
+PLA_TERM | 52 | 
+SPPTERM | 1 | IV_TRUE | QuadDecoder3/rQuadB<0>
+
+PLA | FOOBAR2_ | 47
+PLA_TERM | 0 | 
+SPPTERM | 2 | IV_TRUE | QuadDecoder3/rQuadA<0>_MC.COMB | IV_TRUE | Count1<3>
+PLA_TERM | 1 | 
+SPPTERM | 6 | IV_TRUE | Count1<0> | IV_FALSE | QuadDecoder3/rQuadA<0>_MC.COMB | IV_TRUE | N_PZ_259 | IV_TRUE | N_PZ_262 | IV_TRUE | Count1<1> | IV_TRUE | Count1<2>
+PLA_TERM | 2 | 
+SPPTERM | 6 | IV_FALSE | Count1<0> | IV_FALSE | QuadDecoder3/rQuadA<0>_MC.COMB | IV_FALSE | N_PZ_259 | IV_FALSE | N_PZ_262 | IV_FALSE | Count1<1> | IV_FALSE | Count1<2>
+PLA_TERM | 3 | 
+SPPTERM | 2 | IV_TRUE | QuadDecoder3/rQuadA<0>_MC.COMB | IV_TRUE | Count1<2>
+PLA_TERM | 4 | 
+SPPTERM | 1 | IV_TRUE | Clk_II/UIM
+PLA_TERM | 5 | 
+SPPTERM | 5 | IV_TRUE | Count1<0> | IV_FALSE | QuadDecoder3/rQuadA<0>_MC.COMB | IV_TRUE | N_PZ_259 | IV_TRUE | N_PZ_262 | IV_TRUE | Count1<1>
+PLA_TERM | 6 | 
+SPPTERM | 5 | IV_FALSE | Count1<0> | IV_FALSE | QuadDecoder3/rQuadA<0>_MC.COMB | IV_FALSE | N_PZ_259 | IV_FALSE | N_PZ_262 | IV_FALSE | Count1<1>
+PLA_TERM | 7 | 
+SPPTERM | 2 | IV_TRUE | QuadDecoder3/rQuadA<0>_MC.COMB | IV_TRUE | Count1<1>
+PLA_TERM | 8 | 
+SPPTERM | 4 | IV_TRUE | Count1<0> | IV_FALSE | QuadDecoder3/rQuadA<0>_MC.COMB | IV_TRUE | N_PZ_259 | IV_TRUE | N_PZ_262
+PLA_TERM | 9 | 
+SPPTERM | 4 | IV_FALSE | Count1<0> | IV_FALSE | QuadDecoder3/rQuadA<0>_MC.COMB | IV_FALSE | N_PZ_259 | IV_FALSE | N_PZ_262
+PLA_TERM | 10 | 
+SPPTERM | 2 | IV_TRUE | Count1<0> | IV_TRUE | QuadDecoder3/rQuadA<0>_MC.COMB
+PLA_TERM | 11 | 
+SPPTERM | 3 | IV_FALSE | QuadDecoder3/rQuadA<0>_MC.COMB | IV_TRUE | N_PZ_259 | IV_TRUE | N_PZ_262
+PLA_TERM | 12 | 
+SPPTERM | 3 | IV_FALSE | QuadDecoder3/rQuadA<0>_MC.COMB | IV_FALSE | N_PZ_259 | IV_FALSE | N_PZ_262
+PLA_TERM | 13 | 
+SPPTERM | 2 | IV_FALSE | Clear | IV_TRUE | Found1
+PLA_TERM | 14 | 
+SPPTERM | 1 | IV_TRUE | QuadDecoder3/rQuadA<0>_MC.COMB
+PLA_TERM | 15 | 
+SPPTERM | 2 | IV_FALSE | Clear | IV_TRUE | Found2
+PLA_TERM | 16 | 
+SPPTERM | 1 | IV_TRUE | QuadDecoder2/rQuadB<0>_MC.COMB
+PLA_TERM | 17 | 
+SPPTERM | 2 | IV_TRUE | Found3 | IV_FALSE | Clear
+PLA_TERM | 18 | 
+SPPTERM | 1 | IV_TRUE | QuadDecoder3/rQuadB<0>_MC.COMB
+PLA_TERM | 19 | 
+SPPTERM | 2 | IV_TRUE | Count2<0> | IV_TRUE | QuadDecoder2/rQuadB<0>_MC.COMB
+PLA_TERM | 20 | 
+SPPTERM | 3 | IV_FALSE | QuadDecoder2/rQuadB<0>_MC.COMB | IV_TRUE | N_PZ_260 | IV_TRUE | N_PZ_263
+PLA_TERM | 21 | 
+SPPTERM | 3 | IV_FALSE | QuadDecoder2/rQuadB<0>_MC.COMB | IV_FALSE | N_PZ_260 | IV_FALSE | N_PZ_263
+PLA_TERM | 22 | 
+SPPTERM | 2 | IV_TRUE | QuadDecoder2/rQuadB<0>_MC.COMB | IV_TRUE | Count2<1>
+PLA_TERM | 23 | 
+SPPTERM | 4 | IV_FALSE | Count2<0> | IV_FALSE | QuadDecoder2/rQuadB<0>_MC.COMB | IV_TRUE | N_PZ_260 | IV_TRUE | N_PZ_263
+PLA_TERM | 24 | 
+SPPTERM | 4 | IV_TRUE | Count2<0> | IV_FALSE | QuadDecoder2/rQuadB<0>_MC.COMB | IV_FALSE | N_PZ_260 | IV_FALSE | N_PZ_263
+PLA_TERM | 25 | 
+SPPTERM | 2 | IV_TRUE | QuadDecoder2/rQuadB<0>_MC.COMB | IV_TRUE | Count2<2>
+PLA_TERM | 26 | 
+SPPTERM | 5 | IV_FALSE | Count2<0> | IV_FALSE | QuadDecoder2/rQuadB<0>_MC.COMB | IV_TRUE | N_PZ_260 | IV_TRUE | N_PZ_263 | IV_FALSE | Count2<1>
+PLA_TERM | 27 | 
+SPPTERM | 5 | IV_TRUE | Count2<0> | IV_FALSE | QuadDecoder2/rQuadB<0>_MC.COMB | IV_FALSE | N_PZ_260 | IV_FALSE | N_PZ_263 | IV_TRUE | Count2<1>
+PLA_TERM | 28 | 
+SPPTERM | 2 | IV_TRUE | QuadDecoder2/rQuadB<0>_MC.COMB | IV_TRUE | Count2<3>
+PLA_TERM | 29 | 
+SPPTERM | 6 | IV_FALSE | Count2<0> | IV_FALSE | QuadDecoder2/rQuadB<0>_MC.COMB | IV_TRUE | N_PZ_260 | IV_TRUE | N_PZ_263 | IV_FALSE | Count2<1> | IV_FALSE | Count2<2>
+PLA_TERM | 30 | 
+SPPTERM | 6 | IV_TRUE | Count2<0> | IV_FALSE | QuadDecoder2/rQuadB<0>_MC.COMB | IV_FALSE | N_PZ_260 | IV_FALSE | N_PZ_263 | IV_TRUE | Count2<1> | IV_TRUE | Count2<2>
+PLA_TERM | 31 | 
+SPPTERM | 2 | IV_TRUE | Count3<0> | IV_TRUE | QuadDecoder3/rQuadB<0>_MC.COMB
+PLA_TERM | 32 | 
+SPPTERM | 3 | IV_FALSE | QuadDecoder3/rQuadB<0>_MC.COMB | IV_TRUE | N_PZ_258 | IV_TRUE | N_PZ_261
+PLA_TERM | 33 | 
+SPPTERM | 3 | IV_FALSE | QuadDecoder3/rQuadB<0>_MC.COMB | IV_FALSE | N_PZ_258 | IV_FALSE | N_PZ_261
+PLA_TERM | 34 | 
+SPPTERM | 2 | IV_TRUE | QuadDecoder3/rQuadB<0>_MC.COMB | IV_TRUE | Count3<1>
+PLA_TERM | 35 | 
+SPPTERM | 4 | IV_TRUE | Count3<0> | IV_FALSE | QuadDecoder3/rQuadB<0>_MC.COMB | IV_TRUE | N_PZ_258 | IV_TRUE | N_PZ_261
+PLA_TERM | 36 | 
+SPPTERM | 4 | IV_FALSE | Count3<0> | IV_FALSE | QuadDecoder3/rQuadB<0>_MC.COMB | IV_FALSE | N_PZ_258 | IV_FALSE | N_PZ_261
+PLA_TERM | 37 | 
+SPPTERM | 2 | IV_TRUE | QuadDecoder3/rQuadB<0>_MC.COMB | IV_TRUE | Count3<2>
+PLA_TERM | 38 | 
+SPPTERM | 5 | IV_TRUE | Count3<0> | IV_FALSE | QuadDecoder3/rQuadB<0>_MC.COMB | IV_TRUE | N_PZ_258 | IV_TRUE | N_PZ_261 | IV_TRUE | Count3<1>
+PLA_TERM | 39 | 
+SPPTERM | 5 | IV_FALSE | Count3<0> | IV_FALSE | QuadDecoder3/rQuadB<0>_MC.COMB | IV_FALSE | N_PZ_258 | IV_FALSE | N_PZ_261 | IV_FALSE | Count3<1>
+PLA_TERM | 40 | 
+SPPTERM | 2 | IV_TRUE | QuadDecoder3/rQuadB<0>_MC.COMB | IV_TRUE | Count3<3>
+PLA_TERM | 41 | 
+SPPTERM | 6 | IV_TRUE | Count3<0> | IV_FALSE | QuadDecoder3/rQuadB<0>_MC.COMB | IV_TRUE | N_PZ_258 | IV_TRUE | N_PZ_261 | IV_TRUE | Count3<1> | IV_TRUE | Count3<2>
+PLA_TERM | 42 | 
+SPPTERM | 6 | IV_FALSE | Count3<0> | IV_FALSE | QuadDecoder3/rQuadB<0>_MC.COMB | IV_FALSE | N_PZ_258 | IV_FALSE | N_PZ_261 | IV_FALSE | Count3<1> | IV_FALSE | Count3<2>
+PLA_TERM | 43 | 
+SPPTERM | 4 | IV_TRUE | SCLK_II/UIM | IV_FALSE | Wire/rQ<10> | IV_TRUE | Wire/rQ<9> | IV_FALSE | Wire/rSCLK
+PLA_TERM | 44 | 
+SPPTERM | 4 | IV_TRUE | SCLK_II/UIM | IV_TRUE | Wire/rQ<10> | IV_FALSE | Wire/rQ<9> | IV_FALSE | Wire/rSCLK
+PLA_TERM | 45 | 
+SPPTERM | 3 | IV_TRUE | Wire/rQ<10> | IV_TRUE | N_PZ_265 | IV_FALSE | Count1<2>
+PLA_TERM | 46 | 
+SPPTERM | 3 | IV_FALSE | Wire/rQ<10> | IV_TRUE | N_PZ_265 | IV_TRUE | Count1<2>
+
+PLA | FOOBAR3_ | 31
+PLA_TERM | 0 | 
+SPPTERM | 4 | IV_TRUE | Wire/rQ<15> | IV_TRUE | SCLK_II/UIM | IV_FALSE | Wire/rQ<14> | IV_FALSE | Wire/rSCLK
+PLA_TERM | 1 | 
+SPPTERM | 4 | IV_FALSE | Wire/rQ<15> | IV_TRUE | SCLK_II/UIM | IV_TRUE | Wire/rQ<14> | IV_FALSE | Wire/rSCLK
+PLA_TERM | 2 | 
+SPPTERM | 2 | IV_TRUE | Wire/rQ<15> | IV_TRUE | N_PZ_265
+PLA_TERM | 3 | 
+SPPTERM | 4 | IV_TRUE | SCLK_II/UIM | IV_TRUE | Wire/rQ<14> | IV_FALSE | Wire/rQ<13> | IV_FALSE | Wire/rSCLK
+PLA_TERM | 4 | 
+SPPTERM | 1 | IV_TRUE | Clk_II/UIM
+PLA_TERM | 5 | 
+SPPTERM | 4 | IV_TRUE | SCLK_II/UIM | IV_FALSE | Wire/rQ<14> | IV_TRUE | Wire/rQ<13> | IV_FALSE | Wire/rSCLK
+PLA_TERM | 6 | 
+SPPTERM | 3 | IV_TRUE | Wire/rQ<14> | IV_TRUE | N_PZ_265 | IV_FALSE | Found1
+PLA_TERM | 7 | 
+SPPTERM | 3 | IV_FALSE | Wire/rQ<14> | IV_TRUE | N_PZ_265 | IV_TRUE | Found1
+PLA_TERM | 8 | 
+SPPTERM | 4 | IV_TRUE | SCLK_II/UIM | IV_TRUE | Wire/rQ<13> | IV_FALSE | Wire/rQ<12> | IV_FALSE | Wire/rSCLK
+PLA_TERM | 9 | 
+SPPTERM | 4 | IV_TRUE | SCLK_II/UIM | IV_FALSE | Wire/rQ<13> | IV_TRUE | Wire/rQ<12> | IV_FALSE | Wire/rSCLK
+PLA_TERM | 10 | 
+SPPTERM | 3 | IV_TRUE | Wire/rQ<13> | IV_TRUE | N_PZ_265 | IV_FALSE | Found2
+PLA_TERM | 11 | 
+SPPTERM | 3 | IV_FALSE | Wire/rQ<13> | IV_TRUE | N_PZ_265 | IV_TRUE | Found2
+PLA_TERM | 12 | 
+SPPTERM | 4 | IV_TRUE | SCLK_II/UIM | IV_TRUE | Wire/rQ<12> | IV_FALSE | Wire/rQ<11> | IV_FALSE | Wire/rSCLK
+PLA_TERM | 13 | 
+SPPTERM | 4 | IV_FALSE | Found3 | IV_TRUE | Seek_II/UIM | IV_TRUE | Q3Z_II/UIM | IV_FALSE | QuadDecoder3/rQuadZ
+PLA_TERM | 14 | 
+SPPTERM | 4 | IV_TRUE | SCLK_II/UIM | IV_FALSE | Wire/rQ<12> | IV_TRUE | Wire/rQ<11> | IV_FALSE | Wire/rSCLK
+PLA_TERM | 15 | 
+SPPTERM | 3 | IV_TRUE | Wire/rQ<12> | IV_TRUE | N_PZ_265 | IV_FALSE | Found3
+PLA_TERM | 16 | 
+SPPTERM | 4 | IV_FALSE | Found1 | IV_FALSE | QuadDecoder1/rQuadZ | IV_TRUE | Seek_II/UIM | IV_TRUE | Q1Z_II/UIM
+PLA_TERM | 17 | 
+SPPTERM | 3 | IV_FALSE | Wire/rQ<12> | IV_TRUE | N_PZ_265 | IV_TRUE | Found3
+PLA_TERM | 18 | 
+SPPTERM | 4 | IV_TRUE | SCLK_II/UIM | IV_TRUE | Wire/rQ<11> | IV_FALSE | Wire/rQ<10> | IV_FALSE | Wire/rSCLK
+PLA_TERM | 19 | 
+SPPTERM | 4 | IV_TRUE | SCLK_II/UIM | IV_FALSE | Wire/rQ<11> | IV_TRUE | Wire/rQ<10> | IV_FALSE | Wire/rSCLK
+PLA_TERM | 20 | 
+SPPTERM | 3 | IV_TRUE | Wire/rQ<11> | IV_TRUE | N_PZ_265 | IV_FALSE | Count1<3>
+PLA_TERM | 21 | 
+SPPTERM | 3 | IV_FALSE | Wire/rQ<11> | IV_TRUE | N_PZ_265 | IV_TRUE | Count1<3>
+PLA_TERM | 22 | 
+SPPTERM | 4 | IV_TRUE | SCLK_II/UIM | IV_TRUE | Wire/rQ<2> | IV_FALSE | Wire/rQ<1> | IV_FALSE | Wire/rSCLK
+PLA_TERM | 23 | 
+SPPTERM | 4 | IV_TRUE | SCLK_II/UIM | IV_FALSE | Wire/rQ<2> | IV_TRUE | Wire/rQ<1> | IV_FALSE | Wire/rSCLK
+PLA_TERM | 24 | 
+SPPTERM | 3 | IV_TRUE | Wire/rQ<2> | IV_TRUE | N_PZ_265 | IV_FALSE | Count3<2>
+PLA_TERM | 25 | 
+SPPTERM | 3 | IV_FALSE | Wire/rQ<2> | IV_TRUE | N_PZ_265 | IV_TRUE | Count3<2>
+PLA_TERM | 26 | 
+SPPTERM | 4 | IV_TRUE | SCLK_II/UIM | IV_TRUE | Wire/rQ<3> | IV_FALSE | Wire/rQ<2> | IV_FALSE | Wire/rSCLK
+PLA_TERM | 27 | 
+SPPTERM | 4 | IV_TRUE | SCLK_II/UIM | IV_FALSE | Wire/rQ<3> | IV_TRUE | Wire/rQ<2> | IV_FALSE | Wire/rSCLK
+PLA_TERM | 28 | 
+SPPTERM | 3 | IV_TRUE | Wire/rQ<3> | IV_TRUE | N_PZ_265 | IV_FALSE | Count3<3>
+PLA_TERM | 29 | 
+SPPTERM | 3 | IV_FALSE | Wire/rQ<3> | IV_TRUE | N_PZ_265 | IV_TRUE | Count3<3>
+PLA_TERM | 37 | 
+SPPTERM | 4 | IV_FALSE | Found2 | IV_TRUE | Q2Z_II/UIM | IV_TRUE | Seek_II/UIM | IV_FALSE | QuadDecoder2/rQuadZ
+
+PLA | FOOBAR4_ | 27
+PLA_TERM | 0 | 
+SPPTERM | 1 | IV_TRUE | Wire/rQ<15>
+PLA_TERM | 1 | 
+SPPTERM | 4 | IV_TRUE | SCLK_II/UIM | IV_TRUE | Wire/rQ<4> | IV_FALSE | Wire/rQ<3> | IV_FALSE | Wire/rSCLK
+PLA_TERM | 2 | 
+SPPTERM | 4 | IV_TRUE | SCLK_II/UIM | IV_FALSE | Wire/rQ<4> | IV_TRUE | Wire/rQ<3> | IV_FALSE | Wire/rSCLK
+PLA_TERM | 3 | 
+SPPTERM | 3 | IV_TRUE | Wire/rQ<4> | IV_TRUE | N_PZ_265 | IV_FALSE | Count2<0>
+PLA_TERM | 4 | 
+SPPTERM | 1 | IV_TRUE | Clk_II/UIM
+PLA_TERM | 5 | 
+SPPTERM | 3 | IV_FALSE | Wire/rQ<4> | IV_TRUE | N_PZ_265 | IV_TRUE | Count2<0>
+PLA_TERM | 6 | 
+SPPTERM | 4 | IV_TRUE | SCLK_II/UIM | IV_TRUE | Wire/rQ<5> | IV_FALSE | Wire/rQ<4> | IV_FALSE | Wire/rSCLK
+PLA_TERM | 7 | 
+SPPTERM | 4 | IV_TRUE | SCLK_II/UIM | IV_FALSE | Wire/rQ<5> | IV_TRUE | Wire/rQ<4> | IV_FALSE | Wire/rSCLK
+PLA_TERM | 8 | 
+SPPTERM | 3 | IV_TRUE | Wire/rQ<5> | IV_TRUE | N_PZ_265 | IV_FALSE | Count2<1>
+PLA_TERM | 9 | 
+SPPTERM | 3 | IV_FALSE | Wire/rQ<5> | IV_TRUE | N_PZ_265 | IV_TRUE | Count2<1>
+PLA_TERM | 10 | 
+SPPTERM | 4 | IV_TRUE | SCLK_II/UIM | IV_TRUE | Wire/rQ<6> | IV_FALSE | Wire/rQ<5> | IV_FALSE | Wire/rSCLK
+PLA_TERM | 11 | 
+SPPTERM | 4 | IV_TRUE | SCLK_II/UIM | IV_FALSE | Wire/rQ<6> | IV_TRUE | Wire/rQ<5> | IV_FALSE | Wire/rSCLK
+PLA_TERM | 12 | 
+SPPTERM | 3 | IV_TRUE | Wire/rQ<6> | IV_TRUE | N_PZ_265 | IV_FALSE | Count2<2>
+PLA_TERM | 13 | 
+SPPTERM | 3 | IV_FALSE | Wire/rQ<6> | IV_TRUE | N_PZ_265 | IV_TRUE | Count2<2>
+PLA_TERM | 14 | 
+SPPTERM | 4 | IV_TRUE | SCLK_II/UIM | IV_TRUE | Wire/rQ<7> | IV_FALSE | Wire/rQ<6> | IV_FALSE | Wire/rSCLK
+PLA_TERM | 15 | 
+SPPTERM | 4 | IV_TRUE | SCLK_II/UIM | IV_FALSE | Wire/rQ<7> | IV_TRUE | Wire/rQ<6> | IV_FALSE | Wire/rSCLK
+PLA_TERM | 16 | 
+SPPTERM | 3 | IV_TRUE | Wire/rQ<7> | IV_TRUE | N_PZ_265 | IV_FALSE | Count2<3>
+PLA_TERM | 17 | 
+SPPTERM | 3 | IV_FALSE | Wire/rQ<7> | IV_TRUE | N_PZ_265 | IV_TRUE | Count2<3>
+PLA_TERM | 18 | 
+SPPTERM | 4 | IV_TRUE | SCLK_II/UIM | IV_TRUE | Wire/rQ<8> | IV_FALSE | Wire/rQ<7> | IV_FALSE | Wire/rSCLK
+PLA_TERM | 19 | 
+SPPTERM | 4 | IV_TRUE | SCLK_II/UIM | IV_FALSE | Wire/rQ<8> | IV_TRUE | Wire/rQ<7> | IV_FALSE | Wire/rSCLK
+PLA_TERM | 20 | 
+SPPTERM | 3 | IV_TRUE | Wire/rQ<8> | IV_TRUE | N_PZ_265 | IV_FALSE | Count1<0>
+PLA_TERM | 21 | 
+SPPTERM | 3 | IV_FALSE | Wire/rQ<8> | IV_TRUE | N_PZ_265 | IV_TRUE | Count1<0>
+PLA_TERM | 22 | 
+SPPTERM | 4 | IV_TRUE | SCLK_II/UIM | IV_TRUE | Wire/rQ<9> | IV_FALSE | Wire/rQ<8> | IV_FALSE | Wire/rSCLK
+PLA_TERM | 23 | 
+SPPTERM | 4 | IV_TRUE | SCLK_II/UIM | IV_FALSE | Wire/rQ<9> | IV_TRUE | Wire/rQ<8> | IV_FALSE | Wire/rSCLK
+PLA_TERM | 24 | 
+SPPTERM | 3 | IV_TRUE | Wire/rQ<9> | IV_TRUE | N_PZ_265 | IV_FALSE | Count1<1>
+PLA_TERM | 25 | 
+SPPTERM | 3 | IV_FALSE | Wire/rQ<9> | IV_TRUE | N_PZ_265 | IV_TRUE | Count1<1>
+PLA_TERM | 49 | 
+SPPTERM | 2 | IV_TRUE | SCLK_II/UIM | IV_FALSE | Wire/rSCLK
+
+
+IOSTD | LVCMOS18
+Clk | LVCMOS18
+SCLK | LVCMOS18
+LE | LVCMOS18
+MISO | LVCMOS18
+Seek | LVCMOS18
+Q1A | LVCMOS18
+Q1B | LVCMOS18
+Q1Z | LVCMOS18
+Q2A | LVCMOS18
+Q2B | LVCMOS18
+Q2Z | LVCMOS18
+Q3A | LVCMOS18
+Q3B | LVCMOS18
+Q3Z | LVCMOS18
+
+
+FB_ORDER_OF_INPUTS | FOOBAR1_ | 0 | QuadDecoder3/rQuadA<1> | NULL | 1 | SCLK | 16 | 2 | QuadDecoder1/rQuadA<0> | NULL | 3 | QuadDecoder1/rQuadB<1> | NULL | 4 | QuadDecoder2/rQuadA<1> | NULL
+FB_ORDER_OF_INPUTS | FOOBAR1_ | 5 | QuadDecoder2/rQuadA<0> | NULL | 6 | QuadDecoder1/rQuadA<1> | NULL | 7 | Wire/rLE | NULL | 8 | QuadDecoder3/rQuadB<1> | NULL | 9 | Wire/rSCLK | NULL
+FB_ORDER_OF_INPUTS | FOOBAR1_ | 10 | Count3<0> | NULL | 12 | Wire/rQ<1> | NULL | 15 | Count3<1> | NULL | 16 | QuadDecoder3/rQuadA<0> | NULL | 17 | QuadDecoder1/rQuadB<0> | NULL
+FB_ORDER_OF_INPUTS | FOOBAR1_ | 19 | N_PZ_265 | NULL | 20 | Wire/rQ<0> | NULL | 21 | QuadDecoder2/rQuadB<0> | NULL | 22 | QuadDecoder2/rQuadB<1> | NULL | 23 | Clk | 36
+FB_ORDER_OF_INPUTS | FOOBAR1_ | 25 | LE | 13 | 29 | QuadDecoder3/rQuadB<0> | NULL
+
+FB_IMUX_INDEX | FOOBAR1_ | 68 | 62 | 110 | 71 | 70 | 106 | 77 | 124 | 78 | 126 | 86 | -1 | 64 | -1 | -1 | 85 | 34 | 109 | -1 | 66 | 65 | 41 | 69 | 2 | -1 | 60 | -1 | -1 | -1 | 33 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1
+
+
+FB_ORDER_OF_INPUTS | FOOBAR2_ | 0 | Wire/rQ<9> | NULL | 1 | QuadDecoder3/rQuadA<0>_MC.COMB | NULL | 2 | Count2<1> | NULL | 3 | Count3<2> | NULL | 4 | Count1<3> | NULL
+FB_ORDER_OF_INPUTS | FOOBAR2_ | 5 | Count3<1> | NULL | 6 | QuadDecoder3/rQuadB<0>_MC.COMB | NULL | 7 | N_PZ_265 | NULL | 8 | Count1<1> | NULL | 9 | Wire/rSCLK | NULL
+FB_ORDER_OF_INPUTS | FOOBAR2_ | 10 | Count3<0> | NULL | 11 | Count2<3> | NULL | 12 | Found3 | NULL | 13 | Count1<2> | NULL | 14 | Found1 | NULL
+FB_ORDER_OF_INPUTS | FOOBAR2_ | 15 | N_PZ_258 | NULL | 16 | Count3<3> | NULL | 17 | N_PZ_262 | NULL | 18 | QuadDecoder2/rQuadB<0>_MC.COMB | NULL | 19 | Wire/rQ<10> | NULL
+FB_ORDER_OF_INPUTS | FOOBAR2_ | 20 | Count2<0> | NULL | 21 | Count1<0> | NULL | 23 | Clk | 36 | 24 | SCLK | 16 | 25 | N_PZ_263 | NULL
+FB_ORDER_OF_INPUTS | FOOBAR2_ | 26 | N_PZ_260 | NULL | 28 | Found2 | NULL | 30 | N_PZ_259 | NULL | 32 | N_PZ_261 | NULL | 36 | Clear | NULL
+FB_ORDER_OF_INPUTS | FOOBAR2_ | 37 | Count2<2> | NULL
+
+FB_IMUX_INDEX | FOOBAR2_ | 117 | 98 | 91 | 84 | 95 | 85 | 97 | 66 | 93 | 126 | 86 | 87 | 82 | 94 | 88 | 79 | 81 | 74 | 105 | 80 | 92 | 90 | -1 | 2 | 62 | 73 | 76 | -1 | 83 | -1 | 67 | -1 | 75 | -1 | -1 | -1 | 72 | 89 | -1 | -1
+
+
+FB_ORDER_OF_INPUTS | FOOBAR3_ | 0 | Wire/rQ<13> | NULL | 1 | Found1 | NULL | 2 | Wire/rQ<2> | NULL | 3 | Wire/rQ<12> | NULL | 4 | Count1<3> | NULL
+FB_ORDER_OF_INPUTS | FOOBAR3_ | 5 | Wire/rQ<3> | NULL | 6 | Wire/rQ<15> | NULL | 7 | QuadDecoder3/rQuadZ | NULL | 8 | Wire/rQ<14> | NULL | 9 | Wire/rSCLK | NULL
+FB_ORDER_OF_INPUTS | FOOBAR3_ | 10 | QuadDecoder1/rQuadZ | NULL | 12 | Wire/rQ<11> | NULL | 13 | QuadDecoder2/rQuadZ | NULL | 14 | Found2 | NULL | 16 | Count3<3> | NULL
+FB_ORDER_OF_INPUTS | FOOBAR3_ | 17 | SCLK | 16 | 18 | Seek | 12 | 19 | Count3<2> | NULL | 20 | Q3Z | 29 | 21 | Q2Z | 23
+FB_ORDER_OF_INPUTS | FOOBAR3_ | 23 | Clk | 36 | 24 | Wire/rQ<10> | NULL | 25 | Wire/rQ<1> | NULL | 28 | N_PZ_265 | NULL | 30 | Found3 | NULL
+FB_ORDER_OF_INPUTS | FOOBAR3_ | 36 | Q1Z | 20
+
+FB_IMUX_INDEX | FOOBAR3_ | 104 | 88 | 100 | 103 | 95 | 99 | 111 | 96 | 108 | 126 | 107 | -1 | 102 | 101 | 83 | -1 | 81 | 62 | 58 | 84 | 32 | 37 | -1 | 2 | 80 | 64 | -1 | -1 | 66 | -1 | 82 | -1 | -1 | -1 | -1 | -1 | 43 | -1 | -1 | -1
+
+
+FB_ORDER_OF_INPUTS | FOOBAR4_ | 0 | Wire/rQ<9> | NULL | 1 | SCLK | 16 | 2 | Wire/rQ<8> | NULL | 3 | Wire/rQ<7> | NULL | 4 | Wire/rQ<6> | NULL
+FB_ORDER_OF_INPUTS | FOOBAR4_ | 5 | Wire/rQ<3> | NULL | 6 | Wire/rQ<5> | NULL | 7 | Count2<2> | NULL | 8 | Count1<1> | NULL | 9 | Wire/rSCLK | NULL
+FB_ORDER_OF_INPUTS | FOOBAR4_ | 10 | Wire/rQ<4> | NULL | 11 | Wire/rQ<15> | NULL | 16 | Count2<1> | NULL | 19 | N_PZ_265 | NULL | 20 | Count2<0> | NULL
+FB_ORDER_OF_INPUTS | FOOBAR4_ | 21 | Count1<0> | NULL | 23 | Count2<3> | NULL | 36 | Clk | 36
+
+FB_IMUX_INDEX | FOOBAR4_ | 117 | 62 | 119 | 120 | 121 | 99 | 123 | 89 | 93 | 126 | 127 | 111 | -1 | -1 | -1 | -1 | 91 | -1 | -1 | 66 | 92 | 90 | -1 | 87 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | 2 | -1 | -1 | -1
+
+

@@ -1,0 +1,538 @@
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -i -p xc2c64a-VQ44-7 top.ngc top.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 top.ngd 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 top.ngc top.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 top.ngd 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 top.ngc top.ngd  
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 top.ngc top.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 top.ngd 
+XSLTProcess top_build.xml 
+tsim -intstyle ise top top.nga 
+hprep6 -s IEEE1149 -i top 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 top.ngc top.ngd  
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 top.ngc top.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 top.ngd 
+XSLTProcess top_build.xml 
+tsim -intstyle ise top top.nga 
+hprep6 -s IEEE1149 -i top 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 top.ngc top.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 top.ngd 
+XSLTProcess top_build.xml 
+tsim -intstyle ise top top.nga 
+hprep6 -s IEEE1149 -i top 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 top.ngc top.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 top.ngd 
+XSLTProcess top_build.xml 
+tsim -intstyle ise top top.nga 
+hprep6 -s IEEE1149 -i top 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 top.ngc top.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 top.ngd 
+XSLTProcess top_build.xml 
+tsim -intstyle ise top top.nga 
+hprep6 -s IEEE1149 -i top 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 top.ngc top.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 top.ngd 
+XSLTProcess top_build.xml 
+tsim -intstyle ise top top.nga 
+hprep6 -s IEEE1149 -i top 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 top.ngc top.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 top.ngd 
+XSLTProcess top_build.xml 
+tsim -intstyle ise top top.nga 
+hprep6 -s IEEE1149 -i top 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 top.ngc top.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 top.ngd 
+XSLTProcess top_build.xml 
+tsim -intstyle ise top top.nga 
+hprep6 -s IEEE1149 -i top 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 top.ngc top.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 top.ngd 
+XSLTProcess top_build.xml 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 top.ngc top.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 top.ngd 
+XSLTProcess top_build.xml 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 top.ngc top.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 top.ngd 
+XSLTProcess top_build.xml 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 top.ngc top.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 top.ngd 
+XSLTProcess top_build.xml 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 top.ngc top.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 top.ngd 
+XSLTProcess top_build.xml 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 top.ngc top.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 top.ngd 
+XSLTProcess top_build.xml 
+tsim -intstyle ise top top.nga 
+hprep6 -s IEEE1149 -i top 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 top.ngc top.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 top.ngd 
+XSLTProcess top_build.xml 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 top.ngc top.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 top.ngd 
+XSLTProcess top_build.xml 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 top.ngc top.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 top.ngd 
+XSLTProcess top_build.xml 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 top.ngc top.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 top.ngd 
+XSLTProcess top_build.xml 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 top.ngc top.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 top.ngd 
+XSLTProcess top_build.xml 
+tsim -intstyle ise top top.nga 
+hprep6 -s IEEE1149 -i top 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 top.ngc top.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 top.ngd 
+XSLTProcess top_build.xml 
+tsim -intstyle ise top top.nga 
+hprep6 -s IEEE1149 -i top 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 top.ngc top.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 top.ngd 
+XSLTProcess top_build.xml 
+tsim -intstyle ise top top.nga 
+hprep6 -s IEEE1149 -i top 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 top.ngc top.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 top.ngd 
+XSLTProcess top_build.xml 
+tsim -intstyle ise top top.nga 
+hprep6 -s IEEE1149 -i top 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 top.ngc top.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 top.ngd 
+XSLTProcess top_build.xml 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 top.ngc top.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 top.ngd 
+XSLTProcess top_build.xml 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 top.ngc top.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 top.ngd 
+XSLTProcess top_build.xml 
+tsim -intstyle ise top top.nga 
+hprep6 -s IEEE1149 -i top 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 top.ngc top.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 top.ngd 
+XSLTProcess top_build.xml 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 top.ngc top.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 top.ngd 
+XSLTProcess top_build.xml 
+tsim -intstyle ise top top.nga 
+hprep6 -s IEEE1149 -i top 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 top.ngc top.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 top.ngd 
+XSLTProcess top_build.xml 
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 top.ngd 
+XSLTProcess top_build.xml 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 top.ngc top.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 top.ngd 
+XSLTProcess top_build.xml 
+tsim -intstyle ise top top.nga 
+hprep6 -s IEEE1149 -i top 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 top.ngc top.ngd  
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 top.ngc top.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 top.ngd 
+XSLTProcess top_build.xml 
+tsim -intstyle ise top top.nga 
+hprep6 -s IEEE1149 -i top 
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 top.ngd 
+XSLTProcess top_build.xml 
+tsim -intstyle ise top top.nga 
+hprep6 -s IEEE1149 -i top 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 top.ngc top.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 top.ngd 
+XSLTProcess top_build.xml 
+tsim -intstyle ise top top.nga 
+hprep6 -s IEEE1149 -i top 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 top.ngc top.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 top.ngd 
+XSLTProcess top_build.xml 
+tsim -intstyle ise top top.nga 
+hprep6 -s IEEE1149 -i top 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 top.ngc top.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 top.ngd 
+XSLTProcess top_build.xml 
+tsim -intstyle ise top top.nga 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 top.ngc top.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 top.ngd 
+XSLTProcess top_build.xml 
+tsim -intstyle ise top top.nga 
+hprep6 -s IEEE1149 -i top 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 top.ngc top.ngd  
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 top.ngc top.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 top.ngd 
+XSLTProcess top_build.xml 
+tsim -intstyle ise top top.nga 
+hprep6 -s IEEE1149 -i top 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 top.ngc top.ngd  
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 top.ngc top.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 top.ngd 
+XSLTProcess top_build.xml 
+tsim -intstyle ise top top.nga 
+hprep6 -s IEEE1149 -i top 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 top.ngc top.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 top.ngd 
+XSLTProcess top_build.xml 
+tsim -intstyle ise top top.nga 
+hprep6 -s IEEE1149 -i top 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 top.ngc top.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 top.ngd 
+XSLTProcess top_build.xml 
+tsim -intstyle ise top top.nga 
+hprep6 -s IEEE1149 -i top 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 top.ngc top.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 top.ngd 
+XSLTProcess top_build.xml 
+tsim -intstyle ise top top.nga 
+hprep6 -s IEEE1149 -i top 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 top.ngc top.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 top.ngd 
+XSLTProcess top_build.xml 
+tsim -intstyle ise top top.nga 
+hprep6 -s IEEE1149 -i top 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 top.ngc top.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 top.ngd 
+XSLTProcess top_build.xml 
+tsim -intstyle ise top top.nga 
+hprep6 -s IEEE1149 -i top 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 top.ngc top.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 top.ngd 
+XSLTProcess top_build.xml 
+tsim -intstyle ise top top.nga 
+hprep6 -s IEEE1149 -i top 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 top.ngc top.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 top.ngd 
+XSLTProcess top_build.xml 
+tsim -intstyle ise top top.nga 
+hprep6 -s IEEE1149 -i top 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 top.ngc top.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 top.ngd 
+XSLTProcess top_build.xml 
+tsim -intstyle ise top top.nga 
+hprep6 -s IEEE1149 -i top 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 top.ngc top.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 top.ngd 
+XSLTProcess top_build.xml 
+tsim -intstyle ise top top.nga 
+hprep6 -s IEEE1149 -i top 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 top.ngc top.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 top.ngd 
+XSLTProcess top_build.xml 
+tsim -intstyle ise top top.nga 
+hprep6 -s IEEE1149 -i top 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 top.ngc top.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 top.ngd 
+XSLTProcess top_build.xml 
+tsim -intstyle ise top top.nga 
+hprep6 -s IEEE1149 -i top 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 top.ngc top.ngd  
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 top.ngc top.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 top.ngd 
+XSLTProcess top_build.xml 
+tsim -intstyle ise top top.nga 
+hprep6 -s IEEE1149 -i top 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 top.ngc top.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 top.ngd 
+XSLTProcess top_build.xml 
+tsim -intstyle ise top top.nga 
+hprep6 -s IEEE1149 -i top 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 top.ngc top.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 top.ngd 
+XSLTProcess top_build.xml 
+tsim -intstyle ise top top.nga 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 top.ngc top.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 top.ngd 
+XSLTProcess top_build.xml 
+tsim -intstyle ise top top.nga 
+hprep6 -s IEEE1149 -i top 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 top.ngc top.ngd  
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 top.ngc top.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 top.ngd 
+XSLTProcess top_build.xml 
+tsim -intstyle ise top top.nga 
+hprep6 -s IEEE1149 -i top 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 top.ngc top.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 top.ngd 
+XSLTProcess top_build.xml 
+tsim -intstyle ise top top.nga 
+hprep6 -s IEEE1149 -i top 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 top.ngc top.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 top.ngd 
+XSLTProcess top_build.xml 
+tsim -intstyle ise top top.nga 
+hprep6 -s IEEE1149 -i top 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 top.ngc top.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 top.ngd 
+XSLTProcess top_build.xml 
+tsim -intstyle ise top top.nga 
+hprep6 -s IEEE1149 -i top 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 top.ngc top.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 top.ngd 
+XSLTProcess top_build.xml 
+tsim -intstyle ise top top.nga 
+hprep6 -s IEEE1149 -i top 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 top.ngc top.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 top.ngd 
+XSLTProcess top_build.xml 
+tsim -intstyle ise top top.nga 
+hprep6 -s IEEE1149 -i top 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 top.ngc top.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 top.ngd 
+XSLTProcess top_build.xml 
+tsim -intstyle ise top top.nga 
+hprep6 -s IEEE1149 -i top 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 top.ngc top.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 top.ngd 
+XSLTProcess top_build.xml 
+tsim -intstyle ise top top.nga 
+hprep6 -s IEEE1149 -i top 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 top.ngc top.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 top.ngd 
+XSLTProcess top_build.xml 
+tsim -intstyle ise top top.nga 
+hprep6 -s IEEE1149 -i top 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 top.ngc top.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 top.ngd 
+XSLTProcess top_build.xml 
+tsim -intstyle ise top top.nga 
+hprep6 -s IEEE1149 -i top 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 top.ngc top.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 top.ngd 
+XSLTProcess top_build.xml 
+tsim -intstyle ise top top.nga 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 top.ngc top.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 top.ngd 
+XSLTProcess top_build.xml 
+tsim -intstyle ise top top.nga 
+hprep6 -s IEEE1149 -i top 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 top.ngc top.ngd  
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 top.ngc top.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 top.ngd 
+XSLTProcess top_build.xml 
+tsim -intstyle ise top top.nga 
+hprep6 -s IEEE1149 -i top 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 top.ngc top.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 top.ngd 
+XSLTProcess top_build.xml 
+tsim -intstyle ise top top.nga 
+hprep6 -s IEEE1149 -i top 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 top.ngc top.ngd  
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 top.ngc top.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 top.ngd 
+XSLTProcess top_build.xml 
+tsim -intstyle ise top top.nga 
+hprep6 -s IEEE1149 -i top 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 top.ngc top.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 top.ngd 
+XSLTProcess top_build.xml 
+tsim -intstyle ise top top.nga 
+hprep6 -s IEEE1149 -i top 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 top.ngc top.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 top.ngd 
+XSLTProcess top_build.xml 
+tsim -intstyle ise top top.nga 
+hprep6 -s IEEE1149 -i top 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 top.ngc top.ngd  
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 top.ngc top.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 top.ngd 
+XSLTProcess top_build.xml 
+tsim -intstyle ise top top.nga 
+hprep6 -s IEEE1149 -i top 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 top.ngc top.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 top.ngd 
+XSLTProcess top_build.xml 
+tsim -intstyle ise top top.nga 
+hprep6 -s IEEE1149 -i top 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 top.ngc top.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 top.ngd 
+XSLTProcess top_build.xml 
+tsim -intstyle ise top top.nga 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 top.ngc top.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 top.ngd 
+XSLTProcess top_build.xml 
+tsim -intstyle ise top top.nga 
+hprep6 -s IEEE1149 -i top 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 top.ngc top.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 top.ngd 
+XSLTProcess top_build.xml 
+tsim -intstyle ise top top.nga 
+hprep6 -s IEEE1149 -i top 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 top.ngc top.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 top.ngd 
+XSLTProcess top_build.xml 
+tsim -intstyle ise top top.nga 
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 top.ngd 
+XSLTProcess top_build.xml 
+tsim -intstyle ise top top.nga 
+hprep6 -s IEEE1149 -i top 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 top.ngc top.ngd  
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 top.ngc top.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 top.ngd 
+XSLTProcess top_build.xml 
+tsim -intstyle ise top top.nga 
+hprep6 -s IEEE1149 -i top 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 top.ngc top.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 top.ngd 
+XSLTProcess top_build.xml 
+tsim -intstyle ise top top.nga 
+hprep6 -s IEEE1149 -i top 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 top.ngc top.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 top.ngd 
+XSLTProcess top_build.xml 
+tsim -intstyle ise top top.nga 
+hprep6 -s IEEE1149 -i top 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 top.ngc top.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 top.ngd 
+XSLTProcess top_build.xml 
+tsim -intstyle ise top top.nga 
+hprep6 -s IEEE1149 -i top 
+xst -intstyle ise -ifn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.xst" -ofn "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 top.ngc top.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 top.ngd 
+XSLTProcess top_build.xml 
+tsim -intstyle ise top top.nga 
+hprep6 -s IEEE1149 -i top 

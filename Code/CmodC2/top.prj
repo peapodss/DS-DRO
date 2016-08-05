@@ -1,0 +1,3 @@
+vhdl work "Wire.vhd"
+vhdl work "quad_dec.vhd"
+vhdl work "top.vhd"

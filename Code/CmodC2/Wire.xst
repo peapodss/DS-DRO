@@ -1,0 +1,5 @@
+set -tmpdir "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/xst/projnav.tmp"
+set -xsthdpdir "D:/Sync/ExternalProjects/CNC_QuaDdECODER/QuadraDec3x/xst"
+elaborate
+-ifn Wire.prj
+-ifmt mixed
